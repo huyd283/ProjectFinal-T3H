@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 function Home (props){
     return (
         <React.Fragment>
@@ -334,9 +335,9 @@ function Home (props){
 
                         <div className="col-lg-6 col-md-6 col-12">
                             <div className="news-thumb mb-4">
-                                <a href="news-detail.html">
+                                <NavLink to="/blogdetail">  
                                     <img src="https://botoquanmoc.com/images/news/2023/04/27/large/343658403_959895225355526_2705148923649967748_n_1682583011.jpg" className="img-fluid news-image" alt=""/>
-                                </a>
+                                </NavLink>
                                 
                                 <div className="news-text-info news-text-info-large">
                                     <span className="category-tag bg-danger">27/04/23</span>
@@ -350,9 +351,9 @@ function Home (props){
 
                         <div className="col-lg-6 col-md-6 col-12">
                             <div className="news-thumb mb-4">
-                                <a href="news-detail.html">
+                                <NavLink to="/blogdetail">
                                     <img src="https://botoquanmoc.com/images/news/2023/04/20/resized/bia-web_1681979603.png" className="img-fluid news-image" alt=""/>
-                                </a>
+                                </NavLink>
                                 
                                 <div className="news-text-info news-text-info-large">
                                     <span className="category-tag bg-danger">20/04/23</span>

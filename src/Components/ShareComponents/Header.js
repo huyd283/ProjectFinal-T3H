@@ -1,5 +1,5 @@
 import React from "react";
-
+import { NavLink } from "react-router-dom";
 function Header (props) {
     return (
         <React.Fragment>
@@ -19,23 +19,24 @@ function Header (props) {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav mx-auto">
                         <li className="nav-item">
-                            <a className="nav-link active" href="index.html">TRANG CHỦ</a>
+                            <a className="nav-link" href="contact.html">
+                            <NavLink to="/">TRANG CHỦ</NavLink></a>
                         </li>
-
                         <li className="nav-item">
-                            <a className="nav-link" href="about.html">GIỚI THIỆU</a>
+                            <a className="nav-link" href="contact.html">
+                            <NavLink to="/">GIỚI THIỆU</NavLink></a>
                         </li>
-
                         <li className="nav-item">
-                            <a className="nav-link" href="menu.html">MENU</a>
+                            <a className="nav-link" href="contact.html">
+                            <NavLink to="/">MENU</NavLink></a>
                         </li>
-
                         <li className="nav-item">
-                            <a className="nav-link" href="news.html">TIN TỨC</a>
+                            <a className="nav-link" href="contact.html">
+                            <NavLink to="/blog">TIN TỨC</NavLink></a>
                         </li>
-
                         <li className="nav-item">
-                            <a className="nav-link" href="contact.html">LIÊN HỆ</a>
+                            <a className="nav-link" href="contact.html">
+                            <NavLink to="/blog">LIÊN HỆ</NavLink></a>
                         </li>
                     </ul>
                 </div>
