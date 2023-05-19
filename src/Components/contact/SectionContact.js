@@ -1,28 +1,32 @@
 import React, { useState, useEffect } from "react";
 import { firestore } from "../../db"
 export default function SectionContact(props) {
-    const [address, setAddress] = useState(undefined || {});
-    const [addHanoi, setaddHanoi] = useState(null);
-    const handleInput = (e) => {
-        address[e.target.name] = e.target.value;
-        setAddress(address);
-        console.log(address);
-    }
-    const formSubmit = async (e) => {
-        e.preventDefault();
-        try {
-            const doc = await firestore.collection("address-hanoi").add(address);
-            console.log("push thanh cong");
-            e.target.value = "";
-        } catch (err) {
-            console.log(err);
-        }
-    }
+    const [addHanoi, setaddHanoi] = useState([]);
     const refresh = async () => {
         try {
             const docs = await firestore.collection("address-hanoi").docs;
             setaddHanoi(docs.data());
             console.log(addHanoi)
+        } catch (error) {
+            console.error(error);
+        }
+    }
+    const  changeHanoiAdd=()=>{
+        refresh();
+    }
+    const  changeSaiGonAdd= async()=>{
+        try {
+            const conn = firestore.collection("address-saigon");
+            const data = await conn.get();
+            // setaddHanoi(docs.data());
+            const pro = [];
+            data.docs.map(item => {
+                const h = item.data();
+                h.id = item.id;
+                pro.push(h);
+            })
+            setaddHanoi(pro);
+            console.log(pro)
         } catch (error) {
             console.error(error);
         }
@@ -38,42 +42,30 @@ export default function SectionContact(props) {
                         <h2 className="text-center">
                             LIÊN HỆ
                         </h2>
-                        <form method="post" onSubmit={formSubmit}>
-                            <div className="form-group">
-                                <input onChange={handleInput} type="text" name="address" placeholder="title" />
-                            </div>
-                            <div className="form-group">
-                                <input onChange={handleInput} type="text" name="email" placeholder="address" />
-                            </div>
-                            <div className="form-group">
-                                <input onChange={handleInput} type="text" name="phoneNum" placeholder="email" />
-                            </div>
-                            <div className="form-group">
-                                <input onChange={handleInput} type="text" name="title" placeholder="phone" />
-                            </div>
-                            <button type="submit" className="site-btn"> Add Product</button>
-                            <button type="button" className="site-btn" onClick={() => this.updateProduct}> Update</button>
-                        </form>
                         <div className="d-flex justify-content-around">
-                            <button className="btn btn-primary button-contact">Hà Nội</button>
-                            <button className="btn btn-primary button-contact">Sài Gòn</button>
+                        <button className="btn  button-contact" onClick={()=>changeHanoiAdd}>Hà Nội</button>
+                            <button className="btn  button-contact"onClick={()=>changeSaiGonAdd}>Sài Gòn</button>
                         </div>
                     </div>
                     <div className="col-9 mx-auto">
                         <div className="row">
                             <div className="w-100 list_address">
-                                <div className="address-list">
-                                    <h3>BÒ TƠ QUÁN MỘC CS5 HÀ NỘI</h3>
-                                    <div className="d-flex ">
-                                        <h4 className="my-auto">Địa chỉ:</h4><p className="my-auto ms-3">88 Ngã tư Vạn Phúc - Hà Đông</p>
-                                    </div>
-                                    <div className="d-flex ">
-                                        <h4 className="my-auto">Email:</h4><p className="my-auto ms-3"> cskh1.aladdin@gmail.com</p>
-                                    </div>
-                                    <div className="d-flex ">
-                                        <h4 className="my-auto">Điện thoại:</h4><p className="my-auto ms-3">094 195 3399</p>
-                                    </div>
-                                </div>
+                            {addHanoi.map(item => {
+                                    return (
+                                        <div className="address-list" key={item.id}>
+                                            <h3>{item.title}</h3>
+                                            <div className="d-flex ">
+                                                <h4 className="my-auto">Địa chỉ:</h4><p className="my-auto ms-3">{item.address}</p>
+                                            </div>
+                                            <div className="d-flex ">
+                                                <h4 className="my-auto">Email:</h4><p className="my-auto ms-3"> {item.email}</p>
+                                            </div>
+                                            <div className="d-flex ">
+                                                <h4 className="my-auto">Điện thoại:</h4><p className="my-auto ms-3">{item.phone}</p>
+                                            </div>
+                                        </div>
+                                    )
+                                })}
                                 {/* {addHanoi.map(item => {
                                             return (
                                                 <div className="item_address">
