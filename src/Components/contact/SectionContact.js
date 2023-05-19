@@ -63,10 +63,16 @@ export default function SectionContact(props) {
                         <div className="row">
                             <div className="w-100 list_address">
                                 <div className="address-list">
-                                    <h2>BÒ TƠ QUÁN MỘC CS5 HÀ NỘI</h2>
-                                    <h4>Địa chỉ:</h4><p>88 Ngã tư Vạn Phúc - Hà Đông</p>
-                                    <h4>Email:</h4><p> cskh1.aladdin@gmail.com</p>
-                                    <h4>Điện thoại:</h4><p>094 195 3399</p>
+                                    <h3>BÒ TƠ QUÁN MỘC CS5 HÀ NỘI</h3>
+                                    <div className="d-flex ">
+                                        <h4 className="my-auto">Địa chỉ:</h4><p className="my-auto ms-3">88 Ngã tư Vạn Phúc - Hà Đông</p>
+                                    </div>
+                                    <div className="d-flex ">
+                                        <h4 className="my-auto">Email:</h4><p className="my-auto ms-3"> cskh1.aladdin@gmail.com</p>
+                                    </div>
+                                    <div className="d-flex ">
+                                        <h4 className="my-auto">Điện thoại:</h4><p className="my-auto ms-3">094 195 3399</p>
+                                    </div>
                                 </div>
                                 {/* {addHanoi.map(item => {
                                             return (
@@ -136,7 +142,7 @@ export default function SectionContact(props) {
 
                             <div className="col-12">
                                 <div className="google-map pt-3">
-                                    <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB_-cyct6FgRXaXUbjNYNrcrKLgkF-7LBM&q=bò+tơ+quán+mộc/@21.0510037,105.6969974,13z/data=!3m1!4b1?hl=vi-VN" width="100%" height="300" style={{ border: "0" }} allowFullScreen="" loading="lazy"></iframe>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14920.891757756479!2d-73.83496372506556!3d40.8623107607295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c28cbc17f4a0c3%3A0x9ae0f1e804a817d!2s121%20Einstein%20Loop%20N%2C%20Bronx%2C%20NY%2010475%2C%20USA!5e0!3m2!1sen!2sth!4v1650470337727!5m2!1sen!2sth" width="100%" height="300" style={{ border: "0" }} allowFullScreen="" loading="lazy"></iframe>
                                 </div>
                             </div>
                         </div>
