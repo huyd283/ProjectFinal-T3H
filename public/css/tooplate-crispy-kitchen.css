@@ -118,7 +118,7 @@ button {
 }
 
 a {
-  color: var(--secondary-color);
+  /* color: var(--secondary-color); */
   text-decoration: none;
 }
 
@@ -873,4 +873,28 @@ strong {
     height: 50px;
   }
 }
+.button-contact {
+  background-color: #000;
+  border: none;
+  padding: 1.5rem 2rem;
+}
 
+.button-contact:hover,
+.process-cart-btn:hover,
+.btn-nav-cart:hover {
+  background-color: #f00000;
+}
+
+.process-cart-btn {
+  background-color: #000;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+}
+
+.btn-nav-cart {
+  padding: 5px 15px;
+  background-color: #000;
+  color: #fff;
+
+}
