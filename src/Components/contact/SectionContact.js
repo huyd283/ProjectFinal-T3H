@@ -4,17 +4,25 @@ export default function SectionContact(props) {
     const [addHanoi, setaddHanoi] = useState([]);
     const refresh = async () => {
         try {
-            const docs = await firestore.collection("address-hanoi").docs;
-            setaddHanoi(docs.data());
-            console.log(addHanoi)
+            const conn = firestore.collection("address-hanoi");
+            const data = await conn.get();
+            // setaddHanoi(docs.data());
+            const pro = [];
+            data.docs.map(item => {
+                const h = item.data();
+                h.id = item.id;
+                pro.push(h);
+            })
+            setaddHanoi(pro);
+
         } catch (error) {
             console.error(error);
         }
     }
-    const  changeHanoiAdd=()=>{
+    const changeHanoiAdd = () => {
         refresh();
     }
-    const  changeSaiGonAdd= async()=>{
+    const changeSaiGonAdd = async () => {
         try {
             const conn = firestore.collection("address-saigon");
             const data = await conn.get();
@@ -26,7 +34,6 @@ export default function SectionContact(props) {
                 pro.push(h);
             })
             setaddHanoi(pro);
-            console.log(pro)
         } catch (error) {
             console.error(error);
         }
@@ -43,14 +50,14 @@ export default function SectionContact(props) {
                             LIÊN HỆ
                         </h2>
                         <div className="d-flex justify-content-around">
-                        <button className="btn  button-contact" onClick={()=>changeHanoiAdd}>Hà Nội</button>
-                            <button className="btn  button-contact"onClick={()=>changeSaiGonAdd}>Sài Gòn</button>
+                            <button className="btn  button-contact" onClick={ changeHanoiAdd}>Hà Nội</button>
+                            <button className="btn  button-contact" onClick={changeSaiGonAdd}>Sài Gòn</button>
                         </div>
                     </div>
                     <div className="col-9 mx-auto">
                         <div className="row">
                             <div className="w-100 list_address">
-                            {addHanoi.map(item => {
+                                {addHanoi.map(item => {
                                     return (
                                         <div className="address-list" key={item.id}>
                                             <h3>{item.title}</h3>
