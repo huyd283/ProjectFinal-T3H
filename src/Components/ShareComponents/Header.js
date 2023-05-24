@@ -22,9 +22,9 @@ function Header(props) {
                     {/* <button classNameName="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button> */}
-                    <a className="navbar-brand" href="index.html">
+                    <NavLink className="navbar-brand nav-link" to="/">
                         <img src="https://botoquanmoc.com/images/config/logo_1559032387.png" />
-                    </a>
+                    </NavLink>
 
                     <div className="d-lg-none">
                         <button type="button" className="custom-btn btn btn-danger" data-bs-toggle="modal" data-bs-target="#BookingModal">Reservation</button>
@@ -42,7 +42,7 @@ function Header(props) {
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/Menu ">
-                                    MENU</NavLink>
+                                    THỰC ĐƠN</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/Blog">
