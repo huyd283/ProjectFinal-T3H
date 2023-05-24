@@ -8,6 +8,8 @@ import { Route } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
 import Contact from './pages/Contact';
 import CartPage from './pages/CartPage';
+import AboutPage from './pages/AboutPage';
+
 // import { BrowserRouter, useLocation } from "react-router-dom";
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
     <Route path="/BlogDetail" element={<BlogDetail/>}/>
     <Route path="/Contact" element={<Contact/>}/>
     <Route path="/Cartpage" element={<CartPage/>}></Route>
+    <Route path="/About" element={<AboutPage/>}/>
     </Routes>
     <Footer/>
     </div>
