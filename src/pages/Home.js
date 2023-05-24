@@ -1,6 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import { firestore } from '../db';
 function Home (props){
+    const [news, setNews] = useState(undefined || {});
+    const handleInput = (e) => {
+        news[e.target.name] = e.target.value;
+    }
+    const formSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const doc = await firestore.collection("News").add(news);
+            console.log("push thanh cong");
+            e.target.value = "";
+        } catch (err) {
+            console.log(err);
+        }
+    }
     return (
         <React.Fragment>
         <main>
@@ -136,7 +151,22 @@ function Home (props){
                         <div className="col-12">
                             <h2 className="text-center mb-lg-5 mb-4">Special Menus</h2>
                         </div>
-
+                        {/* <form method="post" onSubmit={formSubmit}>
+                            <div className="form-group">
+                                <input onChange={handleInput} type="text" name="title" placeholder="title" />
+                            </div>
+                            <div className="form-group">
+                                <input onChange={handleInput} type="text" name="img" placeholder="img" />
+                            </div>
+                            <div className="form-group">
+                                <input onChange={handleInput} type="text" name="content" placeholder="content" />
+                            </div>
+                            <div className="form-group">
+                                <input onChange={handleInput} type="date" name="date" placeholder="date" />
+                            </div>
+                            <button type="submit" className="site-btn"> Add </button>
+                            <button type="button" className="site-btn" onClick={() => this.updateProduct}> Update</button>
+                        </form> */}
                         <div className="col-lg-4 col-md-6 col-12">
                             <div className="menu-thumb">
                                 <div className="menu-image-wrap">

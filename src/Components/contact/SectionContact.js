@@ -38,7 +38,7 @@ export default function SectionContact(props) {
                         <h2 className="text-center">
                             LIÊN HỆ
                         </h2>
-                        <form method="post" onSubmit={formSubmit}>
+                        {/* <form method="post" onSubmit={formSubmit}>
                             <div className="form-group">
                                 <input onChange={handleInput} type="text" name="address" placeholder="title" />
                             </div>
@@ -53,7 +53,7 @@ export default function SectionContact(props) {
                             </div>
                             <button type="submit" className="site-btn"> Add Product</button>
                             <button type="button" className="site-btn" onClick={() => this.updateProduct}> Update</button>
-                        </form>
+                        </form> */}
                         <div className="d-flex justify-content-around">
                             <button className="btn btn-primary button-contact">Hà Nội</button>
                             <button className="btn btn-primary button-contact">Sài Gòn</button>
