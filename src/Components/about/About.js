@@ -23,7 +23,7 @@ export default class About extends React.Component {
 
 
         <div className="right text-right">
-            <div className="main_wrapper lazy cls" style={{ background: "url('https://botoquanmoc.com/images/config/product.jpg') center center", display: "block" }}>
+            <div className="main_wrapper lazy cls" >
               <div className="wrapper_content container nohome">
                 <div className="clear"></div>
                 <div className="main-area-left cls">
@@ -63,10 +63,3 @@ export default class About extends React.Component {
     );
   }
 }
-
-
-
-
-
-
-
