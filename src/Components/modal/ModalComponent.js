@@ -1,6 +1,33 @@
-import React from "react";
-
+import React, { useState, useEffect } from "react";
+import { firestore } from "../../db";
 function ModalComponent({ isOpen, onClose }) {
+  const [order, setOrder] = useState(undefined || {});
+    const handleInput = (e) => {
+        order[e.target.name] = e.target.value;
+        console.log(order);
+    }
+    const formSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const doc = await firestore.collection("Order").add(order);
+            console.log("push thanh cong");
+            e.target.value = "";
+        } catch (err) {
+            console.log(err);
+        }
+    }
+    // const refresh = async () => {
+    //     try {
+    //         const docs = await firestore.collection("address-hanoi").docs;
+    //         setaddHanoi(docs.data());
+    //         console.log(addHanoi)
+    //     } catch (error) {
+    //         console.error(error);
+    //     }
+    // }
+    // useEffect(() => {
+    //     refresh();
+    // }, [])
   return (
     <div
       className={`modal fade ${isOpen ? "show" : ""}`}
@@ -24,30 +51,30 @@ function ModalComponent({ isOpen, onClose }) {
           </div>
           <div className="modal-body d-flex flex-column justify-content-center">
             <div className="booking">
-                <form className="booking-form row" role="form" action="#" method="post">
+                <form  onSubmit={formSubmit} className="booking-form row" role="form" action="#" method="post">
                   <div className="col-lg-6 col-12">
                     <label htmlFor="name" className="form-label">Họ và tên</label>
-                    <input type="text" name="name" id="name" className="form-control" placeholder="Họ và tên" required/>
+                    <input onChange={handleInput} type="text" name="name" id="name" className="form-control" placeholder="Họ và tên" required/>
                   </div>
 
                   <div className="col-lg-6 col-12">
                     <label htmlFor="email" className="form-label">Địa chỉ Email</label>
-                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" className="form-control" placeholder="email@example.com" required/>
+                    <input onChange={handleInput} type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" className="form-control" placeholder="email@example.com" required/>
                   </div>
 
                   <div className="col-lg-6 col-12">
                     <label htmlFor="phone" className="form-label">Số điện thoại</label>
-                    <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" className="form-control" placeholder="123-456-7890"/>
-                  </div>
+                    <input onChange={handleInput} type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" className="form-control" placeholder="123-456-7890"/>
+                  </div>  
 
                   <div className="col-lg-6 col-12">
                     <label htmlFor="people" className="form-label">Số người</label>
-                    <input type="text" name="people" id="people" className="form-control" placeholder="Số người"/>
+                    <input onChange={handleInput} type="text" name="people" id="people" className="form-control" placeholder="Số người"/>
                   </div>
 
                   <div className="col-lg-6 col-12">
                     <label htmlFor="date" className="form-label">Ngày</label>
-                    <input type="date" name="date" id="date" value="" className="form-control"/>
+                    <input onChange={handleInput} type="date" name="date" id="date" value="" className="form-control"/>
                   </div>
 
                   <div className="col-lg-6 col-12">
