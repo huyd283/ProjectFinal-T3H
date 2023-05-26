@@ -79,7 +79,7 @@ function ModalComponent({ isOpen, onClose }) {
 
                   <div className="col-lg-6 col-12">
                     <label htmlFor="time" className="form-label">Giờ</label>
-                    <select className="form-select form-control" name="time" id="time">
+                    <select className="form-select form-control" name="time" id="time" onChange={handleInput}>
                       <option value="5" selected>5:00 PM</option>
                       <option value="6">6:00 PM</option>
                       <option value="7">7:00 PM</option>
@@ -89,9 +89,10 @@ function ModalComponent({ isOpen, onClose }) {
                   </div>
 
                   <div className="col-12">
-                    <label htmlFor="message" className="form-label">Yêu cầu đặc biệt</label>
-                    <textarea className="form-control" rows="4" id="message" name="message" placeholder=""></textarea>
-                  </div>
+                      <label htmlFor="message" className="form-label">Yêu cầu đặc biệt</label>
+                      <textarea onChange={handleInput} className="form-control" rows="4" id="message" name="message" placeholder=""></textarea>
+                </div>
+
 
                   <div className="col-lg-4 col-12 ms-auto">
                     <button type="submit" className="form-control">Gửi yêu cầu</button>
