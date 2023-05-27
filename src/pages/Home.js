@@ -43,10 +43,10 @@ function Home (props){
                                         <div className="carousel-caption">
                                             <span className="text-white">
                                                 <i className="bi-geo-alt me-2"></i>
-                                                Thái Thịnh, Hà Nội
+                                                 Thái Thịnh, Hà Nội
                                             </span>
 
-                                            <h4 className="hero-text">THƯỞNG THỨC BÒ TƠ THƯỢNG HẠNG</h4>
+                                            <h4 className="hero-text">THƯỞNG THỨC BÒ THƯỢNG HẠNG</h4>
                                         </div>
                                     </div>
 
