@@ -1,0 +1,173 @@
+{
+  "products": [
+    {
+        "id": 1,
+       "img": "../images/product/chef.jpg",
+        "nameFood": "Fresh Start",
+        "price": 10.99,
+        "start": "01/01/2023",
+        "review": "Đánh giá sản phẩm 1",
+        "reviewDemo": 20
+      },
+      {
+        "id": 2,
+        "img": "../images/product/chef1.jpg",
+        "nameFood": "Baked Creamy",
+        "price": 15.99,
+        "start": "02/01/2023",
+        "review": "Đánh giá sản phẩm 2",
+        "reviewDemo": 30
+      },
+      {
+        "id": 3,
+        "img": "../images/product/combo1.jpg",
+        "nameFood": "Burger Set",
+        "price": 12.99,
+        "start": "03/01/2023",
+        "review": "Đánh giá sản phẩm 3",
+        "reviewDemo": 48
+      },
+      {
+        "id": 4,
+        "img": "../images/product/combo1.jpg",
+        "nameFood": "Burger Set",
+        "price": 12.99,
+        "start": "03/01/2023",
+        "review": "Đánh giá sản phẩm 3",
+        "reviewDemo": 48
+      },
+      {
+        "id": 5,
+        "img": "../images/product/dish.jpg",
+        "nameFood": "Burger Set",
+        "price": 12.99,
+        "start": "03/01/2023",
+        "review": "Đánh giá sản phẩm 3",
+        "reviewDemo": 48
+      }
+      ,
+      {
+        "id": 6,
+        "img": "../images/product/khaivi.jpg",
+        "nameFood": "Burger Set",
+        "price": 12.99,
+        "start": "03/01/2023",
+        "review": "Đánh giá sản phẩm 3",
+        "reviewDemo": 48
+      }
+      ,
+      {
+        "id": 7,
+        "img": "../images/product/khaivi.jpg",
+        "nameFood": "Burger Set",
+        "price": 12.99,
+        "start": "03/01/2023",
+        "review": "Đánh giá sản phẩm 3",
+        "reviewDemo": 48
+      },
+      {
+        "id": 8,
+        "img": "../images/product/khaivi.jpg",
+        "nameFood": "Burger Set",
+        "price": 12.99,
+        "start": "03/01/2023",
+        "review": "Đánh giá sản phẩm 3",
+        "reviewDemo": 48
+      },
+      {
+        "id": 9,
+        "img": "../images/product/khaivi.jpg",
+        "nameFood": "Burger Set",
+        "price": 12.99,
+        "start": "03/01/2023",
+        "review": "Đánh giá sản phẩm 3",
+        "reviewDemo": 48
+      },
+      {
+        "id": 10,
+        "img": "../images/product/khaivi.jpg",
+        "nameFood": "Burger Set",
+        "price": 12.99,
+        "start": "03/01/2023",
+        "review": "Đánh giá sản phẩm 3",
+        "reviewDemo": 48
+      },
+      {
+        "id": 11,
+        "img": "../images/product/khaivi.jpg",
+        "nameFood": "Burger Set",
+        "price": 12.99,
+        "start": "03/01/2023",
+        "review": "Đánh giá sản phẩm 3",
+        "reviewDemo": 48
+      },
+      {
+        "id": 12,
+        "img": "../images/product/khaivi.jpg",
+        "nameFood": "Burger Set",
+        "price": 12.99,
+        "start": "03/01/2023",
+        "review": "Đánh giá sản phẩm 3",
+        "reviewDemo": 48
+      }
+      ,
+      {
+        "id": 13,
+        "img": "../images/product/khaivi.jpg",
+        "nameFood": "Burger Set",
+        "price": 12.99,
+        "start": "03/01/2023",
+        "review": "Đánh giá sản phẩm 3",
+        "reviewDemo": 48
+      }
+  ],
+  "categories":[
+    {
+    "id": 1,
+    "name":"BÒ NHẬP KHẨU"
+    },
+    {
+      "id": 2,
+      "name":"BÒ KOBE"
+    },
+    {
+        "id": 3,
+        "name":"COMBO"
+    },
+    {
+      "id": 4,
+      "name":"SALAT"
+      },
+      {
+        "id": 5,
+        "name":"KHAI VỊ"
+      },
+      {
+        "id": 6,
+        "name":"ĐẦU BẾP ĐẶC BIỆT"
+      },
+      {
+        "id": 7,
+        "name":"HOT"
+      },
+      {
+        "id": 8,
+        "name":"CƠM & MỲ"
+      },
+      {
+        "id": 9,
+        "name":"TRÁNG MIỆNG"
+      },
+      {
+        "id": 10,
+        "name":"ĐỒ UỐNG"
+      },
+      {
+        "id": 1,
+        "name":"RƯỢU"
+      }
+  ]
+}
+
+
+
