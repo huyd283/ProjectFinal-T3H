@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart } from "../redux/slice/cartSlice";
+import { addToCart,addQauntity } from "../redux/slice/cartSlice";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { getById } from "../redux/slice/getProductSlice";
@@ -11,13 +11,14 @@ function ProductDetails(){
   useEffect(() => {
     dispatch(getById(params.id));
   }, [params]);
+
   const { productId } = useSelector((state) => state.products);
     if(productId === 0 ) return <h1>undfind</h1>
+console.log(productId);
     return(
       <>
      {
       productId?.map((productId,index)=>{
-        console.log(productId);
         return <>
               <div key={index}  className="nav-link"  class="menu-thumb">
                     <div className="main-item-detail">
@@ -38,7 +39,7 @@ function ProductDetails(){
                    </div>
                    <div>
                     <button onClick={
-                         ()=>{dispatch(addToCart(productId),toast("thêm sản phẩm thành !"))}
+                         ()=>{dispatch(addToCart(productId) ,toast("thêm sản phẩm thành !"))}
                     }>
                         add cart
                     </button>

@@ -6,7 +6,6 @@ const store = configureStore({
   reducer: {
     carts: cartsReducer,
     products: productsReducer,
-    middleware: [thunkMiddleware],
   },
 });
 export default store;

@@ -7,8 +7,10 @@ import { deleteCart } from "../redux/slice/cartSlice";
 import { NavLink } from "react-router-dom";
 
 export default function CartPage() {
+    const dispatch = useDispatch();
     const { cart } = useSelector((state) => state.carts);
-    const dispatch = useDispatch()
+  if(cart === 0 ) return <h1>undfind</h1>
+  console.log(cart);
     return (
         <React.Fragment>
      
@@ -18,7 +20,7 @@ export default function CartPage() {
                 <div className="bodyCart">
                     <h2 className="bg-light-subtle mb-2" >Products List</h2>
 
-            { cart.length > 0 ? cart.map((itemCart,index)=>{
+            { cart?.length > 0 ? cart.map((itemCart,index)=>{
                 return <>
                     <div key={index} className="main-cart">
                         <div className="item-cart">

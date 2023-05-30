@@ -118,24 +118,12 @@ th{
 .plusss{
     text-align: center;
 }
-.pagination{
-    
-    display: flex; 
-     justify-content: flex-end;
-}
+
 
 ul{
     list-style: none;
 }
-.menu-item-5577{
-    display: inline-block;
-    text-align: center;
-    margin-bottom: 10px;
-    border: 1px solid #981B1E;
-    padding: 10 10px;
-    margin-left: 10px;
-    
-}
+
   
 
 .price-tag {
@@ -165,4 +153,47 @@ h5{
 .item5555{
     display: flex;
 
+}
+button {
+    
+    background-Color : rgba(255, 100, 100, 0.85);
+    padding: '2px 10px';
+    color: 'white';
+     border-radius: 2; 
+     width: 100%;  
+}
+.menu-image1{
+    height: 297px;
+    width: 100%;
+}
+.Name{
+    text-align: center;
+}
+.tab-for-me{
+    display: flex;
+}
+.iconCart{
+    position: relative;
+     
+}
+.countItem{
+    position: absolute;
+    top: -10px;
+    right: 10px; 
+    background-color: red;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:4px;
+}
+.countItem{
+    color: #fff;
+
+}
+.nav-right{
+    display: flex;
+    align-items: center;
 }
