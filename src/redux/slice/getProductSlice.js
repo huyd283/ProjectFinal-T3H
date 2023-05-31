@@ -9,6 +9,8 @@ const initialState = {
   products: [] | null,
   productId : [] | null,
   listcategory:[]|null,
+  cateProduct :[] | null,
+  test :[] | null
 
 };
 
@@ -20,8 +22,13 @@ export const getFectProdust = createAsyncThunk(
         'https://reactjst3h2212-default-rtdb.firebaseio.com/products/.json'
 
       );
-     
-      return responsive.data;
+      const myArr1 = [];
+
+    for (let newItem in responsive.data) {
+      myArr1.push(responsive.data[newItem]);
+    }
+    return myArr1;
+      
     } catch (error) {
       console.log(error);
     }
@@ -36,7 +43,6 @@ export const getcategory = createAsyncThunk(
         'https://reactjst3h2212-default-rtdb.firebaseio.com/categories/.json'
         
       );
-      console .log(responsive)
 
       return responsive.data;
     } catch (error) {
@@ -48,13 +54,30 @@ export const getcategory = createAsyncThunk(
 export const getById = createAsyncThunk("products/getById", async (itemId) => {
   try {
     const responsive = await axios.get(
-      `https://reactjst3h2212-default-rtdb.firebaseio.com/products/.json?orderBy="id"&equalTo=${itemId}`
+      `https://reactjst3h2212-default-rtdb.firebaseio.com/productsCate/.json?orderBy="id"&equalTo=${itemId}`
     );
     const myArr1 = [];
 
     for (let newItem in responsive.data) {
       myArr1.push(responsive.data[newItem]);
     }
+    return myArr1;
+  } catch (error) {
+    console.log(error);
+  }
+});
+export const getByCate = createAsyncThunk("products/getByCate", async (cateItem) => {
+  try {
+    const responsive = await axios.get(
+      `https://reactjst3h2212-default-rtdb.firebaseio.com/productsCate/.json?orderBy="name"&equalTo="${cateItem}"`
+    );
+    const myArr1 = [];
+
+    for (let newItem in responsive.data) {
+      myArr1.push(responsive.data[newItem]);
+    }
+    console.log(myArr1);
+
     return myArr1;
   } catch (error) {
     console.log(error);
@@ -93,6 +116,12 @@ const productsSlice = createSlice({
       build.addCase(getcategory.fulfilled, (state, action) => {
         state.listcategory = action.payload;
       });  
+      build.addCase(getByCate.fulfilled, (state, action) => {
+        state.cateProduct = action.payload;
+      }); 
+      build.addCase(getCate.fulfilled, (state, action) => {
+        state.test = action.payload;
+      }); 
   },
 });
 
