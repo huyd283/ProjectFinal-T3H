@@ -4,7 +4,6 @@ function Home (props){
     return (
         <React.Fragment>
         <main>
-
             <section className="hero">
                 <div className="container">
                     <div className="row">
@@ -432,7 +431,7 @@ function Home (props){
                     <div className="modal-body d-flex flex-column justify-content-center">
                         <div className="booking">
                             
-                            <form className="booking-form row" role="form" action="#" method="post">
+                            <form className="booking-form row" role="form"  action="#" method="post">
                                 <div className="col-lg-6 col-12">
                                     <label for="name" className="form-label">Full Name</label>
 

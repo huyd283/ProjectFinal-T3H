@@ -6,8 +6,6 @@ import { NavLink, Link } from 'react-router-dom';
 
 function Product_details1() {
   return (
-
-
     <div className="container">
       <div className="row">
         <div className="detail1" >
@@ -66,43 +64,32 @@ function Product_details1() {
 
         </div>
         <div className="detail_product_detail_bt">
-          <div className="number_text">Số lượng món </div>
+          <div className="number_text">Số lượng: </div>
           <div>
             <div className="row ">
             <form class="row g-3">
               <div className="col-3">
                 <div className="row plusss">
-                  <div>
+                  <div className="col-3">
                   <button>
-                         <span className="col inc button">-</span>
-                    </button>
+                         <span className="decre button">-</span>
+                  </button>
                   </div>
-                  
-                    <div className="col input_number">
+                    <div className="col-6 input_number">
                       <input name="buy_count" id="buy_count" value="1" type="number" placeholder="Số lượng"/>
                     </div>
-                    <div>
+                    <div className="col-3">
                     <button>
-                      <span className="col dec button">+</span>
+                      <span className=" incre button">+</span>
                     </button>
                     </div>
-                  
-                     
-                    
+                                   
               </div>
               </div>
               <div className="col-6"> 
               <button type="submit" class="btn btn-primary mb-3">Đặt Món</button>
-              </div>
-
-
-              
-              
-               
+              </div> 
             </form>
-           
-
-              
               </div>
              
             </div>

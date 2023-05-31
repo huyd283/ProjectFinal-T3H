@@ -6,11 +6,11 @@ export default function TableCart(props) {
             <table style={{ textAlign: "center", width: "100%" }}>
                         <thead>
                             <tr>
-                                <th>Products</th>
+                                <th>Sản Phẩm</th>
                                 <th style={{ width: 400 }}></th>
-                                <th style={{ width: 100 }}>Price</th>
-                                <th>Quantity</th>
-                                <th style={{ width: 100 }}>Total</th>
+                                <th style={{ width: 100 }}>Giá</th>
+                                <th>Số Lượng</th>
+                                <th style={{ width: 100 }}>Tổng</th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -35,7 +35,7 @@ export default function TableCart(props) {
                             })} */}
                         </tbody>
                     </table>
-                    <div className="row ">
+                    <div className="row">
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                         <button className="btn-nav-cart">COUNTINUE</button>
                         <button className="btn-nav-cart">UPDATE CART</button>

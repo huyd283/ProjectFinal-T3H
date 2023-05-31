@@ -6,8 +6,8 @@ export default function CartPage(props) {
     return (
         <React.Fragment>
             <section className="product spad">
-                <div className="container">
-                    <h2 className="bg-light-subtle mb-2" >Products List</h2>
+                <div className="container row">
+                    <h2 className="bg-light-subtle mb-2" >Danh sách sản phẩm</h2>
                     <TableCart></TableCart>
                     <FormCart></FormCart>
                 </div>

@@ -20,7 +20,7 @@ function Menu (props){
                             </div>  */}
                             <div className=" menu-left-1">
                             <em> 
-                            <h2 className="combo">THỰC ĐƠN NHÀ HÀNG</h2>
+                            <h2 className="combo"> NHÀ HÀNG</h2>
                             </em>
                                     
                                     
@@ -31,7 +31,7 @@ function Menu (props){
                                                         <li id="menu-item-5577" className="menu-item-5577"><a href="/product1">BÒ NHẬP KHẨU</a></li>
                                                         <li id="menu-item-5578" className="menu-item-5577"><a href="#combo">BÒ KOBE</a></li>
                                                         <li id="menu-item-5579" className="menu-item-5577"><a href="#salad">COMBO</a></li>
-                                                        <li id="menu-item-5580"className="menu-item-5577"><a href="#appetizer">SALAT</a></li>
+                                                        <li id="menu-item-5580" className="menu-item-5577"><a href="#appetizer">SALAT</a></li>
                                                         <li id="menu-item-5581" className="menu-item-5577"><a href="#ahijo">MÓN KHAI VỊ</a></li>
                                                     </div>
                                                     <br></br>
@@ -54,7 +54,7 @@ function Menu (props){
                          </div>
 
                          <div className="product1">
-                            <b><h5>THỰC ĐƠN CÁC MÓN BÒ NHẬP KHẨU     </h5></b>
+                            <b><h5>CÁC MÓN BÒ NHẬP KHẨU     </h5></b>
                              <div className="row">
                                     <div className="product1-1 col-6">
                                         <NavLink className="nav-link" to="/product_details1" >
@@ -104,7 +104,7 @@ function Menu (props){
                            
                          </div>
                          <div className="product1">
-                            <h5>THỰC ĐƠN CÁC MÓN BO KOBE</h5>
+                            <h5>CÁC MÓN BÒ KOBE</h5>
                             <div className="row">
                                 <div className="product1-1 col-6">
                                         <img src="images/product/hinh2.1.jpg" className="product-image" alt=""/>
@@ -152,7 +152,7 @@ vnd</span>
                            
                          </div>
                          <div className="product1">
-                            <h5>THỰC ĐƠN COMBO</h5>
+                            <h5> COMBO</h5>
                             <div className="row">
                                 <div className="product1-1 col-6">
                                         <img src="images/product/combo1.jpg" className="product-image" alt=""/>
@@ -200,7 +200,7 @@ vnd</span>
                            
                          </div>
                          <div className="product1">
-                            <h5>THỰC ĐƠN CÁC MÓN SALAD</h5>
+                            <h5> CÁC MÓN SALAD</h5>
                             <div className="row">
                                 <div className="product1-1 col-6">
                                         <img src="images/product/salat1.jpg" className="product-image" alt=""/>
@@ -248,7 +248,7 @@ vnd</span>
                            
                          </div>
                          <div className="product1">
-                            <h5>THỰC ĐƠN CÁC MÓN KHAI VỊ</h5>
+                            <h5> CÁC MÓN KHAI VỊ</h5>
                             <div className="row">
                                 <div className="product1-1 col-6">
                                         <img src="images/product/khaivi.jpg" className="product-image" alt=""/>
@@ -296,7 +296,7 @@ vnd</span>
                            
                          </div>
                          <div className="product1">
-                            <h5>THỰC ĐƠN CÁC MÓN KHAI VỊ</h5>
+                            <h5> CÁC MÓN KHAI VỊ</h5>
                             <div className="row">
                                 <div className="product1-1 col-6">
                                         <img src="images/product/kho.jpg" className="product-image" alt=""/>
@@ -344,7 +344,7 @@ vnd</span>
                            
                          </div>
                          <div className="product1">
-                            <h5>THỰC ĐƠN CÁC MÓN DO ĐẦU BẾP ĐẶC BIỆT</h5>
+                            <h5> CÁC MÓN DO ĐẦU BẾP ĐẶC BIỆT</h5>
                             <div className="row">
                                 <div className="product1-1 col-6">
                                         <img src="images/product/chef.jpg" className="product-image" alt=""/>
@@ -392,7 +392,7 @@ vnd</span>
                            
                          </div>
                          <div className="product1">
-                            <h5>THỰC ĐƠN CÁC MÓN HOT</h5>
+                            <h5> CÁC MÓN HOT</h5>
                             <div className="row">
                                 <div className="product1-1 col-6">
                                         <img src="images/product/dish.jpg" className="product-image" alt=""/>
@@ -440,7 +440,7 @@ vnd</span>
                            
                          </div>
                          <div className="product1">
-                            <h5>THỰC ĐƠN CÁC MÓN CƠM & MỲ</h5>
+                            <h5> CÁC MÓN CƠM & MỲ</h5>
                             <div className="row">
                                 <div className="product1-1 col-6">
                                         <img src="images/product/pas.jpg" className="product-image" alt=""/>
@@ -489,7 +489,7 @@ vnd</span>
                            
                          </div>
                          <div className="product1">
-                            <h5>THỰC ĐƠN CÁC MÓN TRÁNG MIỆNG</h5>
+                            <h5> CÁC MÓN TRÁNG MIỆNG</h5>
                             <div className="row">
                                 <div className="product1-1 col-6">
                                         <img src="images/product/traicay.jpg" className="product-image" alt=""/>
