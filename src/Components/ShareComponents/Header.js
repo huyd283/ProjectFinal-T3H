@@ -23,9 +23,7 @@ function Header(props) {
             <img src="https://botoquanmoc.com/images/config/logo_1559032387.png" alt="Logo" />
           </a>
 
-          <div className="d-lg-none">
-            <button type="button" className="custom-btn btn btn-danger" data-bs-toggle="modal" data-bs-target="#BookingModal">Reservation</button>
-          </div>
+          
 
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mx-auto">
