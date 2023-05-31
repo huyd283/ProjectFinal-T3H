@@ -142,7 +142,7 @@ function ModalComponent({ isOpen, onClose }) {
 
                   <div className="col-12">
                       <label htmlFor="message" className="form-label">Yêu cầu đặc biệt</label>
-                      <textarea onChange={handleInput} className="form-control" rows="4" id="message" name="message" placeholder=""></textarea>
+                      <textarea onChange={handleInput} className="form-control" rows="4" id="comment" name="message" placeholder=""></textarea>
                 </div>
 
 
