@@ -47,7 +47,7 @@ export default class About extends React.Component {
                       Ngồi giữa khung cảnh phố Xưa Hà Nội, ngắm dòng người tất bật qua khung cửa sổ gỗ xanh, thư giãn trong không gian ấm cúng như nhà mình, rồi nếm thử một miếng bò tơ chín mềm nóng hổi, thực khách sẽ cảm thấy cả miền ký ức Hà Nội thập niên 80 chợt thu bé lại, mênh mang và đầy thương!</p>
                       <p dir="ltr"><img alt="" height="800" src="https://botoquanmoc.com/upload_images/images/2019/06/27/51874720_579608439172564_4629655259650719744_o.jpg" width="1150"/></p>
                       
-                      <p dir="ltr">Hãy đến Bò Tơ Quán Mộc để tự mình trải nghiệm khách nhé!</p>
+                      <p dir="ltr">Hãy đến Bò Tơ Quán Mộc để tự mình trải nghiệm tuyêt vời khách nhé!</p>
                   
                         <p>-----------------------</p>
                       </div>
