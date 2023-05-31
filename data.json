@@ -1,157 +1,241 @@
 {
-  "products": [
-    {
-        "id": 1,
-       "img": "../images/product/chef.jpg",
-        "nameFood": "Thăn Nội Wagyu",
-        "price": 1390000,
-        "nameFood": "Fresh Start",
-        "price": 10.922222222222
-        "start": "01/01/2023",
-        "review": "Đánh giá sản phẩm 1",
-        "reviewDemo": 20,
-        "name":"BÒ NHẬP KHẨU"
-      },
-      {
-        "id": 2,
-        "img": "../images/product/chef1.jpg",
-        "nameFood": "Steak Thịt Vai Wagyu (150gr)",
-        "price": 890000,
-        "start": "02/01/2023",
-        "review": "Đánh giá sản phẩm 2",
-        "reviewDemo": 30,
-        "name":"BÒ KOBE"
-      },
-      {
-        "id": 3,
-        "img": "../images/product/combo1.jpg",
-        "nameFood": "Combo Lớn (Steak Bụng Bò, Lưỡi Bò, Mông Trên, Thịt Xông Khói, Xúc Xích)",
-        "price": 990000,
-        "start": "03/01/2023",
-        "review": "Đánh giá sản phẩm 3",
-        "reviewDemo": 48,
-        "name":"COMBO"
-      },
-      {
-        "id": 4,
-        "img": "../images/product/dish.jpg",
-        "nameFood": "Thịt Bụng Bò",
-        "price": 350000,
-        "start": "03/01/2023",
-        "review": "Đánh giá sản phẩm 3",
-        "reviewDemo": 48
-      },
-      {
-        "id": 5,
-        "img": "../images/product/combo2.jpg",
-        "nameFood": "Combo 3 Loại (Steak Bụng Bò, Lưỡi Bò, Mông Trên)",
-        "price": 290000,
-        "start": "03/01/2023",
-        "review": "Đánh giá sản phẩm 3",
-        "reviewDemo": 48,
-        "name":"COMBO"
-      }
-      ,
-      {
-        "id": 6,
-        "img": "../images/product/dish1.jpg",
-        "nameFood": "Steak Thịt Bụng Bò (450Gr)",
-        "price":550000,
-        "start": "03/01/2023",
-        "review": "Đánh giá sản phẩm 3",
-        "reviewDemo": 48,
-        "name":"SALAT"
-      }
-      ,
-      {
-        "id": 7,
-        "img": "../images/product/khaivi.jpg",
-        "nameFood": "Set Ham Tươi & Phô Mai",
-        "price": 180000,
-        "start": "03/01/2023",
-        "review": "Đánh giá sản phẩm 3",
-        "reviewDemo": 48,
-        "name":"KHAI VỊ"
-      },
-      {
-        "id": 8,
-        "img": "../images/product/khaivi.jpg",
-        "nameFood": "Bò Tuyết Nướng Carpaccio",
-        "price":320000,
-        "start": "03/01/2023",
-        "review": "Đánh giá sản phẩm 3",
-        "reviewDemo": 48,
-        "name":"ĐẦU BẾP ĐẶC BIỆT"
-      },
-      {
-        "id": 9,
-        "img": "../images/product/hinh1.jpg",
-        "nameFood": "Bò Bằm Sốt Tiêu & Kem",
-        "price": 320000,
-        "start": "03/01/2023",
-        "review": "Đánh giá sản phẩm 3",
-        "reviewDemo": 48,
-        "name":"HOT"
-      },
-      {
-        "id": 10,
-        "img": "../images/product/hinh1a.jpg",
-        "nameFood": "Steak Bụng Bò,",
-        "price": 250000,
-        "start": "03/01/2023",
-        "review": "Đánh giá sản phẩm 3",
-        "reviewDemo": 48,
-        "name":"CƠM & MỲ"
-      },
-      {
-        "id": 11,
-        "img": "../images/product/hinh2.1.jpg",
-        "nameFood": "Steak Nạc Vai",
-        "price": 280000,
-        "start": "03/01/2023",
-        "review": "Đánh giá sản phẩm 3",
-        "reviewDemo": 48,
-        "name":"TRÁNG MIỆNG"
-      },
-      {
-        "id": 12,
-        "img": "../images/product/traicay.jpg",
-        "nameFood": "Thố Kem Trái Cây",
-        "price": 160.000,
-        "start": "03/01/2023",
-        "review": "Đánh giá sản phẩm 3",
-        "reviewDemo": 48
-      }
-      ,
-      {
-        "id": 13,
-        "img": "../images/product/traicay1.jpg",
-        "nameFood": "Burger Set",
-        "price": 12.99,
-        "start": "03/01/2023",
-        "review": "Đánh giá sản phẩm 3",
-        "reviewDemo": 48
-      }
-  ],
+ 
   "productsCate": [
     {
-        "id": 1,
-       "img": "../images/product/chef.jpg",
-        "nameFood": "Thăn Nội Wagyu",
-        "price": 1390000,
+        "id": 11,
+        "img": "../images/product/combo1.jpg",
+        "nameFood": "Steak Thịt Vai Wagyu (450Gr)",
+        "price": 390000,
         "start": "01/01/2023",
-        "review": "Đánh giá sản phẩm 1",
-        "reviewDemo": 20,
-        "name":"BÒ NHẬP KHẨU"
+        "review": " 67 Đánh Giá Món Ăn",
+        "reviewDemo": 4.5,
+        "name":"TẤT CẢ"
       },
       {
-        "id": 2,
+        "id": 12,
         "img": "../images/product/chef1.jpg",
-        "nameFood": "Steak Thịt Vai Wagyu (150gr)",
+        "nameFood": "Steak Thịt Bụng Bò (450Gr)",
         "price": 890000,
         "start": "02/01/2023",
-        "review": "Đánh giá sản phẩm 2",
-        "reviewDemo": 30,
+        "review": " 50 Đánh Giá Món Ăn  ",
+        "reviewDemo": 4.5,
+        "name":"TẤT CẢ"
+      },{
+        "id":13 ,
+        "img": "../images/product/combo2.jpg",
+        "nameFood": "Combo Bò Wagyu Đặc Biệt",
+        "price": 720000,
+        "start": "01/01/2023",
+        "review": " 80 Đánh Giá Món Ăn",
+        "reviewDemo": 4,
+        "name":"TẤT CẢ"
+      },{
+        "id": 14,
+        "img": "../images/product/pas.jpg",
+        "nameFood": "Sushi Bò Tuyết Nướng",
+        "price": 450000,
+        "start": "01/01/2023",
+        "review": " 68 Đánh Giá Món Ăn",
+        "reviewDemo": 5,
+        "name":"TẤT CẢ"
+      },{
+        "id": 15,
+        "img": "../images/product/macao.jpg",
+        "nameFood": "Bò Áp Chảo Macau",
+        "price": 270000,
+        "start": "01/01/2023",
+        "review": "23 Đánh Giá Món Ăn",
+        "reviewDemo": 4.6,
+        "name":"TẤT CẢ"
+      },{
+        "id": 16,
+        "img": "../images/product/bbq.jpg",
+        "nameFood": "Sườn Bò Nướng Sốt BBQ",
+        "price": 560000,
+        "start": "01/01/2023",
+        "review": " 76 Đánh Giá Món Ăn",
+        "reviewDemo": 5,
+        "name":"TẤT CẢ"
+      },{
+        "id": 17,
+        "img": "../images/product/bbt.jpg",
+        "nameFood": "Bò Bít Tết (Beef Steak)",
+        "price": 250000,
+        "start": "01/01/2023",
+        "review": "45 Đánh Giá Món Ăn",
+        "reviewDemo": 4.1,
+        "name":"TẤT CẢ"
+      },{
+        "id": 18,
+        "img": "../images/product/hinh1a.jpg",
+        "nameFood": "Steak Thịt Vai Wagyu (150gr)",
+        "price": 540000,
+        "start": "01/01/2023",
+        "review": "89 Đánh Giá Món Ăn",
+        "reviewDemo": 4.5,
+        "name":"TẤT CẢ"
+      },{
+        "id": 19,
+        "img": "../images/product/thanbo.jpg",
+        "nameFood": "Steak Thịt Thăn Bò (450Gr)",
+        "price": 820000,
+        "start": "01/01/2023",
+        "review": "98 Đánh Giá Món Ăn",
+        "reviewDemo": 4.7,
+        "name":"TẤT CẢ"
+      },{
+        "id": 20,
+        "img": "../images/product/bbq2.jpg",
+        "nameFood": "Bò Bít Tết (Châu Âu)",
+        "price": 650000,
+        "start": "01/01/2023",
+        "review": "90 Đánh Giá Món Ăn",
+        "reviewDemo": 4.8,
+        "name":"TẤT CẢ"
+      },{
+        "id": 21,
+        "img": "../images/product/bbq3.jpg",
+        "nameFood": "Bò Nướng Tảng",
+        "price": 420000,
+        "start": "01/01/2023",
+        "review": "54 Đánh Giá Món Ăn",
+        "reviewDemo": 4.9,
+        "name":"TẤT CẢ"
+      },{
+        "id": 22,
+        "img": "../images/product/hot.jpg",
+        "nameFood": "Bò Nướng BBQ",
+        "price": 340000,
+        "start": "01/01/2023",
+        "review": " 56 Đánh Giá Món Ăn",
+        "reviewDemo": 4.5,
+        "name":"HOT"
+      },{
+        "id": 22,
+        "img": "../images/product/hot1.jpg",
+        "nameFood": "BBQ + Sốt Thái",
+        "price": 340000,
+        "start": "01/01/2023",
+        "review": " 26 Đánh Giá Món Ăn",
+        "reviewDemo": 4.1,
+        "name":"HOT"
+      },{
+        "id": 22,
+        "img": "../images/product/hot2.jpg",
+        "nameFood": "Bò Hoàng Gia",
+        "price": 340000,
+        "start": "01/01/2023",
+        "review": " 56 Đánh Giá Món Ăn",
+        "reviewDemo": 4.5,
+        "name":"HOT"
+      },{
+        "id": 22,
+        "img": "../images/product/hot3.jpg",
+        "nameFood": "KING BBQ",
+        "price": 340000,
+        "start": "01/01/2023",
+        "review": " 56 Đánh Giá Món Ăn",
+        "reviewDemo": 4.5,
+        "name":"HOT"
+      },{
+        "id": 22,
+        "img": "../images/product/bbq.jpg",
+        "nameFood": "Bò Mỹ",
+        "price": 340000,
+        "start": "01/01/2023",
+        "review": " 56 Đánh Giá Món Ăn",
+        "reviewDemo": 4.5,
+        "name":"HOT"
+      },{
+        "id": 22,
+        "img": "../images/product/hot4.jpg",
+        "nameFood": "Sườn Bò Nướng BBQ",
+        "price": 340000,
+        "start": "01/01/2023",
+        "review": " 56 Đánh Giá Món Ăn",
+        "reviewDemo": 4.5,
+        "name":"HOT"
+      },{
+        "id": 23,
+        "img": "../images/product/bbq5.jpg",
+        "nameFood": "Thăn Bò Nướng Đá Núi Lửa",
+        "price": 350000,
+        "start": "01/01/2023",
+        "review": "76 Đánh Giá Món Ăn",
+        "reviewDemo": 4.9,
+        "name":"BÒ NHẬP KHẨU"
+      },{
+        "id": 1,
+        "img": "../images/product/chef.jpg",
+        "nameFood": "Bò Sốt Tiêu Đen",
+        "price": 390000,
+        "start": "01/01/2023",
+        "review": "Đánh Giá Món Ăn1",
+        "reviewDemo": 20,
+        "name":"TẤT CẢ"
+      },{
+      "id": 19,
+      "img": "../images/product/thanbo.jpg",
+      "nameFood": "Steak Thịt Thăn Bò (450Gr)",
+      "price": 820000,
+      "start": "01/01/2023",
+      "review": "98 Đánh Giá Món Ăn",
+      "reviewDemo": 4.7,
+      "name":"BÒ NHẬP KHẨU"
+    },{
+      "id": 16,
+      "img": "../images/product/bbq.jpg",
+      "nameFood": "Sườn Bò Nướng Sốt BBQ",
+      "price": 560000,
+      "start": "01/01/2023",
+      "review": " 76 Đánh Giá Món Ăn",
+      "reviewDemo": 5,
+      "name":"BÒ NHẬP KHẨU"
+    },
+    {
+      "id": 20,
+      "img": "../images/product/bbq2.jpg",
+      "nameFood": "Bò Bít Tết (Châu Âu)",
+      "price": 650000,
+      "start": "01/01/2023",
+      "review": "90 Đánh Giá Món Ăn",
+      "reviewDemo": 4.8,
+      "name":"BÒ NHẬP KHẨU"
+    },{
+        "id": 14,
+        "img": "../images/product/pas.jpg",
+        "nameFood": "Sushi Bò Tuyết Nướng",
+        "price": 450000,
+        "start": "01/01/2023",
+        "review": " 68 Đánh Giá Món Ăn",
+        "reviewDemo": 5,
+        "name":"BÒ KOBE"
+      },{
+        "id": 22,
+        "img": "../images/product/bbq4.jpg",
+        "nameFood": "Bò Tái",
+        "price": 340000,
+        "start": "01/01/2023",
+        "review": " 56 Đánh Giá Món Ăn",
+        "reviewDemo": 4.5,
+        "name":"BÒ KOBE"
+      },{
+        "id": 11,
+        "img": "../images/product/hinh2.2.jpg",
+        "nameFood": "Steak Thịt Thăn Wagyu (450Gr)",
+        "price": 390000,
+        "start": "01/01/2023",
+        "review": " 67 Đánh Giá Món Ăn",
+        "reviewDemo": 4.5,
+        "name":"BÒ KOBE"
+      },{
+        "id": 21,
+        "img": "../images/product/bbq3.jpg",
+        "nameFood": "Bò Nướng Tảng",
+        "price": 420000,
+        "start": "01/01/2023",
+        "review": "54 Đánh Giá Món Ăn",
+        "reviewDemo": 4.9,
         "name":"BÒ KOBE"
       },
       {
@@ -160,61 +244,208 @@
         "nameFood": "Combo Lớn (Steak Bụng Bò, Lưỡi Bò, Mông Trên, Thịt Xông Khói, Xúc Xích)",
         "price": 990000,
         "start": "03/01/2023",
-        "review": "Đánh giá sản phẩm 3",
-        "reviewDemo": 48,
+        "review": " 77 Đánh Giá Món Ăn",
+        "reviewDemo": 4.8,
         "name":"COMBO"
       },
       {
-        "id": 4,
-        "img": "../images/product/dish.jpg",
-        "nameFood": "Thịt Bụng Bò",
-        "price": 350000,
-        "start": "03/01/2023",
-        "review": "Đánh giá sản phẩm 3",
-        "reviewDemo": 48,
+        "id": 19,
+        "img": "../images/product/combo2.jpg",
+        "nameFood": "Combo Bò Wagyu Đặc Biệt (Steak Thăn Nội, Steak Thăn Ngoại, Steak Mông Trên)",
+        "price": 820000,
+        "start": "01/01/2023",
+        "review": "28 Đánh Giá Món Ăn",
+        "reviewDemo": 4.2,
         "name":"COMBO"
-
       },
+      {
+        "id": 19,
+        "img": "../images/product/combo3.jpg",
+        "nameFood": "Combo Bò Wagyu 5 Loại (Steak Nạc Vai, Mông Trên, Mông Đùi, Thịt Sườn, Mông Giữa)",
+        "price": 820000,
+        "start": "01/01/2023",
+        "review": "9 Đánh Giá Món Ăn",
+        "reviewDemo": 4.3,
+        "name":"COMBO"
+      },
+      {
+        "id": 19,
+        "img": "../images/product/combo5.jpg",
+        "nameFood": "Combo 3 Loại (Steak Bụng Bò, Lưỡi Bò, Mông Trên)",
+        "price": 820000,
+        "start": "01/01/2023",
+        "review": "92 Đánh Giá Món Ăn",
+        "reviewDemo": 4.7,
+        "name":"COMBO"
+      },
+      {
+        "id": 19,
+        "img": "../images/product/combo4.jpg",
+        "nameFood": "Combo Bò Wagyu 3 Loại (Steak Nạc Vai, Mông Trên, Mông Đùi)",
+        "price": 820000,
+        "start": "01/01/2023",
+        "review": "8 Đánh Giá Món Ăn",
+        "reviewDemo": 4.8,
+        "name":"COMBO"
+      },
+    
       {
         "id": 5,
         "img": "../images/product/combo2.jpg",
         "nameFood": "Combo 3 Loại (Steak Bụng Bò, Lưỡi Bò, Mông Trên)",
         "price": 290000,
         "start": "03/01/2023",
-        "review": "Đánh giá sản phẩm 3",
-        "reviewDemo": 48,
+        "review": " 34 Đánh Giá Món Ăn",
+        "reviewDemo": 4.9,
         "name":"COMBO"
       }
       ,
       {
         "id": 6,
-        "img": "../images/product/dish1.jpg",
-        "nameFood": "Steak Thịt Bụng Bò (450Gr)",
+        "img": "../images/product/salat2.jpg",
+        "nameFood": "Salad Cà Chua ",
         "price":550000,
         "start": "03/01/2023",
-        "review": "Đánh giá sản phẩm 3",
-        "reviewDemo": 48,
+        "review": " 98 Đánh Giá Món Ăn",
+        "reviewDemo": 4.1,
         "name":"SALAT"
       }
       ,
+      {
+        "id": 6,
+        "img": "../images/product/salat3.jpg",
+        "nameFood": "SALAD HOA QUẢ",
+        "price":550000,
+        "start": "03/01/2023",
+        "review": "76 Đánh Giá Món Ăn",
+        "reviewDemo": 4.8,
+        "name":"SALAT"
+      }
+      ,
+      {
+        "id": 6,
+        "img": "../images/product/salat7.jpg",
+        "nameFood": "SALAD RONG NHO BIỂN TƯƠI",
+        "price":550000,
+        "start": "03/01/2023",
+        "review": " 36 Đánh Giá Món Ăn",
+        "reviewDemo": 4.5,
+        "name":"SALAT"
+      }
+      ,
+      {
+        "id": 6,
+        "img": "../images/product/salat8.jpg",
+        "nameFood": " SALAD TÔM SÚ",
+        "price":550000,
+        "start": "03/01/2023",
+        "review": "32 Đánh Giá Món Ăn",
+        "reviewDemo": 4.7,
+        "name":"SALAT"
+      }
+      ,
+      {
+        "id": 6,
+        "img": "../images/product/salat9.jpg",
+        "nameFood": " SALAD RONG BIỂN TRỨNG CUA",
+        "price":550000,
+        "start": "03/01/2023",
+        "review": " 32 Đánh Giá Món Ăn",
+        "reviewDemo": 4.2,
+        "name":"SALAT"
+      }
+      ,
+      {
+        "id": 6,
+        "img": "../images/product/salat4.jpg",
+        "nameFood": "Salat Ý",
+        "price":550000,
+        "start": "03/01/2023",
+        "review": " 90 Đánh Giá Món Ăn",
+        "reviewDemo": 4.3,
+        "name":"SALAT"
+      }
+      ,
+
       {
         "id": 7,
         "img": "../images/product/khaivi.jpg",
         "nameFood": "Set Ham Tươi & Phô Mai",
         "price": 180000,
         "start": "03/01/2023",
-        "review": "Đánh giá sản phẩm 3",
-        "reviewDemo": 48,
+        "review": "74 Đánh Giá Món Ăn",
+        "reviewDemo": 4.8,
         "name":"KHAI VỊ"
       },
       {
+        "id": 7,
+        "img": "../images/product/khaivi2.jpg",
+        "nameFood": "Gỏi Củ Hủ Dừa",
+        "price": 180000,
+        "start": "03/01/2023",
+        "review": " 65 Đánh Giá Món Ăn",
+        "reviewDemo": 4.2,
+        "name":"KHAI VỊ"
+      },
+      {
+        "id": 7,
+        "img": "../images/product/khaivi3.jpg",
+        "nameFood": " Gỏi Ngó Sen Tôm Thịt",
+        "price": 180000,
+        "start": "03/01/2023",
+        "review": "Đánh Giá Món Ăn3",
+        "reviewDemo": 4.7,
+        "name":"KHAI VỊ"
+      },
+      {
+        "id": 7,
+        "img": "../images/product/khaivi4.jpg",
+        "nameFood": "Gỏi Bò Mè Bóp Thấu",
+        "price": 180000,
+        "start": "03/01/2023",
+        "review": "68 Đánh Giá Món Ăn",
+        "reviewDemo": 4.8,
+        "name":"KHAI VỊ"
+      },
+      {
+        "id": 7,
+        "img": "../images/product/khaivi5.jpg",
+        "nameFood": " Gỏi Bưởi Tôm Mực",
+        "price": 180000,
+        "start": "03/01/2023",
+        "review": "11 Đánh Giá Món Ăn",
+        "reviewDemo": 4.5,
+        "name":"KHAI VỊ"
+      },
+      {
+        "id": 7,
+        "img": "../images/product/khaivi6.jpg",
+        "nameFood": "Gỏi Miến Trộn Tôm Thịt",
+        "price": 180000,
+        "start": "03/01/2023",
+        "review": " 54 Đánh Giá Món Ăn",
+        "reviewDemo": 4.1,
+        "name":"KHAI VỊ"
+      },
+      {
+        "id": 7,
+        "img": "../images/product/khaivi7.jpg",
+        "nameFood": "Gỏi Tiến Vua Tôm Thịt + Bánh Phồng ",
+        "price": 180000,
+        "start": "03/01/2023",
+        "review": " 60 Đánh Giá Món Ăn",
+        "reviewDemo": 4.1,
+        "name":"KHAI VỊ"
+      },
+    
+      {
         "id": 8,
-        "img": "../images/product/khaivi.jpg",
-        "nameFood": "Bò Tuyết Nướng Carpaccio",
+        "img": "../images/product/daubep.jpg",
+        "nameFood": "Đầu Bếp Carpaccio",
         "price":320000,
         "start": "03/01/2023",
-        "review": "Đánh giá sản phẩm 3",
-        "reviewDemo": 48,
+        "review": " 81 Đánh Giá Món Ăn",
+        "reviewDemo": 4.8,
         "name":"ĐẦU BẾP ĐẶC BIỆT"
       },
       {
@@ -223,95 +454,178 @@
         "nameFood": "Bò Bằm Sốt Tiêu & Kem",
         "price": 320000,
         "start": "03/01/2023",
-        "review": "Đánh giá sản phẩm 3",
+        "review": "Đánh Giá Món Ăn3",
         "reviewDemo": 48,
         "name":"HOT"
       },
       {
-        "id": 10,
-        "img": "../images/product/hinh1a.jpg",
-        "nameFood": "Steak Bụng Bò,",
-        "price": 250000,
+        "id": 95,
+        "img": "../images/product/susi.jpg",
+        "nameFood": "SUSHI Quấn Thịt Bò,",
+        "price": 150000,
         "start": "03/01/2023",
-        "review": "Đánh giá sản phẩm 3",
+        "review": "11 Đánh Giá Món Ăn",
+        "reviewDemo": 4.1,
+        "name":"CƠM & MỲ"
+      },
+      {
+        "id": 94,
+        "img": "../images/product/susi1.jpg",
+        "nameFood": "Cơm Cuộn Bò Mỹ",
+        "price": 50000,
+        "start": "03/01/2023",
+        "review": "22 Đánh Giá Món Ăn",
+        "reviewDemo": 4.0,
+        "name":"CƠM & MỲ"
+      },
+      {
+        "id": 93,
+        "img": "../images/product/susi2.jpg",
+        "nameFood": "SUSHI",
+        "price": 210000,
+        "start": "03/01/2023",
+        "review": " 56 Đánh Giá Món Ăn",
+        "reviewDemo": 4.8,
+        "name":"CƠM & MỲ"
+      },
+      {
+        "id": 92,
+        "img": "../images/product/my1.jpg",
+        "nameFood": "Mỳ Ống Trộn Cà Chua Bi Và Phô Mai",
+        "price": 90000,
+        "start": "03/01/2023",
+        "review": " 121 Đánh Giá Món Ăn",
         "reviewDemo": 48,
         "name":"CƠM & MỲ"
       },
       {
-        "id": 11,
-        "img": "../images/product/hinh2.1.jpg",
-        "nameFood": "Steak Nạc Vai",
-        "price": 280000,
+        "id": 91,
+        "img": "../images/product/my3.jpg",
+        "nameFood": "Mỳ Ống Ý",
+        "price": 250000,
         "start": "03/01/2023",
-        "review": "Đánh giá sản phẩm 3",
-        "reviewDemo": 48,
-        "name":"TRÁNG MIỆNG"
+        "review": "89 Đánh Giá Món Ăn",
+        "reviewDemo": 4.1,
+        "name":"CƠM & MỲ"
+      },
+      {
+        "id": 90,
+        "img": "../images/product/my2.jpg",
+        "nameFood": "Mì Spaghetti Bò Bằm",
+        "price": 150000,
+        "start": "03/01/2023",
+        "review": " 65 Đánh Giá Món Ăn",
+        "reviewDemo": 4.8,
+        "name":"CƠM & MỲ"
+      },
+
+      
+      {
+        "id": 24,
+        "img": "../images/product/traicay.jpg",
+        "nameFood": "Kem Trái Cây",
+        "price": 110000,
+        "start": "03/01/2023",
+        "review": "96 Đánh Giá Món Ăn",
+        "reviewDemo": 4.7,
+        "name":"TẤT CẢ"
+      },
+      {
+        "id": 25,
+        "img": "../images/product/hinh2.1.jpg",
+        "nameFood": "Hoa Quả Tráng Miệng Tổng Hợp",
+        "price": 150000,
+        "start": "03/01/2023",
+        "review": "68 Đánh Giá Món Ăn",
+        "reviewDemo": 4.8,
+        "name":"TẤT CẢ"
       },
       {
         "id": 12,
         "img": "../images/product/traicay.jpg",
         "nameFood": "Thố Kem Trái Cây",
-        "price": 160.000,
+        "price": 160000,
         "start": "03/01/2023",
-        "review": "Đánh giá sản phẩm 3",
-        "reviewDemo": 48,
+        "review": "Đánh Giá Món Ăn",
+        "reviewDemo": 4.2,
         "name":"TRÁNG MIỆNG"
       }
-      ,
-      {
+      
+    
+      , {
+        "id": 14,
+        "img": "../images/product/traicay1.jpg",
+        "nameFood": "HOA QUẢ",
+        "price": 99.000,
+        "start": "03/01/2023",
+        "review": "12 Đánh Giá Món Ăn",
+        "reviewDemo": 4.3,
+        "name":"TRÁNG MIỆNG"
+      },
+      
+       {
         "id": 13,
         "img": "../images/product/traicay1.jpg",
-        "nameFood": "Burger Set",
-        "price": 12.99,
+        "nameFood": "Trái Cây",
+        "price": 99.000,
         "start": "03/01/2023",
-        "review": "Đánh giá sản phẩm 3",
+        "review": "Đánh Giá Món Ăn3",
         "reviewDemo": 48,
-        "name":"TRÁNG MIỆNG"
+        "name":"CƠM  MỲ"
       }
+      
   ],
   "categories":[
-    {
+      {
     "id": 1,
+    "name":"TẤT CẢ"
+    },
+    {
+    "id": 2,
     "name":"BÒ NHẬP KHẨU"
     },
     {
-      "id": 2,
+      "id": 3,
       "name":"BÒ KOBE"
     },
     {
-        "id": 3,
+        "id": 4,
         "name":"COMBO"
     },
     {
-      "id": 4,
+      "id": 5,
       "name":"SALAT"
       },
       {
-        "id": 5,
+        "id": 6,
         "name":"KHAI VỊ"
       },
       {
-        "id": 6,
+        "id": 7,
         "name":"ĐẦU BẾP ĐẶC BIỆT"
       },
       {
-        "id": 7,
+        "id": 8,
         "name":"HOT"
       },
       {
-        "id": 8,
+        "id": 9,
         "name":"CƠM & MỲ"
       },
       {
-        "id": 9,
+        "id": 10,
         "name":"TRÁNG MIỆNG"
       },
       {
         "id": 10,
-        "name":"ĐỒ UỐNG"
+        "name":"CƠM & MỲ"
       },
       {
         "id": 11,
+        "name":"ĐỒ UỐNG"
+      },
+      {
+        "id": 12,
         "name":"RƯỢU"
       }
   ]

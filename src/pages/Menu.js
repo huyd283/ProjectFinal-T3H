@@ -46,7 +46,7 @@ function Menu (props){
   const { listcategory } = useSelector((state) => state.products);
 
 
-        if(products === 0 ) return <h1>undfind</h1>
+       
         return(
             
             <div className="menu">
@@ -68,67 +68,8 @@ function Menu (props){
                     
                             </div> 
                          </div>
-                    <div className="products">
                     
-                                                <b><h5>THỰC ĐƠN CÁC MÓN BÒ NHẬP </h5></b>
-                        <div class="row">
-                                    {products?.map((product,index)=>{
-                                     return   <>
-                                           <div key={index} class="product1-2 col-4">
-                                            <NavLink className="nav-link" to={`/product_details/${product.id}`} class="menu-thumb">
-                                            <img src={product.img} class="img-fluid menu-image" alt=""/>
-                                                <div class="menu-info d-flex flex-wrap align-items-center">
-                                                    <h4 class="mb-0">{product.nameFood} </h4><br></br>
-                                                    <span class="price-tag bg-white shadow-lg lg-2"><small>{product.price}.vnd</small></span>
-                                                        <div class="d-flex flex-wrap align-items-center w-100 mt-2">
-                                                        <h6 class="reviews-text mb-0 me-3">4.4/5</h6>
-                                                        <div class="reviews-stars">
-                                                            <i class="bi-star-fill reviews-icon"></i>
-                                                            <i class="bi-star-fill reviews-icon"></i>
-                                                            <i class="bi-star-fill reviews-icon"></i>
-                                                            <i class="bi-star-fill reviews-icon"></i>
-                                                            <i class="bi-star reviews-icon"></i>
-                                                        </div>
-                                                        <p class="reviews-text mb-0 ms-4">{product.reviewDemo} Reviews</p>
-                                                        </div>
-                                                </div>
-                                            </NavLink>
-                                </div>
-                                        </>
-                                    })}
-                              </div>
-
-                    </div>
-                    {/* <div className="products">
-                    <b><h5>THỰC ĐƠN CÁC COMBO BÒ</h5></b>
-                        <div class="row">
-                                    {products?.map((product,index)=>{
-                                     return   <>
-                                           <div key={index} class="product1-2 col-4">
-                                            <NavLink className="nav-link" to={`/product_details/${product.id}`} class="menu-thumb">
-                                            <img src={product.img} class="img-fluid menu-image" alt=""/>
-                                                <div class="menu-info d-flex flex-wrap align-items-center">
-                                                    <h4 class="mb-0">{product.nameFood} </h4><br></br>
-                                                    <span class="price-tag bg-white shadow-lg lg-2"><small>{product.price}.vnd</small></span>
-                                                        <div class="d-flex flex-wrap align-items-center w-100 mt-2">
-                                                        <h6 class="reviews-text mb-0 me-3">4.4/5</h6>
-                                                        <div class="reviews-stars">
-                                                            <i class="bi-star-fill reviews-icon"></i>
-                                                            <i class="bi-star-fill reviews-icon"></i>
-                                                            <i class="bi-star-fill reviews-icon"></i>
-                                                            <i class="bi-star-fill reviews-icon"></i>
-                                                            <i class="bi-star reviews-icon"></i>
-                                                        </div>
-                                                        <p class="reviews-text mb-0 ms-4">{product.reviewDemo} Reviews</p>
-                                                        </div>
-                                                </div>
-                                            </NavLink>
-                                </div>
-                                        </>
-                                    })}
-                              </div>
-
-                    </div> */}
+                   
                   
                 </div>
                    

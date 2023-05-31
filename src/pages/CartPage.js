@@ -13,20 +13,18 @@ export default function CartPage() {
   console.log(cart);
     return (
         <React.Fragment>
-     
-         
             <section className="product spad">
                 <div className="container">
                 <div className="bodyCart">
-                    <h2 className="bg-light-subtle mb-2" >Products List</h2>
+                <h2 className="bg-light-subtle mb-2" >Products List</h2>
 
             { cart?.length > 0 ? cart.map((itemCart,index)=>{
                 return <>
                     <div key={index} className="main-cart">
                         <div className="item-cart">
-                        <div className="item-img">
-                            <img src={itemCart.img}/>
-                        </div>
+                            <div className="item-img">
+                                <img src={itemCart.img}/>
+                            </div>
                         <div className="info-item">
                              <div className="item-name">
                                  {itemCart.nameFood}

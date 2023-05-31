@@ -54,7 +54,7 @@ export const getcategory = createAsyncThunk(
 export const getById = createAsyncThunk("products/getById", async (itemId) => {
   try {
     const responsive = await axios.get(
-      `https://reactjst3h2212-default-rtdb.firebaseio.com/products/.json?orderBy="id"&equalTo=${itemId}`
+      `https://reactjst3h2212-default-rtdb.firebaseio.com/productsCate/.json?orderBy="id"&equalTo=${itemId}`
     );
     const myArr1 = [];
 
