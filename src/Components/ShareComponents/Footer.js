@@ -26,7 +26,7 @@ function Footer (props) {
 
                         <p className="mb-2">Thứ 2 - Thứ 7</p>
 
-                        <p>9:00 AM - 08:00 PM</p>
+                        <p>7:00 AM - 09:00 PM</p>
 
                         <p>Tel: <a href="tel: 010-02-0340" className="tel-link">010-02-0340</a></p>
                     </div>

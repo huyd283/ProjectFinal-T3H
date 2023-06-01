@@ -11,7 +11,7 @@ export default class About extends React.Component {
                     <div class="col-lg-10 col-12 mx-auto">
                         <h1 class="text-white"> Bò Tơ Quán Mộc </h1>
 
-                        <strong class="text-white"> Vẻ Đẹp Phố Xưa Hà Nội </strong>
+                        <strong class="text-white">  Vẻ đẹp Phố Xưa Hà Nội</strong>
                     </div>
 
                 </div>
@@ -20,6 +20,8 @@ export default class About extends React.Component {
             <div class="overlay"></div>
         </header>
 
+
+
         <div className="right text-right">
             <div className="main_wrapper lazy cls" >
               <div className="wrapper_content container nohome">
@@ -27,12 +29,11 @@ export default class About extends React.Component {
                 <div className="main-area-left cls">
                   <div className="content_detail wapper-page wapper-page-detail">
                     <h1 className="page_title">
-                      <span> BÒ TƠ QUÁN MỘC </span>
+                      <span>Bò Tơ Quán Mộc - Vẻ đẹp Phố Xưa Hà Nội</span>
                     </h1>
                     <div className="summary">Bò Tơ Quán Mộc - Nhà hàng phong cách phố Xưa Hà Nội! Một điểm đến nhuốm đậm màu thời gian, dẫu có chút hoài cổ nhưng luôn mang lại cảm giác bình yên, ấm cúng cho bất cứ ai. Đây là địa điểm lý tưởng để bạn thưởng thức bữa tiệc gặp mặt gia đình hay hội họp cùng bạn bè rôm rả.</div>
                     <div className="description">
                       <h4><strong>KHÔNG GIAN PHỐ XƯA HÀ NỘI</strong></h4>
-
                       <p>Đã từ lâu, người ta đã không còn nhớ được rằng, nhắc đến Bò tơ quán mộc là nhớ đến Hà Nội xưa, hay nghĩ đến không gian phố xưa Hà Nội là nhớ đến Bò tơ quán mộc. Tọa lạc tại những con phố sầm uất và đông đúc người qua lại, chuỗi nhà hàng Bò tơ quán mộc trong mắt người Hà thành đã sớm trở thành địa điểm hiếm hoi, thân thuộc còn lưu giữ được vẻ đẹp thuần túy, bình yên và truyền thống.</p>
                       <p><img alt="" height="800" src="https://botoquanmoc.com/upload_images/images/2019/06/27/IMG_0357-2.jpg" width="1150" /></p>
                       <p>Đưa thực khách ngược dòng thời gian về với Hà Nội của 40 năm về trước, Bò Tơ Quán Mộc mở ra một không gian kiến trúc ấn tượng, vừa lạ vừa quen với những khung cảnh xưa cũ, giản dị, đạm bạc nhưng dịu dàng, ấm áp. Thực khách đến đây không chỉ để trải nghiệm ẩm thực mà còn để trải nghiệm một không gian gợi nhiều ký ức ấu thơ, đong đầy cảm xúc, gần gũi như chính ngôi nhà của mình. Mỗi một khung cửa gỗ, chiếc bàn, cái ghế, thậm chí là rèm cửa, chạn bát đều ẩn dấu hình bóng một Hà Nội thập niên 80 - thời điểm khốn khó, vất vả nhưng lại chan chứa tình người và tiếng cười vô tư của những đứa trẻ.</p>

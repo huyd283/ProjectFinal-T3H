@@ -1,0 +1,157 @@
+.container{
+    display: flex;
+    
+
+}
+.category-layout{
+    width: 25%;
+}
+.products{
+    width: 70%;
+}
+.header{
+    padding: 0 0px;
+    
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20190221/ourmid/pngtree-simple-gradient-beautiful-gradient-poster-image_30641.jpg')
+
+}
+
+.combo{
+    
+    background-color: rgb(234, 233, 242);
+    color: rgba(17, 10, 10, 0.973);
+    text-align: center;
+    padding: 0;
+    margin: 8px;
+}
+.menu-item5555 li:hover {
+    background:#981B1E;
+    
+}
+
+.menu-item-5577{
+    padding: 9px 74px;
+    margin: 2px;
+    display: flex;  justify-content: center;
+}
+.item5556 {
+    display: flex;  
+    justify-content: center;
+}
+.item5557
+    {
+        display: flex;  
+        justify-content: center;
+    }
+
+#menu-item-6000{
+    color: white;
+    background: #b4abab;
+    
+}
+
+
+
+.header-items{
+
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center; 
+    height: 250px;
+    width: 100%;
+    color: rgb(230, 81, 17);
+    background-image: url('https://botoquanmoc.com/images/banners/original/41-1_1684742862.jpg')
+
+}
+
+.tatca{
+    font-size: 0.9rem;
+    font-weight: 300;
+    transition: all 0.3s linear 0s;
+    cursor: pointer;
+    float: left;
+}
+
+
+
+.link-user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    
+}
+ .main-detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 40px;
+} 
+.detail1{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.link-user2{
+    display: flex;
+    float: left;
+    align-items: center;
+    justify-content: space-between;
+    width: 35%;
+    margin-left: 88px;
+}
+ 
+th{
+    
+    width: 80%;
+    
+}
+
+    
+   
+.buy_area{
+    background: rgb(211, 208, 43);
+    width: 50%;
+    padding: auto;
+
+}
+.plusss{
+    text-align: center;
+}
+.pagination{
+    
+    display: flex; 
+     justify-content: flex-end;
+}
+
+ul{
+    list-style: none;
+}
+.menu-item-5577{
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid #981B1E;
+    padding: 10 10px;
+    margin-left: 10px;
+    
+}
+  
+
+.price-tag {
+    width: 140px; 
+}
+h5{
+    text-align: center;
+     background-color: rgb(242, 233, 233); 
+}
+.price-tag {
+    text-align: center;
+}
+.product-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
