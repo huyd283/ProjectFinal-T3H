@@ -1,39 +1,28 @@
-import React, { useState, useEffect } from "react";
-import { firestore } from "../../db";
+import React, { useState } from "react";
+import { database } from "../../db";
+
 function ModalComponent({ isOpen, onClose }) {
-  useEffect(() => {
-    // console.log([...Array(24).keys 
-}, [])    
+  const [order, setOrder] = useState({});
+  const [orderId, setOrderId] = useState(null);
+  const handleInput = (e) => {
+    setOrder({
+      ...order,
+      [e.target.name]: e.target.value,
+    });
+  };
 
-
-
-  const [order, setOrder] = useState(undefined || {});
-    const handleInput = (e) => {
-        order[e.target.name] = e.target.value;
-        console.log(order);
+  const formSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const newOrderRef = await database.ref("Order").push(order);
+      const newOrderId = newOrderRef.key; // Lấy ID của dữ liệu mới được thêm
+      setOrderId(newOrderId);
+      console.log("Đẩy dữ liệu thành công");
+      e.target.reset();
+    } catch (err) {
+      console.log(err);
     }
-    const formSubmit = async (e) => {
-        e.preventDefault();
-        try {
-            const doc = await firestore.collection("Order").add(order);
-            console.log("push thanh cong");
-            e.target.value = "";
-        } catch (err) {
-            console.log(err);
-        }
-    }
-    // const refresh = async () => {
-    //     try {
-    //         const docs = await firestore.collection("address-hanoi").docs;
-    //         setaddHanoi(docs.data());
-    //         console.log(addHanoi)
-    //     } catch (error) {
-    //         console.error(error);
-    //     }
-    // }
-    // useEffect(() => {
-    //     refresh();
-    // }, [])
+  };
   return (
     <div
       className={`modal fade ${isOpen ? "show" : ""}`}
@@ -69,16 +58,17 @@ function ModalComponent({ isOpen, onClose }) {
                   </div>
 
                   <div className="col-lg-6 col-12">
-                    <label htmlFor="phone" className="form-label">Số điện thoại</label>
-                    <input onChange={handleInput} type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" className="form-control" placeholder="123-456-7890"/>
-                  </div>  
+                  <label htmlFor="phone" className="form-label">Số điện thoại</label>
+                  <input onChange={handleInput} type="tel" name="phone" id="phone" pattern="[0-9]{10}" className="form-control" placeholder="Số điện thoại"/>
+                </div>
+
 
 
                  
 
                   <div className="col-lg-6 col-12">
                     <label htmlFor="people" className="form-label">Số người</label>
-                    <input onChange={handleInput} type="text" name="people" id="people" className="form-control" placeholder="Số người"/>
+                    <input onChange={handleInput} type="text" name="guests" id="people" className="form-control" placeholder="Số người"/>
                   </div>
 
                   <div className="col-lg-6 col-12">
@@ -86,10 +76,10 @@ function ModalComponent({ isOpen, onClose }) {
                     <input onChange={handleInput} type="date" name="date" id="date" value="" className="form-control"/>
                   </div>
 
-                  <div className="col-lg-3 row">
+                  <div className="col-lg-6 row">
                     <label htmlFor="time" className="form-label">Giờ</label>
                     <div className="col-6">
-                    <select className="form-select form-control w-150 " name="time" id="time" onChange={handleInput}>
+                    <select className="form-select form-control w-150 " name="hour" id="time" onChange={handleInput}>
                     {
                                 [...Array(24).keys()].map((i) => {
                                     if (7 <= i && i <= 21) {
@@ -103,7 +93,8 @@ function ModalComponent({ isOpen, onClose }) {
                         </select>
                     </div>
                     <div className="col-6">
-                        <select id="contact-minutes" className="form-control " required>
+                    <select name="minutes" id="contact-minutes" className="form-control" required onChange={handleInput}>
+
                             {
                                 [...Array(60).keys()].map((i) => {
 
@@ -119,7 +110,7 @@ function ModalComponent({ isOpen, onClose }) {
                   </div>
                   <div className="col-lg-12 col-12">
                   <label className="form-label">Địa điểm nhà hàng</label>
-                  <select name="contact-address" id="contact-address" className="form-control" onChange={handleInput}>
+                  <select name="address" id="contact-address" className="form-control" onChange={handleInput}>
                   <option defaultValue={"default"}>Vui lòng chọn địa chỉ nhà hàng</option>
 																	<option value="102 Thái Thịnh ">102 Thái Thịnh </option>
 																	<option value="Biệt Thự D17, Ngõ 76 Nguyễn Phong Sắc">Biệt Thự D17, Ngõ 76 Nguyễn Phong Sắc</option>
@@ -142,7 +133,7 @@ function ModalComponent({ isOpen, onClose }) {
 
                   <div className="col-12">
                       <label htmlFor="message" className="form-label">Yêu cầu đặc biệt</label>
-                      <textarea onChange={handleInput} className="form-control" rows="4" id="comment" name="message" placeholder=""></textarea>
+                      <textarea onChange={handleInput} className="form-control" rows="4" id="comment" name="comment" placeholder=""></textarea>
                 </div>
 
 
@@ -152,7 +143,11 @@ function ModalComponent({ isOpen, onClose }) {
                 </form>
             </div>
           </div>
-          <div className="modal-footer"></div>
+          {orderId && (
+            <div className="modal-footer">
+              <p className="mb-0">ID đặt bàn: {orderId}</p>
+            </div>
+          )}
         </div>
       </div>
     </div>
