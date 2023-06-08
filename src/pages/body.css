@@ -1,13 +1,17 @@
 .container{
     display: flex;
     
+
 }
 .category-layout{
     width: 25%;
 }
 .products{
-    width: 100%;
+    width: 70%;
 }
+
+
+
 
 
 .combo{
@@ -24,7 +28,7 @@
 }
 
 .menu-item-5577{
-    padding: 9px 102px;
+    padding: 9px 74px;
     margin: 2px;
     display: flex;  justify-content: center;
 }
@@ -43,6 +47,7 @@
     background: #b4abab;
     
 }
+ 
 .header-items{
     display: flex;
     height: 20rem;
@@ -70,6 +75,23 @@
 .listcate:hover{
     flex: 2;
     background-color:rgb(184, 249, 249) ;
+}
+
+
+
+
+
+.header-items{
+
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center; 
+    height: 250px;
+    width: 100%;
+    color: rgb(230, 81, 17);
+    background-image: url('https://botoquanmoc.com/images/banners/original/41-1_1684742862.jpg')
+
 }
 
 
@@ -127,12 +149,24 @@ th{
 .plusss{
     text-align: center;
 }
-
+.pagination{
+    
+    display: flex; 
+     justify-content: flex-end;
+}
 
 ul{
     list-style: none;
 }
-
+.menu-item-5577{
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid #981B1E;
+    padding: 10 10px;
+    margin-left: 10px;
+    
+}
   
 
 .price-tag {
@@ -146,12 +180,12 @@ h5{
     text-align: center;
 }
 .product-image{
-    height: 50%;
     width: 100%;
     display: flex;
     justify-content: center;
 
 }
+ HEAD
 .product1-1{
     padding: 0px;
 }
@@ -241,3 +275,5 @@ button {
 
   
   .pagination a:hover:not(.active) {background-color: #ddd;}
+
+

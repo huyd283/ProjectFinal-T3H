@@ -1,10 +1,38 @@
 import React from 'react';
+import { useEffect, useState } from "react";
+import { database } from '../db';
+import UserContext from '../Components/context/UserContext';
 import { NavLink } from 'react-router-dom';
+import { useDispatch, useSelector } from "react-redux";
+
 function Home (props){
+    
+    const {state, dispatch } = React.useContext(UserContext);
+    const refresh = () => {
+        const dbRef = database.ref();
+        dbRef.child("/productsCate").get().then((snapshot) => {
+            if (snapshot.exists()) {
+                state.productsCate = snapshot.val();
+                dispatch({ type: "update_products", payload: state.productsCate });
+                localStorage.setItem('state', JSON.stringify(state));
+                setTimeout(()=>{
+                    dispatch({ type: "hide_loading" });
+                },1000)
+            } else {
+                console.log("không có giữ liệu");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+    }
+    useEffect(() => {
+        // console.log(state);
+        refresh();
+    }, [])
+    const data = JSON.parse(localStorage.getItem('state'));
     return (
         <React.Fragment>
         <main>
-
             <section className="hero">
                 <div className="container">
                     <div className="row">
@@ -123,7 +151,6 @@ function Home (props){
                         <source src="video/production_ID_3769033.mp4" type="video/mp4"/>
                         	Your browser does not support the video tag.
                     	</video>
-                    {/* <img src="/public/images/home/homeImg1.jpg" /> */}
                 </div>
 
                 <div className="overlay"></div>
@@ -136,7 +163,6 @@ function Home (props){
                         <div className="col-12">
                             <h2 className="text-center mb-lg-5 mb-4">Special Menus</h2>
                         </div>
-
                         <div className="col-lg-4 col-md-6 col-12">
                             <div className="menu-thumb">
                                 <div className="menu-image-wrap">
@@ -232,6 +258,37 @@ function Home (props){
                         <div className="col-lg-4 col-md-6 col-12">
                             <div className="menu-thumb">
                                 <div className="menu-image-wrap">
+                                    <img src="https://botoquanmoc.com/images/products/2023/05/08/resized/345895774_1337728313765412_2380716814099890746_n_1683513167.jpg" alt=""/>
+
+                                    <span className="menu-tag bg-warning">Dinner</span>
+                                </div>
+
+                                <div className="menu-info d-flex flex-wrap align-items-center">
+                                    <h4 className="mb-0">BÒ TƠ CHÁY TỎI</h4>
+
+                                    <span className="price-tag bg-white shadow-lg ms-4">95.000<small>Đ</small></span>
+
+                                    <del className="ms-4">124.000<small>Đ</small></del>
+
+                                    <div className="d-flex flex-wrap align-items-center w-100 mt-2">
+                                        <h6 className="reviews-text mb-0 me-3">3/5</h6>
+
+                                        <div className="reviews-stars">
+                                            <i className="bi-star-fill reviews-icon"></i>
+                                            <i className="bi-star-fill reviews-icon"></i>
+                                            <i className="bi-star-fill reviews-icon"></i>
+                                            <i className="bi-star reviews-icon"></i>
+                                            <i className="bi-star reviews-icon"></i>
+                                        </div>
+
+                                        <p className="reviews-text mb-0 ms-4">44 Reviews</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-md-6 col-12">
+                            <div className="menu-thumb">
+                                <div className="menu-image-wrap">
                                     <img src="https://botoquanmoc.com/images/products/2023/05/08/large/119205895_999066027226801_8360464199140109388_n_1683520069.jpg" className="img-fluid menu-image" alt=""/>
 
                                     <span className="menu-tag bg-warning">Dinner</span>
@@ -260,67 +317,7 @@ function Home (props){
                                 </div>
                             </div>
                         </div>
-
-                        {/* <div className="col-lg-4 col-md-6 col-12">
-                            <div className="menu-thumb">
-                                <div className="menu-image-wrap">
-                                    <img src="images/breakfast/louis-hansel-dphM2U1xq0U-unsplash.jpg" className="img-fluid menu-image" alt=""/>
-
-                                    <span className="menu-tag bg-warning">Breakfast</span>
-                                </div>
-
-                                <div className="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 className="mb-0">Burger Set</h4>
-
-                                    <span className="price-tag bg-white shadow-lg ms-4"><small>Đ</small>20.50</span>
-
-                                    <div className="d-flex flex-wrap align-items-center w-100 mt-2">
-                                        <h6 className="reviews-text mb-0 me-3">4.3/5</h6>
-
-                                        <div className="reviews-stars">
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star reviews-icon"></i>
-                                        </div>
-
-                                        <p className="reviews-text mb-0 ms-4">102 Reviews</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6 col-12">
-                            <div className="menu-thumb">
-                                <div className="menu-image-wrap">
-                                    <img src="images/lunch/farhad-ibrahimzade-D5c9ZciQy_I-unsplash.jpg" className="img-fluid menu-image" alt=""/>
-
-                                    <span className="menu-tag bg-warning">Lunch</span>
-                                </div>
-
-                                <div className="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 className="mb-0">Healthy Soup</h4>
-
-                                    <span className="price-tag bg-white shadow-lg ms-4"><small>Đ</small>34.20</span>
-
-                                    <div className="d-flex flex-wrap align-items-center w-100 mt-2">
-                                        <h6 className="reviews-text mb-0 me-3">3/5</h6>
-
-                                        <div className="reviews-stars">
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star reviews-icon"></i>
-                                            <i className="bi-star reviews-icon"></i>
-                                        </div>
-
-                                        <p className="reviews-text mb-0 ms-4">64 Reviews</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
-
+                        
                     </div>
                 </div>
             </section>
@@ -432,7 +429,7 @@ function Home (props){
                     <div className="modal-body d-flex flex-column justify-content-center">
                         <div className="booking">
                             
-                            <form className="booking-form row" role="form" action="#" method="post">
+                            <form className="booking-form row" role="form"  action="#" method="post">
                                 <div className="col-lg-6 col-12">
                                     <label for="name" className="form-label">Full Name</label>
 

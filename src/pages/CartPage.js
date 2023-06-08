@@ -1,21 +1,22 @@
-import React from "react";
+import React,{useContext, useEffect, useState } from "react";
 import TableCart from "../Components/cart/TableCart";
-import Footer from "../Components/ShareComponents/Footer"
 import FormCart from "../Components/cart/FormCart";
+<<<<<<< HEAD
 import { useDispatch, useSelector } from "react-redux";
 import { deleteCart } from "../redux/slice/cartSlice";
 import { NavLink } from "react-router-dom";
 import './body.css';
+=======
+import UserContext from "../Components/context/UserContext";
+export default function CartPage(props) {
+    const {state,dispatch} = React.useContext(UserContext);      
+>>>>>>> 21090f20d484cbe468a8344878ca5ef638a2d6ac
 
-export default function CartPage() {
-    const dispatch = useDispatch();
-    const { cart } = useSelector((state) => state.carts);
-  if(cart === 0 ) return <h1>undfind</h1>
-  console.log(cart);
     return (
      
          
             <section className="product spad">
+<<<<<<< HEAD
                 <div className="container">
                 <div className="bodyCart">
                     <h2 className="bg-light-subtle mb-2" >Products List</h2>
@@ -48,12 +49,19 @@ export default function CartPage() {
             }
 
 {/*                 
+=======
+                <div className="container row">
+                    <h2 className="bg-light-subtle mb-2" >Danh sách sản phẩm</h2>
+>>>>>>> 21090f20d484cbe468a8344878ca5ef638a2d6ac
                     <TableCart></TableCart>
-                    <FormCart></FormCart> */}
-            </div>
+                    <FormCart></FormCart>
                 </div>
             </section>
+<<<<<<< HEAD
                
         
+=======
+        </React.Fragment>
+>>>>>>> 21090f20d484cbe468a8344878ca5ef638a2d6ac
     )
 }
