@@ -8,20 +8,15 @@
 .products{
     width: 100%;
 }
-.header{
-    padding: 0 0px;
-    
-    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20190221/ourmid/pngtree-simple-gradient-beautiful-gradient-poster-image_30641.jpg')
 
-} 
 
 .combo{
     
-    background-color: rgb(234, 233, 242);
+    background-color: rgb(184, 249, 249);
     color: rgba(17, 10, 10, 0.973);
     text-align: center;
     padding: 0;
-    margin: 8px;
+    margin-top: 8px;
 }
 .menu-item5555 li:hover {
     background:#981B1E;
@@ -48,21 +43,35 @@
     background: #b4abab;
     
 }
-
-
-
- .header-items{
-
+.header-items{
     display: flex;
-    padding: 0;
-    justify-content: center;
-    align-items: center; 
-    height: 550px;
-    width: 100%;
-    color: rgb(230, 81, 17);
-    background-image: url('https://botoquanmoc.com/images/banners/original/41-1_1684742862.jpg')
+    height: 20rem;
+    gap: 1rem;
+}
+.header-items >div{
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .6s cubic-bezier(.90, .122, .415, 1.4);
+}
+.header-items >div:hover{
+    flex: 6;
+}
+.listcate{
+  
+    border-radius: 2px;
+   
+    background-color: rgb(250, 252, 243) ;
+    flex: 1;
+    transition: .3s all ease;
+}
+.listcate:hover{
+    flex: 2;
+    background-color:rgb(184, 249, 249) ;
+}
 
-} 
 
 .tatca{
     font-size: 0.9rem;
@@ -156,15 +165,24 @@ h5{
 }
 button {
     
-    background-Color : rgba(255, 100, 100, 0.85);
+    background-Color :rgb(184, 249, 249);
     padding: '2px 10px';
     color: 'white';
      border-radius: 2; 
      width: 100%;  
 }
-.menu-image1{
+.wrapper{
+    overflow: hidden;
+}
+
+.wrapper img{
     height: 297px;
     width: 100%;
+    transition: scale 400ms;
+    
+}
+.wrapper:hover img{
+    scale: 170%;
 }
 .Name{
     text-align: center;
@@ -199,8 +217,27 @@ button {
 }
 .menu-image{
     width: 500px;
-    height: 240px;
+    height: 281px;
 }
 .product-item {
     padding-top: 20px;
 }
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  .pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  .menu-thumb{
+    width: 1000px;
+  }
+
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}

@@ -7,7 +7,9 @@ import { getFectProdust, getcategory } from "../redux/slice/getProductSlice";
 import { useState } from "react";
 import { TabPanel } from "@mui/lab";
 import TabPanelUI from "./TabPanelUI";
+
 function Menu (props){
+
   const dispatch = useDispatch();
 
   const [activeTab, setActiveTab] = useState(0);
@@ -16,23 +18,6 @@ function Menu (props){
     setActiveTab(index);
   };
 
-  const tabsData = [
-    {
-      id: 1,
-      title: 'Tab 1',
-      content: 'combo'
-    },
-    {
-      id: 2,
-      title: 'Tab 2',
-      content: 'Content of Tab 2'
-    },
-    {
-      id: 3,
-      title: 'Tab 3',
-      content: 'Content of Tab 3'
-    }
-  ];
 
     useEffect(() => {
         dispatch(getFectProdust());
@@ -45,6 +30,8 @@ function Menu (props){
   const { products } = useSelector((state) => state.products);
   const { listcategory } = useSelector((state) => state.products);
 
+  // phân trang
+  
 
        
         return(
@@ -53,15 +40,24 @@ function Menu (props){
             
                 <div className ="header">
                               <div className="header-items" >
+                              <div style={{backgroundImage: "url(/images/product/hinh1a.jpg)" }}></div>
+                              <div style={{backgroundImage: "url(/images/product/hot1.jpg)" }}></div>
+                             
+                              
+                               <div style={{backgroundImage: "url(/images/product/logo.jpg)" }}></div>
+                               <div style={{backgroundImage: "url(/images/product/logo2.jpg)" }}></div>
                                
+                               <div style={{backgroundImage: "url(/images/product/hot1.jpg)" }}></div>  
+                               <div style={{backgroundImage: "url(/images/product/combo2.jpg)" }}></div>
                             </div>  
                        
                             <div className=" menu-left-1">
                            
-                            <em> 
+                           
                             <h2 className="combo">THỰC ĐƠN NHÀ HÀNG</h2>
-                            </em>
+                           
                     {/* category */}
+                    
                             <div>
                                 <TabPanelUI listcategory={listcategory} />
                             </div>
@@ -71,7 +67,11 @@ function Menu (props){
                     
                    
                   
-                </div>
+                
+                <div id="pagination">
+                    <h1>Đâu rồi</h1>
+              </div>
+              </div>
                    
             
           

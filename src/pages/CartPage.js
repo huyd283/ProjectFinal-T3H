@@ -5,6 +5,7 @@ import FormCart from "../Components/cart/FormCart";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteCart } from "../redux/slice/cartSlice";
 import { NavLink } from "react-router-dom";
+import './body.css';
 
 export default function CartPage() {
     const dispatch = useDispatch();
@@ -12,26 +13,27 @@ export default function CartPage() {
   if(cart === 0 ) return <h1>undfind</h1>
   console.log(cart);
     return (
-        <React.Fragment>
+     
+         
             <section className="product spad">
                 <div className="container">
                 <div className="bodyCart">
-                <h2 className="bg-light-subtle mb-2" >Products List</h2>
+                    <h2 className="bg-light-subtle mb-2" >Products List</h2>
 
             { cart?.length > 0 ? cart.map((itemCart,index)=>{
                 return <>
                     <div key={index} className="main-cart">
                         <div className="item-cart">
-                            <div className="item-img">
-                                <img src={itemCart.img}/>
-                            </div>
+                        <div className="wrapper ">
+                            <img src={itemCart.img}/>
+                        </div>
                         <div className="info-item">
-                             <div className="item-name">
+                             <h4 className="item-name">
                                  {itemCart.nameFood}
-                                 </div>
-                                     <div className="item-price">
-                              {itemCart.price}
-                                </div>
+                                 </h4>
+                                 <span class="price-tag bg-light shadow-lg lg-2"><small>Giá    :</small></span>
+                                    <span class="price-tag bg-light shadow-lg lg-2"><small> {itemCart.price}.vnd</small></span>
+                                     
                         </div>
                             <div>
                                 <button onClick={()=>{dispatch(deleteCart(itemCart))}}>
@@ -52,7 +54,6 @@ export default function CartPage() {
                 </div>
             </section>
                
-        </React.Fragment>
         
     )
 }

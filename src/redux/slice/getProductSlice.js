@@ -19,7 +19,7 @@ export const getFectProdust = createAsyncThunk(
   async () => {
     try {
       const responsive = await axios.get(
-        'https://reactjst3h2212-default-rtdb.firebaseio.com/products/.json'
+        'https://reactjst3h2212-default-rtdb.firebaseio.com/productsCate/.json'
 
       );
       const myArr1 = [];
@@ -70,7 +70,7 @@ export const getByCate = createAsyncThunk("products/getByCate", async (cateItem)
   try {
     const responsive = await axios.get(
       `https://reactjst3h2212-default-rtdb.firebaseio.com/productsCate/.json?orderBy="name"&equalTo="${cateItem}"`
-    );
+    )
     const myArr1 = [];
 
     for (let newItem in responsive.data) {
@@ -86,7 +86,7 @@ export const getByCate = createAsyncThunk("products/getByCate", async (cateItem)
 export const getCate = createAsyncThunk("products/getCate", async (itemId) => {
   try {
     const responsive = await axios.get(
-      `https://reactjst3h2212-default-rtdb.firebaseio.com/products/.json?orderBy=0&startAt=0&endAt=3${itemId}`
+      `https://reactjst3h2212-default-rtdb.firebaseio.com/productsCate/.json?orderBy=0&startAt=0&endAt=3${itemId}`
     );
     const myArr1 = [];
 

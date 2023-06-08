@@ -5,6 +5,7 @@ import { addToCart,addQauntity } from "../redux/slice/cartSlice";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { getById } from "../redux/slice/getProductSlice";
+import './body.css';
 function ProductDetails(){
   let params = useParams();
   const dispatch = useDispatch();
@@ -26,12 +27,20 @@ function ProductDetails(){
         <div className="container">
         <div key={index}  className="nav-link"  class="menu-thumb">
                     <div className="main-item-detail row">
-                      <div className="col-6">
-                      <img src={item?.img} class="img-fluid menu-image" alt=""/>
+                      <div className="wrapper col-6">
+                      <img src={item?.img} alt=""/>
                       </div>
                        <div class="menu-info  align-items-center col-6">
                           <h4 class="mb-0">{item?.nameFood}</h4>
-                          <span class="price-tag bg-white shadow-lg ms-4"><small>{item?.price}.vnd</small></span>
+                          <span class="price-tag bg-light shadow-lg lg-2"><small>Giá    :</small></span>
+                            <span class="price-tag bg-light shadow-lg lg-2"><small>{item.price}.vnd</small></span>
+                          <div className="row">
+                         
+                          <p><h6>Nguyên Liệu :</h6>{item.describe } </p>
+                          </div>
+                         
+
+
                            <div class="d-flex flex-wrap align-items-center w-100 mt-2">
                              <h6 class="reviews-text mb-0 me-3">{item.reviewDemo }</h6>
                              <div class="reviews-stars">
