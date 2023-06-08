@@ -1,8 +1,10 @@
-import React from "react";
+import React,{useContext, useEffect, useState } from "react";
 import TableCart from "../Components/cart/TableCart";
-import Footer from "../Components/ShareComponents/Footer"
 import FormCart from "../Components/cart/FormCart";
+import UserContext from "../Components/context/UserContext";
 export default function CartPage(props) {
+    const {state,dispatch} = React.useContext(UserContext);      
+
     return (
         <React.Fragment>
             <section className="product spad">

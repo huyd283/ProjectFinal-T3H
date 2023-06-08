@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useReducer,useEffect, useState } from 'react';
 import Home from './pages/Home';
 import Header from './Components/ShareComponents/Header';
 import Footer from './Components/ShareComponents/Footer';
@@ -11,12 +11,23 @@ import CartPage from './pages/CartPage';
 import AboutPage from './pages/AboutPage';
 import Menu from './pages/Menu';
 import Product_details1 from './pages/Product_details1';
+import { UserProvider } from './Components/context/UserContext';
+import reducer from './Components/context/Reducer';
+import store from './Components/context/store';
 
 // import { BrowserRouter, useLocation } from "react-router-dom";
 
 function App() {
+  const localState = localStorage.getItem("state") ? JSON.parse(localStorage.getItem("state")) :store;
+  const [state,dispatch] = useReducer(reducer,localState);  
+  const display=state.isLoading ? "block":"none";
   return (
+
+    <UserProvider value={{state,dispatch}}>
     <div>
+    <div id="preloder" style={{ display: display }}>
+            <div className="loader"></div>
+    </div>
     <Header/>
     <Routes>
     <Route path="/" element={<Home/>}/>
@@ -30,6 +41,7 @@ function App() {
     </Routes>
     <Footer/>
     </div>
+    </UserProvider>
   )
 }
 

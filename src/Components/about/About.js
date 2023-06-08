@@ -31,7 +31,7 @@ export default class About extends React.Component {
                     <h1 className="page_title">
                       <span>Bò Tơ Quán Mộc - Vẻ đẹp Phố Xưa Hà Nội</span>
                     </h1>
-                    <div className="summary">Bò Tơ Quán Mộc - Nhà hàng phong cách phố Xưa Hà Nội! Một điểm đến nhuốm đậm màu thời gian, dẫu có chút hoài cổ nhưng luôn mang lại cảm giác bình yên, ấm cúng cho bất cứ ai. Đây là địa điểm lý tưởng để bạn thưởng thức bữa tiệc gặp mặt gia đình hay hội họp cùng bạn bè rôm rả.</div>
+                    <div className="summary display-8">Bò Tơ Quán Mộc - Nhà hàng phong cách phố Xưa Hà Nội! Một điểm đến nhuốm đậm màu thời gian, dẫu có chút hoài cổ nhưng luôn mang lại cảm giác bình yên, ấm cúng cho bất cứ ai. Đây là địa điểm lý tưởng để bạn thưởng thức bữa tiệc gặp mặt gia đình hay hội họp cùng bạn bè rôm rả.</div>
                     <div className="description">
                       <h4><strong>KHÔNG GIAN PHỐ XƯA HÀ NỘI</strong></h4>
                       <p>Đã từ lâu, người ta đã không còn nhớ được rằng, nhắc đến Bò tơ quán mộc là nhớ đến Hà Nội xưa, hay nghĩ đến không gian phố xưa Hà Nội là nhớ đến Bò tơ quán mộc. Tọa lạc tại những con phố sầm uất và đông đúc người qua lại, chuỗi nhà hàng Bò tơ quán mộc trong mắt người Hà thành đã sớm trở thành địa điểm hiếm hoi, thân thuộc còn lưu giữ được vẻ đẹp thuần túy, bình yên và truyền thống.</p>

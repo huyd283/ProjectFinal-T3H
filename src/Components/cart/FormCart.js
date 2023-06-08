@@ -1,36 +1,24 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { firestore } from "../../db";
+import { database } from "../../db";
+import UserContext from "../context/UserContext";
 export default function FormCart(props) {
-    const [pays, setPays] = useState(undefined || {});
+    const [pay, setPay] = useState([{}]);
+    const {state, dispatch } = React.useContext(UserContext);
+
     const handleInput = (e) => {
-        pays[e.target.name] = e.target.value;
-        setPays(pays);
-        console.log(pays);
+        pay[e.target.name] = e.target.value;
+        setPay(pay);
+        console.log(pay);
     }
+    
     const formSubmit = async (e) => {
-        e.preventDefault();
-        try {
-            const doc = await firestore.collection("pays").add(pays);
-            console.log("push thanh cong");
-            e.target.value = "";
-        } catch (err) {
-            console.log(err);
-        }
+        console.log("submit success");
+        e.preventDefault(); 
+        database.ref('cartlist/1').set(pay);
+        
     }
-    const refresh = async () => {
-        try {
-            const docs = await firestore.collection("pays").docs;
-            setPays(docs.data());
-            console.log(pays);
-        } catch (error) {
-            console.error(error);
-        }
-    }
-    useEffect(() => {
-        refresh();
-        // console.log([...Array(24).keys()])
-    }, [])
+    
     return (
         <div className="form mt-4">
             <h6 className="text-bg-danger">Thông tin đặt hàng</h6>
@@ -57,8 +45,12 @@ export default function FormCart(props) {
 
                     <label for="contact-address" className="form-label">Địa điểm nhà hàng</label>
 
-                    <select id="contact-address" className="form-control">
-                        <option defaultValue={"default"}>Vui lòng chọn địa chỉ nhà hàng</option>
+                    <select id="contact-address" className="form-control" placeholder="Vui lòng chọn địa điểm">
+                        <option defaultValue={"default"}>Vui lòng chọn địa điểm</option>
+                        <option defaultValue={"default"}>BÒ TƠ QUÁN MỘC CS1 HÀ NỘI</option>
+                        <option defaultValue={"default"}>BÒ TƠ QUÁN MỘC CS2 HÀ NỘI</option>
+                        <option defaultValue={"default"}>BÒ TƠ QUÁN MỘC CS1 SÀI GÒN</option>
+                        <option defaultValue={"default"}>BÒ TƠ QUÁN MỘC CS2 SÀI GÒN</option>
                     </select>
                     <label for="contact-time" className="form-label">Thời gian ăn</label>
 
