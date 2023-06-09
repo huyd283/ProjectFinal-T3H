@@ -5,7 +5,7 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { useRef } from "react";
 import Menu from "../../pages/Menu";
 import { useSelector } from "react-redux";
-
+import"./Header.css"
 function Header(props) {
     const { cart } = useSelector((state) => state.carts);
 
@@ -67,11 +67,17 @@ function Header(props) {
                     <div className="nav-right  d-flex flex-row-reverse">
                         <button type="button" className="custom-btn btn btn-danger" data-bs-toggle="modal" data-bs-target="#BookingModal" onClick={showModal}>ĐẶT BÀN</button>
                         <div className="iconCart">
-                        {cart.length === 0 ? "" :  <div className="countItem">
+                            {cart.length === 0 ? "" :  <div className="countItem">
                              <span>{cart.length === 0 ? "" : cart.length} </span>
-                    </div>}
+                            </div>}
                    
                         <NavLink className="my-auto" to="./Cartpage"><FontAwesomeIcon className="me-3 fs-4" icon={faCartShopping} style={{ color: "#000000" }} /></NavLink>
+                        </div>
+                        <div className="search">
+                            <i className="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" required></input>
+                            <i className="fa-solid fa-arrow-right"></i>
+
                         </div>
                  
                     </div>

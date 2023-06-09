@@ -41,7 +41,7 @@ function Menu (props){
                               <div style={{backgroundImage: "url(/images/product/hot1.jpg)" }}></div>
                              
                               
-                               <div style={{backgroundImage: "url(/images/product/logo.jpg)" }}></div>
+                               <div style={{backgroundImage: "url(/images/product/logo.jpg)"  , width:3010}}></div>
                                <div style={{backgroundImage: "url(/images/product/logo2.jpg)" }}></div>
                                
                                <div style={{backgroundImage: "url(/images/product/hot1.jpg)" }}></div>  

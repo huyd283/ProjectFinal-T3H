@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import './body.css';
 function Home (props){
     return (
         <React.Fragment>
@@ -51,7 +52,7 @@ function Home (props){
                                     </div>
 
                                     <div className="carousel-item">
-                                        <div className="carousel-image-wrap">
+                                        <div className="wrapper ">
                                             <img src="images/slide/jason-leung-O67LZfeyYBk-unsplash.jpg" className="img-fluid carousel-image" alt=""/>
                                         </div>
                                         
@@ -77,7 +78,7 @@ function Home (props){
                                     </div>
 
                                     <div className="carousel-item">
-                                        <div className="carousel-image-wrap">
+                                        <div className="wrapper ">
                                             <img src="images/slide/ivan-torres-MQUqbmszGGM-unsplash.jpg" className="img-fluid carousel-image" alt=""/>
                                         </div>
                                         
