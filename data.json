@@ -1,26 +1,6 @@
 {
-  "cartlist": [
-    {
-      "contact-address": "Hà Nội",
-      "contact-email": "huyc@gmail.com",
-      "contact-hour": "8",
-      "contact-message": "5 người có trẻ em",
-      "contact-minutes": "10",
-      "contact-name": "Duy Huy",
-      "contact-phone": "091-234-5678",
-      "contact-time": "2023-06-09"
-    },
-    {
-      "contact-address": "TPHCM",
-      "contact-email": "thaott@gmail.com",
-      "contact-hour": "15",
-      "contact-message": "Văn phòng, 12 người",
-      "contact-minutes": "10",
-      "contact-name": "Thảo",
-      "contact-phone": "094-128-9622",
-      "contact-time": "2023-06-16"
-    }
-  ],
+ 
+ 
   "categories": [
     {
       "id": 1,
@@ -70,23 +50,7 @@
       "id": 12,
       "name": "RƯỢU"
     }
-  ],
-  "order": [
-    {
-      "address": "102 Thái Thịnh",
-      "checked": true,
-      "comment": "có trẻ em",
-      "date": "2023-06-05",
-      "email": "pmdao2k1@gmail.com",
-      "guests": 5,
-      "hour": 7,
-      "id": 1,
-      "minute": 30,
-      "name": "Phạm Minh Đạo",
-      "phone": 398146886
-    }
-  ],
-  "productsCate": [
+  ],"productsCate": [
     {
       "describe": "450Gr thịt bò + 1gr Muối tinh +1 gr Tiêu Xanh ",
       "id": 34,
@@ -662,22 +626,5 @@
       "start": "03/01/2023"
     }
    
-  ],
-  "user": [
-    {
-      "id": 1,
-      "name": "admin",
-      "password": 123456
-    },
-    {
-      "id": 2,
-      "name": "karamel",
-      "password": 123456
-    },
-    {
-      "id": 3,
-      "name": "yogurt",
-      "password": 123456
-    }
   ]
 }

@@ -1,47 +1,103 @@
-import React,{useContext, useEffect, useState } from "react";
+import React from "react";
 import TableCart from "../Components/cart/TableCart";
+import Footer from "../Components/ShareComponents/Footer"
 import FormCart from "../Components/cart/FormCart";
-<<<<<<< HEAD
 import { useDispatch, useSelector } from "react-redux";
-import { deleteCart } from "../redux/slice/cartSlice";
+import { decreaseQuantity, deleteCart, increaseQuantity } from "../redux/slice/cartSlice";
 import { NavLink } from "react-router-dom";
 import './body.css';
-=======
-import UserContext from "../Components/context/UserContext";
-export default function CartPage(props) {
-    const {state,dispatch} = React.useContext(UserContext);      
->>>>>>> 21090f20d484cbe468a8344878ca5ef638a2d6ac
 
+export default function CartPage() {
+    const dispatch = useDispatch();
+    const { cart } = useSelector((state) => state.carts);
+  if(cart === 0 ) return <h1>undfind</h1>
+  console.log(cart);
+  const handleDecreaseQuantity = (product) => {
+    if (product.quantity === 1) {
+      // Nếu số lượng là 1, xóa sản phẩm khỏi giỏ hàng
+      dispatch(deleteCart(product.id));
+    } else {
+      // Giảm số lượng đi 1
+      dispatch(decreaseQuantity(product.id));
+    }
+  };
+  
+  const handleIncreaseQuantity = (product) => {
+    // Tăng số lượng đi 1
+    dispatch(increaseQuantity(product.id));
+  };
     return (
-     
+      
          
             <section className="product spad">
-<<<<<<< HEAD
                 <div className="container">
                 <div className="bodyCart">
-                    <h2 className="bg-light-subtle mb-2" >Products List</h2>
+                    <h2 className="bg-light-subtle mb-2" >Đơn Hàng</h2>
 
             { cart?.length > 0 ? cart.map((itemCart,index)=>{
                 return <>
-                    <div key={index} className="main-cart">
-                        <div className="item-cart">
-                        <div className="wrapper ">
+                <div key={index} className="main-cart row ">
+       <table className="table">
+         <thead>
+          <th>Stt</th>
+          <th>Tên</th>
+          <th>Ảnh</th>
+          <th>Số Lượng</th>
+          <th>Giá</th>
+          
+       
+
+          </thead>       
+      <tbody>
+        <tr >
+          <td  >{itemCart.id}</td>
+          <td ><h4 style = {{ width: 403,height: 250}} > {itemCart.nameFood}</h4></td>
+          <td className="wrap-image"> <img  style = {{ width: 403,height: 250}} src={itemCart.img}/>  </td>
+
+          <td><div className="main-btn" style={{width: 203,height: 250}}>
+              
+
+              <button className="add-button" onClick={() => handleDecreaseQuantity(itemCart)}style={{width: 103,height: 50}}>-</button>
+              <span className="span">{itemCart?.quantity !== '' ? itemCart?.quantity : ''}</span>
+              <button onClick={() => handleIncreaseQuantity(itemCart)}style={{ background :"white",width: 103,height: 50}}>+</button>
+              </div>  
+          </td>
+          <td ><h5 style = {{ background :"white", width: 203,height: 250}} >{itemCart.price * itemCart?.quantity}</h5></td>
+          <td> <button className="subtract-button" onClick={()=>{dispatch(deleteCart(itemCart))}}>
+                                    delete
+                                </button></td>
+        </tr>
+       
+      </tbody>
+    </table>
+                    
+                        {/* <div className="item-cart">
+                        <div className="wrapper col-6">
                             <img src={itemCart.img}/>
                         </div>
-                        <div className="info-item">
-                             <h4 className="item-name">
+                        <div className="info-item col-6">
+                             <div className="item-name">
                                  {itemCart.nameFood}
-                                 </h4>
-                                 <span class="price-tag bg-light shadow-lg lg-2"><small>Giá    :</small></span>
-                                    <span class="price-tag bg-light shadow-lg lg-2"><small> {itemCart.price}.vnd</small></span>
-                                     
+                                 </div>
+                                     <div className="item-price">
+                              {itemCart.price * itemCart?.quantity}
+                                </div>
                         </div>
                             <div>
-                                <button onClick={()=>{dispatch(deleteCart(itemCart))}}>
+                                <div className="main-btn">
+
+                                <button className="add-button" onClick={() => handleDecreaseQuantity(itemCart)}>-</button>
+                    <span>{itemCart?.quantity !== '' ? itemCart?.quantity : ''}</span>
+
+
+                                 <button onClick={() => handleIncreaseQuantity(itemCart)}>+</button>
+                                </div>
+
+                                <button className="subtract-button" onClick={()=>{dispatch(deleteCart(itemCart))}}>
                                     delete
                                 </button>
                             </div>
-                        </div>
+                        </div> */}
                      
                     </div>
                 </>
@@ -49,19 +105,12 @@ export default function CartPage(props) {
             }
 
 {/*                 
-=======
-                <div className="container row">
-                    <h2 className="bg-light-subtle mb-2" >Danh sách sản phẩm</h2>
->>>>>>> 21090f20d484cbe468a8344878ca5ef638a2d6ac
                     <TableCart></TableCart>
-                    <FormCart></FormCart>
+                    <FormCart></FormCart> */}
+            </div>
                 </div>
             </section>
-<<<<<<< HEAD
                
         
-=======
-        </React.Fragment>
->>>>>>> 21090f20d484cbe468a8344878ca5ef638a2d6ac
     )
 }

@@ -1,4 +1,4 @@
-import React,{ useReducer,useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Home from './pages/Home';
 import Header from './Components/ShareComponents/Header';
 import Footer from './Components/ShareComponents/Footer';
@@ -8,26 +8,18 @@ import { Route } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
 import Contact from './pages/Contact';
 import CartPage from './pages/CartPage';
-import AboutPage from './pages/AboutPage';
 import Menu from './pages/Menu';
-import Product_details1 from './pages/Product_details1';
-import { UserProvider } from './Components/context/UserContext';
-import reducer from './Components/context/Reducer';
-import store from './Components/context/store';
+import ProductDetails from './pages/ProductDetails';
+import { useDispatch } from 'react-redux';
+import { getFectProdust } from './redux/slice/getProductSlice';
+
 
 // import { BrowserRouter, useLocation } from "react-router-dom";
 
 function App() {
-  const localState = localStorage.getItem("state") ? JSON.parse(localStorage.getItem("state")) :store;
-  const [state,dispatch] = useReducer(reducer,localState);  
-  const display=state.isLoading ? "block":"none";
-  return (
 
-    <UserProvider value={{state,dispatch}}>
+  return (
     <div>
-    <div id="preloder" style={{ display: display }}>
-            <div className="loader"></div>
-    </div>
     <Header/>
     <Routes>
     <Route path="/" element={<Home/>}/>
@@ -36,12 +28,10 @@ function App() {
     <Route path="/BlogDetail" element={<BlogDetail/>}/>
     <Route path="/Contact" element={<Contact/>}/>
     <Route path="/Cartpage" element={<CartPage/>}></Route>
-    <Route path="/About" element={<AboutPage/>}/>
-    <Route path="/product_details1" element={<Product_details1 />}/>
+    <Route path="/product_details/:id" element={<ProductDetails />}/>
     </Routes>
-    <Footer/>
+    <Footer/> 
     </div>
-    </UserProvider>
   )
 }
 

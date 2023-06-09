@@ -76,7 +76,6 @@ export const getByCate = createAsyncThunk("products/getByCate", async (cateItem)
     for (let newItem in responsive.data) {
       myArr1.push(responsive.data[newItem]);
     }
-    console.log(myArr1);
 
     return myArr1;
   } catch (error) {
