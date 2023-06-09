@@ -51,10 +51,10 @@ export default function CartPage() {
       <tbody>
         <tr >
           <td  >{itemCart.id}</td>
-          <td ><h4 style = {{ width: 403,height: 250}} > {itemCart.nameFood}</h4></td>
-          <td className="wrap-image"> <img  style = {{ width: 403,height: 250}} src={itemCart.img}/>  </td>
+          <td ><h4 style = {{ width: 403,height: 200}} > {itemCart.nameFood}</h4></td>
+          <td className="wrap-image"> <img  style = {{ width: 403,height: 200}} src={itemCart.img}/>  </td>
 
-          <td><div className="main-btn" style={{width: 203,height: 250}}>
+          <td><div className="main-btn" style={{width: 203,height: 200}}>
               
 
               <button className="add-button" onClick={() => handleDecreaseQuantity(itemCart)}style={{width: 103,height: 50}}>-</button>
@@ -62,7 +62,7 @@ export default function CartPage() {
               <button onClick={() => handleIncreaseQuantity(itemCart)}style={{ background :"white",width: 103,height: 50}}>+</button>
               </div>  
           </td>
-          <td ><h5 style = {{ background :"white", width: 203,height: 250}} >{itemCart.price * itemCart?.quantity}</h5></td>
+          <td ><h5 style = {{ background :"white", width: 203,height: 200}} >{itemCart.price * itemCart?.quantity}</h5></td>
           <td> <button className="subtract-button" onClick={()=>{dispatch(deleteCart(itemCart))}}>
                                     delete
                                 </button></td>
@@ -99,10 +99,9 @@ export default function CartPage() {
                                 </button>
                             </div>
                         </div> */}
-                     <button className="subtract-button" onClick={()=>{}}>
-                                    Thanh Toán
-                                </button>
+                     
                     </div>
+                    
                 </>
             }) : <div> khong co san pham,<NavLink to='/menu'>   mua ngay</NavLink> </div>
             
@@ -114,6 +113,9 @@ export default function CartPage() {
             </div>
            
                 </div>
+                <button className="subtract-button" onClick={()=>{}}>
+                                    Thanh Toán
+                                </button>
             </section>
             
                
