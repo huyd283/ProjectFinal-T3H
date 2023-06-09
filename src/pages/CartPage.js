@@ -70,6 +70,7 @@ export default function CartPage() {
        
       </tbody>
     </table>
+    
                     
                         {/* <div className="item-cart">
                         <div className="wrapper col-6">
@@ -98,18 +99,23 @@ export default function CartPage() {
                                 </button>
                             </div>
                         </div> */}
-                     
+                     <button className="subtract-button" onClick={()=>{}}>
+                                    Thanh Toán
+                                </button>
                     </div>
                 </>
             }) : <div> khong co san pham,<NavLink to='/menu'>   mua ngay</NavLink> </div>
+            
             }
 
 {/*                 
                     <TableCart></TableCart>
                     <FormCart></FormCart> */}
             </div>
+           
                 </div>
             </section>
+            
                
         
     )
