@@ -3,7 +3,8 @@ import Home from './pages/Home';
 import Header from './Components/ShareComponents/Header';
 import Footer from './Components/ShareComponents/Footer';
 import Blog from './pages/Blog';
-import BlogDetail from './pages/Blog-Detail';
+import BlogDetail0 from './pages/Blogdetail/Blog-Detail0';
+import BlogDetail1 from './pages/Blogdetail/Blog-Detail';
 import { Route } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
 import Contact from './pages/Contact';
@@ -25,7 +26,8 @@ function App() {
     <Route path="/" element={<Home/>}/>
     <Route path="/Blog" element={<Blog/>}/>
     <Route path="/Menu" element={<Menu/>}/>
-    <Route path="/BlogDetail" element={<BlogDetail/>}/>
+    <Route path="/BlogDetail1" element={<BlogDetail1/>}/>
+    <Route path="/BlogDetail0" element={<BlogDetail0/>}/>
     <Route path="/Contact" element={<Contact/>}/>
     <Route path="/Cartpage" element={<CartPage/>}></Route>
     <Route path="/product_details/:id" element={<ProductDetails />}/>

@@ -103,19 +103,19 @@ export default function CartPage() {
                     </div>
                     
                 </>
-            }) : <div> khong co san pham,<NavLink to='/menu'>   mua ngay</NavLink> </div>
+            }) : <div> Chưa có sản phẩm trong giỏ,<NavLink to='/menu'>   Mua ngay</NavLink> </div>
             
             }
 
-{/*                 
-                    <TableCart></TableCart>
-                    <FormCart></FormCart> */}
+                
+                    {/* <TableCart></TableCart> */}
+                    <FormCart></FormCart>
             </div>
            
                 </div>
-                <button className="subtract-button" onClick={()=>{}}>
+                {/* <button className="subtract-button" onClick={()=>{}}>
                                     Thanh Toán
-                                </button>
+                </button> */}
             </section>
             
                
