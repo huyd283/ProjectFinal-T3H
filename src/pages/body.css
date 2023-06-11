@@ -12,11 +12,13 @@
 
 .combo{
     
-    background-color: rgb(184, 249, 249);
+    background-color: rgb(16, 208, 39);
     color: rgba(17, 10, 10, 0.973);
     text-align: center;
     padding: 0;
     margin-top: 8px;
+    margin-left: 10px;
+    border-radius: 20px;
 }
 .menu-item5555 li:hover {
     background:#981B1E;
@@ -47,6 +49,7 @@
     display: flex;
     height: 20rem;
     gap: 1rem;
+    margin-left: 13px;
 }
 .header-items >div{
     flex: 1;
@@ -68,7 +71,7 @@
     transition: .3s all ease;
 }
 .listcate:hover{
-    flex: 2;
+    flex: 1;
     background-color:rgb(184, 249, 249) ;
 }
 
@@ -269,10 +272,13 @@ button {
   }
   .add-button-main{
     background-color:white;
-    color: #f44336;
+    color: #16e928;
     height: 50px;
     margin-top: 60px;
+    text-align: center;
+    
   }
+  
   .name-main-list{
     margin-top: 70px;
   }
@@ -310,8 +316,8 @@ button {
 
 .dish-box {
     border-radius: 30px;
-    background: linear-gradient(145deg, #ececec, #ffffff);
-    box-shadow: 28px 28px 28px #d4d4d4, -28px -28px 45px #ffffff;
+    background: linear-gradient(145deg, #6aead2, #ffffff);
+    box-shadow: 28px 28px 28px #2bc0e1, -28px -28px 45px #ffffff;
     display: flow-root;
     padding: 0 10px 30px;
     padding-top: 0;
@@ -320,7 +326,7 @@ button {
 }
 
 .dish-box:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
 
@@ -352,6 +358,7 @@ button {
     -webkit-box-orient: vertical;
     overflow: hidden;
     font-weight: 900;
+    background-color: #92e6d6;
 }
 
 
@@ -410,26 +417,27 @@ button {
     
     border: none;
     border-radius: 10px;
-    color: #ffffff;
+    color: black;
     transition: 0.3s;
-    background: linear-gradient(145deg, #ffc954, #ffbc00);
-    box-shadow: inset 4px 4px 8px #d6a029, inset -4px -4px 8px #ffd837;
+    background: linear-gradient(145deg, #ced9ce, #49cdd9);
+    box-shadow: inset 4px 4px 8px #91d5de, inset -4px -4px 8px #82e8bc;
 }
 
 .dish-add-btn i {
-    color: #ffffff;
+    color: #f62020;
     font-size: 22px;
 }
 
 .dish-add-btn:hover {
-    background: linear-gradient(245deg, #e3a92b, #ffc933);
+    background: linear-gradient(245deg, #e91515, #e3ef06);
+    box-shadow: inset 4px 4px 8px hwb(67 9% 9%), inset -4px -4px 8px hwb(0 4% 1%);
 }
 
 
 /* menu cate */
 .menu-tab ul .filter-active {
-    color: #ffffff;
-    background: linear-gradient(145deg, #e3a92b, #ffc933);
+    color: #ca1616;
+    background: linear-gradient(145deg, #da4141, #f01f25);
 }
 .filter-active {
     position: absolute;
@@ -438,7 +446,7 @@ button {
     min-height: 50px;
     z-index: -1;
 }
-.menu-tab ul li, .menu-tab ul .filter-active {
+ .menu-tab ul li, .menu-tab ul .filter-active {
     display: inline-flex;
     text-transform: capitalize;
     font-size: 18px;
@@ -449,17 +457,24 @@ button {
     transition: 0.3s;
     justify-content: center;
     align-items: center;
-}
+} 
 .menu-tab ul li {
     padding: 10px;
     display: inline-block;
-    border-radius: 60px;
-    background: linear-gradient(145deg, #ececec, #ffffff);
-    box-shadow: 28px 28px 55px #d4d4d4, -28px -28px 55px #ffffff;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #70f97b, #3facda);
+    box-shadow: 48px 28px 55px rgb(55, 236, 185); 
+    /* đổ bóng màu 2 chiều */
+    /* -28px -28px 55px white; */
     position: relative;
-    z-index: 2;
+    z-index: 7;
+    margin-left: -24px;
+} 
+.menu-tab ul li div h2{
+    color: rgb(21, 21, 20);
+    margin-left: -170px;
 }
-.menu-tab ul li :hover{
+.menu-tab ul li .ten :hover{
         color: red;
 }
 .form-control{

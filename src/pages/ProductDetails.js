@@ -53,13 +53,8 @@ console.log(productId);
                             <p class="reviews-text mb-0 ms-4">{item.review }</p>
                            </div>
                    <div>
-                    <button onClick={
-                         ()=>{dispatch(addToCart(item) ,toast("thêm sản phẩm thành !"))}
-                    }>
-                       Đặt Món
-                    </button>
-                   
-                   </div>
+                        <button className="dish-add-btn" style={{height:70}} onClick={()=>{dispatch(addToCart(item) ,toast("thêm sản phẩm thành !"))}}><h3>Đặt Món</h3></button>
+                  </div>
            </div>
            </div>
         </div>

@@ -50,9 +50,9 @@ export default function CartPage() {
                     <td className="wrap-image"> <img  style = {{ width: 403,height: 200}} src={itemCart.img}/>  </td>
 
                     <td><div className="main-btn row" >
-                          <button className="add-button-main col-4" onClick={() => handleDecreaseQuantity(itemCart)}>-</button>
-                           <button className="add-button-main col-4">{itemCart?.quantity !== '' ? itemCart?.quantity : ''}</button>
-                           <button className="add-button-main col-4" onClick={() => handleIncreaseQuantity(itemCart)}>+</button>
+                          <button className="add-button-main col-4"  onClick={() => handleDecreaseQuantity(itemCart)}><h3 style={{margin:-10}}>-</h3></button>
+                           <h3 className="add-button-main col-4">{itemCart?.quantity !== '' ? itemCart?.quantity : ''}</h3>
+                           <button className="add-button-main col-4" onClick={() => handleIncreaseQuantity(itemCart)}><h3 style={{margin:-10}}>+</h3></button>
                     </div>  
                     </td>
                     <td ><h5 className="price-main-list" style = {{ background :"white",width: 203,height: 200}} >{itemCart.price * itemCart?.quantity}</h5></td>

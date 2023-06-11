@@ -33,12 +33,12 @@ function TabPanelUI({listcategory}) {
     <TabContext value={value}>
                         <div class="menu-tab-wp">
                             <div class="row">
-                                <div class="col-lg-12 m-auto">
+                                <div class="col-lg-12 ">
                                     <div class="menu-tab text-center">
                                         <ul class="filters">
                                             <div class="filter-active"></div>
                                             <li class="filter" data-filter=".all, .breakfast, .lunch, .dinner">
-                                                <div className=''>
+                                                <div className=''><h2 className='Menu-nha-hang'>Thực Đơn Nhà Hàng</h2>
                                                 <TabList  onChange={handleChange}>
                                                 {listcategory && listcategory.map((cate,index)=>{
                                                 return <Tab  onClick={() => {
@@ -87,11 +87,11 @@ function TabPanelUI({listcategory}) {
                                         <div className="dish-info">
                                             <ul>
                                                 <li>
-                                                    <p>Type</p>
-                                                    <b>Giá</b>
+                                                    <p>Sale</p>
+                                                    <b>Thành Tiền</b>
                                                 </li>
                                                 <li>
-                                                    <p>Persons</p>
+                                                    <p>UpTo 30%</p>
                                                     <b>{item.price}.vnd</b>
                                                 </li>
                                             </ul>

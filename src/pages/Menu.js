@@ -37,21 +37,26 @@ function Menu (props){
             
                 <div className ="header">
                               <div className="header-items" >
-                                  <div style={{backgroundImage: "url(/images/product/hinh1a.jpg)" }}></div>
+                                  <div style={{backgroundImage: "url(/images/product/traicay2.jpg)" }}></div>
                                   <div style={{backgroundImage: "url(/images/product/hot1.jpg)" }}></div>
-                                
+                                  <div style={{backgroundImage: "url(/images/product/salat4.jpg)" }}></div>
+
                                   
-                                  <div style={{backgroundImage: "url(/images/product/logo.jpg)"  , width:3010}}></div>
+                                  <div style={{backgroundImage: "url(/images/product/logo.jpg)"  , width:333010}}>
+
                                   
-                                  <div style={{backgroundImage: "url(/images/product/hot1.jpg)" }}></div>  
-                                  <div style={{backgroundImage: "url(/images/product/combo2.jpg)" }}></div>
+                                  </div>
+                                  
+                                  <div style={{backgroundImage: "url(/images/product/daubep.jpg)" }}></div>  
+                                  <div style={{backgroundImage: "url(/images/product/salat2.jpg)" }}></div>
+                                  <div style={{backgroundImage: "url(/images/product/bbq.jpg)" }}></div>
                             </div>  
                             
                        
                             <div className=" menu-left-1">
                            
                            
-                            <h2 className="combo">THỰC ĐƠN NHÀ HÀNG</h2>
+                            {/* <h2 className="combo">THỰC ĐƠN NHÀ HÀNG</h2> */}
                            
                     {/* category */}
                     
