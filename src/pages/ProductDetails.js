@@ -5,7 +5,7 @@ import { addToCart } from "../redux/slice/cartSlice";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { getById } from "../redux/slice/getProductSlice";
-import './body.css';
+import'./body.css';
 function ProductDetails(){
   let params = useParams();
   const dispatch = useDispatch();
@@ -58,6 +58,7 @@ console.log(productId);
                     }>
                        Đặt Món
                     </button>
+                   
                    </div>
            </div>
            </div>

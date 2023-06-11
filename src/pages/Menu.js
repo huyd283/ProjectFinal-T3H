@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { NavLink} from 'react-router-dom';
 import Header from "../Components/ShareComponents/Header";
-import './body.css';
+
 import { useDispatch, useSelector } from "react-redux";
 import { getFectProdust, getcategory } from "../redux/slice/getProductSlice";
 import { useState } from "react";
 import { TabPanel } from "@mui/lab";
 import TabPanelUI from "./TabPanelUI";
-
+import'./body.css';
 function Menu (props){
   const dispatch = useDispatch();
 
@@ -37,16 +37,16 @@ function Menu (props){
             
                 <div className ="header">
                               <div className="header-items" >
-                              <div style={{backgroundImage: "url(/images/product/hinh1a.jpg)" }}></div>
-                              <div style={{backgroundImage: "url(/images/product/hot1.jpg)" }}></div>
-                             
-                              
-                               <div style={{backgroundImage: "url(/images/product/logo.jpg)"  , width:3010}}></div>
-                               <div style={{backgroundImage: "url(/images/product/logo2.jpg)" }}></div>
-                               
-                               <div style={{backgroundImage: "url(/images/product/hot1.jpg)" }}></div>  
-                               <div style={{backgroundImage: "url(/images/product/combo2.jpg)" }}></div>
+                                  <div style={{backgroundImage: "url(/images/product/hinh1a.jpg)" }}></div>
+                                  <div style={{backgroundImage: "url(/images/product/hot1.jpg)" }}></div>
+                                
+                                  
+                                  <div style={{backgroundImage: "url(/images/product/logo.jpg)"  , width:3010}}></div>
+                                  
+                                  <div style={{backgroundImage: "url(/images/product/hot1.jpg)" }}></div>  
+                                  <div style={{backgroundImage: "url(/images/product/combo2.jpg)" }}></div>
                             </div>  
+                            
                        
                             <div className=" menu-left-1">
                            
@@ -60,7 +60,7 @@ function Menu (props){
                             </div>
                     
                             </div> 
-                         </div>
+                </div>
                     
                    
                   

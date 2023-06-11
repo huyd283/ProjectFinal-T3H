@@ -5,7 +5,7 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { useRef } from "react";
 import Menu from "../../pages/Menu";
 import { useSelector } from "react-redux";
-import"./Header.css"
+
 function Header(props) {
     const { cart } = useSelector((state) => state.carts);
 
@@ -25,9 +25,7 @@ function Header(props) {
         <React.Fragment>
             <div className="navbar navbar-expand-lg bg-white shadow-lg">
                 <div className="container">
-                    {/* <button classNameName="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button> */}
+                    
                     <a className="navbar-brand" href="index.html">
                         <img src="https://botoquanmoc.com/images/config/logo_1559032387.png" />
                     </a>
@@ -73,12 +71,8 @@ function Header(props) {
                    
                         <NavLink className="my-auto" to="./Cartpage"><FontAwesomeIcon className="me-3 fs-4" icon={faCartShopping} style={{ color: "#000000" }} /></NavLink>
                         </div>
-                        <div className="search">
-                            <i className="fa-solid fa-magnifying-glass"></i>
-                            <input type="text" required></input>
-                            <i className="fa-solid fa-arrow-right"></i>
-
-                        </div>
+                       
+                       
                  
                     </div>
                     <div className="modal fade show" id="BookingModal " ref={ref} tabindex="-1" aria-labelledby="BookingModal" aria-hidden="true" onClick={closeModal}>

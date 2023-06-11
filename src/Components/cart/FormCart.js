@@ -1,16 +1,20 @@
 import React from "react";
 import { useEffect } from "react";
+
+
 export default function FormCart(props) {
     useEffect(() => {
         console.log([...Array(24).keys()])
     }, [])
     return (
-        <div className="form mt-4">
+        <div className="form ">
+            
             <h6 className="text-bg-danger">Thông tin đặt hàng</h6>
-            <form className="custom-form contact-form row" action="#" method="post" role="form">
+      
+                <input type="text" name="contact-name" id=" contact-name" className="form-control" placeholder="Tên của bạn" required />
+                 <form className="custom-form contact-form row" action="#" method="post" role="form">
                 <div className="col-lg-6 col-6">
-                    <label for="contact-name" className="form-label">Họ và tên</label>
-
+                    <label for="contact-name" className="form-label">Họ và tên</label> 
                     <input type="text" name="contact-name" id="contact-name" className="form-control" placeholder="Tên của bạn" required />
                 </div>
 
@@ -21,9 +25,11 @@ export default function FormCart(props) {
                 </div>
 
                 <div className="col-12">
+                    
                     <label for="contact-email" className="form-label">Email</label>
 
-                    <input type="email" name="contact-email" id="contact-email" pattern="[^ @]*@[^ @]*" className="form-control" placeholder="abc@gmail.com" required="" />
+                        <input type="email" name="contact-email" id="contact-email" pattern="[^ @]*@[^ @]*" className="form-control" placeholder="abc@gmail.com" required="" />
+                    
                     <label for="contact-name" className="form-label">Địa chỉ</label>
 
                     <input type="text" name="contact-name" id="contact-name" className="form-control" placeholder="Địa chỉ" required />
@@ -69,6 +75,7 @@ export default function FormCart(props) {
                 </div>
 
                 <div className="col-lg-5 col-12 ms-auto">
+                   
                     <button type="submit" className="form-control">Tạo đơn hàng</button>
                 </div>
             </form>
