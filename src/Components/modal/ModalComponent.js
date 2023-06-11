@@ -4,6 +4,8 @@ import { database } from "../../db";
 function ModalComponent({ isOpen, onClose }) {
   const [order, setOrder] = useState({});
   const [orderId, setOrderId] = useState(null);
+  const [counter, setCounter] = useState(0);
+
   const handleInput = (e) => {
     setOrder({
       ...order,
@@ -11,13 +13,29 @@ function ModalComponent({ isOpen, onClose }) {
     });
   };
 
+  const isOrderValid = () => {
+    return order.guests >= 1 && order.hour >= 7 && order.hour <= 21;
+  };
+
   const formSubmit = async (e) => {
     e.preventDefault();
     try {
-      const newOrderRef = await database.ref("Order").push(order);
-      const newOrderId = newOrderRef.key; // Lấy ID của dữ liệu mới được thêm
+      if (!isOrderValid()) {
+        console.log("Đơn đặt hàng không hợp lệ");
+        return;
+      }
+
+      const newOrder = {
+        ...order,
+        id: counter + 1,
+        checked: true,
+      };
+
+      const newOrderRef = await database.ref("Order").push(newOrder);
+      const newOrderId = newOrderRef.key;
       setOrderId(newOrderId);
       console.log("Đẩy dữ liệu thành công");
+      setCounter((prevCounter) => prevCounter + 1);
       e.target.reset();
     } catch (err) {
       console.log(err);
