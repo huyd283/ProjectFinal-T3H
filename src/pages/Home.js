@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import './body.css';
 function Home (props){
     return (
         <React.Fragment>
@@ -51,7 +52,7 @@ function Home (props){
                                     </div>
 
                                     <div className="carousel-item">
-                                        <div className="carousel-image-wrap">
+                                        <div className="wrapper ">
                                             <img src="images/slide/jason-leung-O67LZfeyYBk-unsplash.jpg" className="img-fluid carousel-image" alt=""/>
                                         </div>
                                         
@@ -77,7 +78,7 @@ function Home (props){
                                     </div>
 
                                     <div className="carousel-item">
-                                        <div className="carousel-image-wrap">
+                                        <div className="wrapper ">
                                             <img src="images/slide/ivan-torres-MQUqbmszGGM-unsplash.jpg" className="img-fluid carousel-image" alt=""/>
                                         </div>
                                         
@@ -176,7 +177,7 @@ function Home (props){
                                 </div>
 
                                 <div className="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 className="mb-0">BÒ SỐT TIÊU ĐEN + BÁNH BAO</h4>
+                                    <h4 className="mb-0">BÒ SỐT TIÊU ĐEN + BÁNH</h4>
 
                                     <span className="price-tag bg-white shadow-lg ms-4">185.000<small>Đ</small></span>
 
@@ -335,7 +336,7 @@ function Home (props){
 
                         <div className="col-lg-6 col-md-6 col-12">
                             <div className="news-thumb mb-4">
-                                <NavLink to="/blogdetail">  
+                                <NavLink to="/blogdetail0">  
                                     <img src="https://botoquanmoc.com/images/news/2023/04/27/large/343658403_959895225355526_2705148923649967748_n_1682583011.jpg" className="img-fluid news-image" alt=""/>
                                 </NavLink>
                                 

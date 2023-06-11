@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Blog(props) {
     return(
@@ -28,9 +29,9 @@ function Blog(props) {
                     
                     <div class="col-lg-6 col-md-6 col-12">
                         <div class="news-thumb mb-4">
-                            <a href="news-detail.html">
+                            <NavLink to="/BlogDetail0">
                                 <img src="https://botoquanmoc.com/images/news/2023/04/27/large/343658403_959895225355526_2705148923649967748_n_1682583011.jpg" class="img-fluid news-image" alt=""/>
-                            </a>
+                            </NavLink>
                             
                             <div class="news-text-info news-text-info-large">
                                 <span class="category-tag bg-danger">Nổi bật</span>
@@ -72,9 +73,9 @@ function Blog(props) {
 
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="news-thumb mb-4">
-                            <a href="news-detail.html">
+                            <NavLink to="/blogdetail1">
                                 <img src="https://botoquanmoc.com/images/news/2023/01/11/resized/325072151_1354205105332398_6657784196248892336_n_1673403303.jpg" class="img-fluid news-image" alt=""/>
-                            </a>
+                            </NavLink>
                             
                             <div class="news-text-info">
                                 <span class="category-tag me-3 bg-info">Khuyến mãi</span>

@@ -1,6 +1,6 @@
 import React from "react";
 
-function BlogDetail(props) {
+export default function BlogDetail1(props) {
     return (
         <main>
         <header class="site-header site-news-detail-header">
@@ -196,4 +196,3 @@ function BlogDetail(props) {
     </main>  
     )
 }
-export default BlogDetail;

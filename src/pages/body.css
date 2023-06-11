@@ -1,0 +1,483 @@
+.container{
+    display: flex;
+    
+}
+.category-layout{
+    width: 25%;
+}
+.products{
+    width: 100%;
+}
+
+
+.combo{
+    
+    background-color: rgb(16, 208, 39);
+    color: rgba(17, 10, 10, 0.973);
+    text-align: center;
+    padding: 0;
+    margin-top: 8px;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+.menu-item5555 li:hover {
+    background:#981B1E;
+    
+}
+
+.menu-item-5577{
+    padding: 9px 102px;
+    margin: 2px;
+    display: flex;  justify-content: center;
+}
+.item5556 {
+    display: flex;  
+    justify-content: center;
+}
+.item5557
+    {
+        display: flex;  
+        justify-content: center;
+    }
+
+#menu-item-6000{
+    color: white;
+    background: #b4abab;
+    
+}
+.header-items{
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+    margin-left: 13px;
+}
+.header-items >div{
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .6s cubic-bezier(.90, .122, .415, 1.4);
+}
+.header-items >div:hover{
+    flex: 6;
+}
+.listcate{
+  
+    border-radius: 2px;
+   
+    background-color: rgb(250, 252, 243) ;
+    flex: 1;
+    transition: .3s all ease;
+}
+.listcate:hover{
+    flex: 1;
+    background-color:rgb(184, 249, 249) ;
+}
+
+
+.tatca{
+    font-size: 0.9rem;
+    font-weight: 300;
+    transition: all 0.3s linear 0s;
+    cursor: pointer;
+    float: left;
+}
+
+
+
+.link-user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    
+}
+ .main-detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 40px;
+} 
+.detail1{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.link-user2{
+    display: flex;
+    float: left;
+    align-items: center;
+    justify-content: space-between;
+    width: 35%;
+    margin-left: 88px;
+}
+ 
+th{
+    
+    width: 80%;
+    
+}
+
+    
+   
+.buy_area{
+    background: rgb(211, 208, 43);
+    width: 50%;
+    padding: auto;
+
+}
+.plusss{
+    text-align: center;
+}
+
+
+ul{
+    list-style: none;
+}
+
+  
+
+.price-tag {
+    width: 140px; 
+}
+h5{
+    text-align: center;
+     background-color: rgb(242, 233, 233); 
+}
+.price-tag {
+    text-align: center;
+}
+.product-image{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.product1-1{
+    padding: 0px;
+}
+.list-category div{
+        margin-left: 20px;  
+
+}
+.item5555{
+    display: flex;
+
+}
+button {
+    
+    background-Color :rgb(184, 249, 249);
+    padding: '2px 10px';
+    color: 'white';
+     border-radius: 2; 
+     width: 100%;  
+}
+.wrapper{
+    overflow: hidden;
+}
+
+.wrapper img{
+    height: 297px;
+    width: 100%;
+    transition: scale 400ms;
+    
+}
+.wrapper:hover img{
+    scale: 170%;
+}
+.Name{
+    text-align: center;
+}
+.tab-for-me{
+    display: flex;
+}
+.iconCart{
+    position: relative;
+     
+}
+.countItem{
+    position: absolute;
+    top: -10px;
+    right: 10px; 
+    background-color: red;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:4px;
+}
+.countItem{
+    color: #fff;
+
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.product-item {
+    padding-top: 20px;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  .pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  .menu-thumb{
+    width: 1000px;
+  }
+
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+
+  .add-button {
+    background-color: white;
+    color: black;
+    padding: 8px 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-button:hover {
+    background-color: white;
+    ;
+  }
+  
+  /* CSS cho nút trừ */
+  .subtract-button {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .main-btn{
+    display: flex; 
+     justify-content: center;
+     width: 300px;
+  }
+  .add-button-main{
+    background-color:white;
+    color: #16e928;
+    height: 50px;
+    margin-top: 60px;
+    text-align: center;
+    
+  }
+  
+  .name-main-list{
+    margin-top: 70px;
+  }
+  .price-main-list{
+    margin-top: 70px;
+  }
+  .subtract-button{
+    margin-top: 70px;
+  }
+  .subtract-button:hover {
+    background-color: #d32f2f;
+  }
+
+  table thead th{
+    text-align: center;
+  }
+
+
+
+
+  /* menu */
+  .dist-img{
+    display: flex;
+    width: 240px;
+    height: 205px;
+    margin-top: -90px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+  }
+  .menu-list-row .bydefault_show .dish-box-wp {
+    display: inline-block !important;
+}
+
+
+
+.dish-box {
+    border-radius: 30px;
+    background: linear-gradient(145deg, #6aead2, #ffffff);
+    box-shadow: 28px 28px 28px #2bc0e1, -28px -28px 45px #ffffff;
+    display: flow-root;
+    padding: 0 10px 30px;
+    padding-top: 0;
+    margin: 130px 0 30px;
+    transition: 0.4s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+}
+
+.dish-box:hover {
+    transform: scale(1.08);
+}
+
+
+
+.dist-img img {
+    box-shadow: 28px 28px 45px #d4d4d4, -28px -28px 45px #ffffff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.dish-rating {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.dish-title {
+    padding: 0 30px;
+}
+.dish-title .h3-title {
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    font-family:  serif;
+    font-weight: bold;
+    color: #0d0d25;
+    transition: 0.3s;
+    min-height: 26px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-weight: 900;
+    background-color: #92e6d6;
+}
+
+
+
+
+.dish-info ul, .dist-bottom-row ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.dish-info ul li {
+    display: inline-block;
+    flex: 1;
+}
+
+.dish-info ul li:last-child {
+    text-align: right;
+    border-left: 2px solid rgb(204 204 204 / 30%);
+}
+
+.dist-bottom-row ul li:last-child {
+    text-align: right;
+}
+
+.dish-info ul li p {
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+    font-weight: 300;
+}
+
+.dish-info ul li b {
+    font-weight: 600;
+}
+
+.dish-info, .dist-bottom-row {
+    padding: 0 30px;
+}
+
+.dish-info {
+    border-bottom: 2px solid rgb(204 204 204 / 30%);
+    margin: 30px 0 30px;
+    padding-bottom: 30px;
+}
+.dist-bottom-row ul li .dish-add-btn {
+    width: 110px;
+    height: 50px;
+}
+
+.dish-add-btn {
+    margin: 0;
+    padding: 0;
+    
+    border: none;
+    border-radius: 10px;
+    color: black;
+    transition: 0.3s;
+    background: linear-gradient(145deg, #ced9ce, #49cdd9);
+    box-shadow: inset 4px 4px 8px #91d5de, inset -4px -4px 8px #82e8bc;
+}
+
+.dish-add-btn i {
+    color: #f62020;
+    font-size: 22px;
+}
+
+.dish-add-btn:hover {
+    background: linear-gradient(245deg, #e91515, #e3ef06);
+    box-shadow: inset 4px 4px 8px hwb(67 9% 9%), inset -4px -4px 8px hwb(0 4% 1%);
+}
+
+
+/* menu cate */
+.menu-tab ul .filter-active {
+    color: #ca1616;
+    background: linear-gradient(145deg, #da4141, #f01f25);
+}
+.filter-active {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    min-height: 50px;
+    z-index: -1;
+}
+ .menu-tab ul li, .menu-tab ul .filter-active {
+    display: inline-flex;
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: normal;
+    cursor: pointer;
+    padding: 10px 26px;
+    border-radius: 30px;
+    transition: 0.3s;
+    justify-content: center;
+    align-items: center;
+} 
+.menu-tab ul li {
+    padding: 10px;
+    display: inline-block;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #70f97b, #3facda);
+    box-shadow: 48px 28px 55px rgb(55, 236, 185); 
+    /* đổ bóng màu 2 chiều */
+    /* -28px -28px 55px white; */
+    position: relative;
+    z-index: 7;
+    margin-left: -24px;
+} 
+.menu-tab ul li div h2{
+    color: rgb(21, 21, 20);
+    margin-left: -170px;
+}
+.menu-tab ul li .ten :hover{
+        color: red;
+}
+.form-control{
+    display: flex;
+    border: 1px solid   rgb(65, 30, 191);
+}
