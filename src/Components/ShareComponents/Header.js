@@ -72,7 +72,7 @@ function Header(props) {
                         <NavLink className="my-auto" to="./Cartpage"><FontAwesomeIcon className="me-3 fs-4" icon={faCartShopping} style={{ color: "#000000" }} /></NavLink>
                         </div>
                        
-                       
+                        
                  
                     </div>
                     <div className="modal fade show" id="BookingModal " ref={ref} tabindex="-1" aria-labelledby="BookingModal" aria-hidden="true" onClick={closeModal}>

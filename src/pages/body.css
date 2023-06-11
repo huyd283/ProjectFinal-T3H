@@ -240,16 +240,17 @@ button {
   .pagination a:hover:not(.active) {background-color: #ddd;}
 
   .add-button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 8px 12px;
-    border: none;
+    border: 2px solid black;
     border-radius: 4px;
     cursor: pointer;
   }
   
   .add-button:hover {
-    background-color: #45a049;
+    background-color: white;
+    ;
   }
   
   /* CSS cho nút trừ */
@@ -261,10 +262,34 @@ button {
     border-radius: 4px;
     cursor: pointer;
   }
-  
+  .main-btn{
+    display: flex; 
+     justify-content: center;
+     width: 300px;
+  }
+  .add-button-main{
+    background-color:white;
+    color: #f44336;
+    height: 50px;
+    margin-top: 60px;
+  }
+  .name-main-list{
+    margin-top: 70px;
+  }
+  .price-main-list{
+    margin-top: 70px;
+  }
+  .subtract-button{
+    margin-top: 70px;
+  }
   .subtract-button:hover {
     background-color: #d32f2f;
   }
+
+  table thead th{
+    text-align: center;
+  }
+
 
 
 

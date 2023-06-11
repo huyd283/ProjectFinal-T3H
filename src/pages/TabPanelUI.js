@@ -104,15 +104,25 @@ function TabPanelUI({listcategory}) {
                                                 <li>
                                                     
                                                       <button className="dish-add-btn"  onClick={()=>{dispatch(addToCart(item) ,toast("thêm sản phẩm thành !"))}}>Đặt Món</button>
-                                                      
+                                                     
                                                 </li>
                                             </ul>
                                         </div>
+                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+                        <ToastContainer position="top-center"
+                                                        autoClose={3000}
+                                                        hideProgressBar={false}
+                                                        newestOnTop={false}
+                                                        closeOnClick
+                                                        rtl={false}
+                                                        pauseOnFocusLoss
+                                                        draggable
+                                                        pauseOnHover
+                                                        theme="light" />
                     </div>
                     
              

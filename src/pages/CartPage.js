@@ -46,18 +46,16 @@ export default function CartPage() {
                 <tbody>
                   <tr >
                     <td  >{itemCart.id}</td>
-                    <td ><h4 style = {{ width: 403,height: 200}} > {itemCart.nameFood}</h4></td>
+                    <td ><h4 className="name-main-list"  style = {{ width: 403,height: 150}} > {itemCart.nameFood}</h4></td>
                     <td className="wrap-image"> <img  style = {{ width: 403,height: 200}} src={itemCart.img}/>  </td>
 
-                    <td><div className="main-btn" style={{width: 203,height: 200}}>
-                        
-
-                        <button className="add-button" onClick={() => handleDecreaseQuantity(itemCart)}style={{width: 103,height: 50}}>-</button>
-                        <span className="span">{itemCart?.quantity !== '' ? itemCart?.quantity : ''}</span>
-                        <button onClick={() => handleIncreaseQuantity(itemCart)}style={{ background :"white",width: 103,height: 50}}>+</button>
-                        </div>  
+                    <td><div className="main-btn row" >
+                          <button className="add-button-main col-4" onClick={() => handleDecreaseQuantity(itemCart)}>-</button>
+                           <button className="add-button-main col-4">{itemCart?.quantity !== '' ? itemCart?.quantity : ''}</button>
+                           <button className="add-button-main col-4" onClick={() => handleIncreaseQuantity(itemCart)}>+</button>
+                    </div>  
                     </td>
-                    <td ><h5 style = {{ background :"white", width: 203,height: 200}} >{itemCart.price * itemCart?.quantity}</h5></td>
+                    <td ><h5 className="price-main-list" style = {{ background :"white",width: 203,height: 200}} >{itemCart.price * itemCart?.quantity}</h5></td>
                     <td> <button className="subtract-button" onClick={()=>{dispatch(deleteCart(itemCart))}}>
                                               delete
                           </button></td>
