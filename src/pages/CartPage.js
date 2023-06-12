@@ -1,16 +1,16 @@
-import React from "react";
+import React,{useContext, useEffect, useState } from "react";
 import TableCart from "../Components/cart/TableCart";
-import Footer from "../Components/ShareComponents/Footer"
 import FormCart from "../Components/cart/FormCart";
+import UserContext from "../Components/context/UserContext";
 import { useDispatch, useSelector } from "react-redux";
 import { decreaseQuantity, deleteCart, increaseQuantity } from "../redux/slice/cartSlice";
 import { NavLink } from "react-router-dom";
 import'./body.css';
 
-export default function CartPage() {
-    const dispatch = useDispatch();
+export default function CartPage(props) {
+    const {state,dispatch} = React.useContext(UserContext);      
     const { cart } = useSelector((state) => state.carts);
-  if(cart === 0 ) return <h1>undfind</h1>
+  if(cart === 0 ) return <h1>undefind</h1>
   console.log(cart);
   const handleDecreaseQuantity = (product) => {
     if (product.quantity === 1) {
@@ -37,7 +37,7 @@ export default function CartPage() {
                 <div key={index} className="main-cart row ">
               <table className="table">
                 <thead>
-                  <th>Stt</th>
+                  <th>STT</th>
                   <th>Tên</th>
                   <th>Ảnh</th>
                   <th>Số Lượng</th>
@@ -69,14 +69,9 @@ export default function CartPage() {
             }) : <div> Chưa có sản phẩm trong giỏ,<NavLink to='/menu'>   Mua ngay</NavLink> </div>
             
             } 
-                <FormCart></FormCart>
+            <FormCart></FormCart>
             </div>
-           
                 </div>
-                
             </section>
-            
-               
-        
-    )
+                )
 }
