@@ -16,6 +16,7 @@ import { getFectProdust } from './redux/slice/getProductSlice';
 import { UserProvider } from './Components/context/UserContext';
 import reducer from '../src/Components/context/Reducer';
 import store from '../src/Components/context/Store';
+import AboutPage from './pages/AboutPage';
 
 // import { BrowserRouter, useLocation } from "react-router-dom";
 
