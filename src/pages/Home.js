@@ -130,291 +130,564 @@ function Home (props){
                 <div className="overlay"></div>
             </section>
 
-            <section className="menu section-padding">
-                <div className="container">
-                    <div className="row">
-
-                        <div className="col-12">
-                            <h2 className="text-center mb-lg-5 mb-4">Special Menus</h2>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6 col-12">
-                            <div className="menu-thumb">
-                                <div className="menu-image-wrap">
-                                    <img src="https://botoquanmoc.com/images/products/2023/05/08/large/342720443_617543967096001_1356484114668483016_n_1683528923.jpg" className="img-fluid menu-image" alt=""/>
-
-                                    <span className="menu-tag bg-warning">Dinner</span>
-                                </div>
-
-                                <div className="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 className="mb-0">BÒ SỐT TIÊU ĐEN</h4>
-
-                                    <span className="price-tag bg-white shadow-lg ms-4">119.000<small>Đ</small></span>
-
-                                    <div className="d-flex flex-wrap align-items-center w-100 mt-2">
-                                        <h6 className="reviews-text mb-0 me-3">4.3/5</h6>
-
-                                        <div className="reviews-stars">
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star reviews-icon"></i>
-                                        </div>
-
-                                        <p className="reviews-text mb-0 ms-4">102 Reviews</p>
+            
+            
+            <section class="our-menu section bg-light repeat-img" id="menu">
+                <div class="sec-wp">
+                    <div class="container">
+                    <section className="about-sec section" id="about">
+                        <div className="row">
+                            <div className="">
+                                <div className="sec-title text-center mb-5">
+                                <h2 className="h2-title">Restaurant story</h2>
+                                    <div className="sec-title-shape mb-4">
+                                        <img src="images/product/title-shape.svg" alt=""/>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6 col-12">
-                            <div className="menu-thumb">
-                                <div className="menu-image-wrap">
-                                    <img src="https://botoquanmoc.com/images/products/2023/05/08/large/342702175_217389224337088_589677272958336657_n_1683528885.jpg" className="img-fluid menu-image" alt=""/>
-
-                                    <span className="menu-tag bg-warning">Lunch</span>
-                                </div>
-
-                                <div className="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 className="mb-0">BÒ SỐT TIÊU ĐEN + BÁNH</h4>
-
-                                    <span className="price-tag bg-white shadow-lg ms-4">185.000<small>Đ</small></span>
-
-                                    <div className="d-flex flex-wrap align-items-center w-100 mt-2">
-                                        <h6 className="reviews-text mb-0 me-3">3/5</h6>
-
-                                        <div className="reviews-stars">
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star reviews-icon"></i>
-                                            <i className="bi-star reviews-icon"></i>
-                                        </div>
-
-                                        <p className="reviews-text mb-0 ms-4">50 Reviews</p>
+                                    <div className="content">
+                                    <p>
+                                        Cơ sở Bò Tơ Quán Mộc đầu tiên được mở tại biệt thự số 102 Thái Thịnh. Giữa khung cảnh phố xá ồn ã, tòa biệt thự như một lát cắt độc đáo về lối sống của người Hà Nội thủa trước. Nằm giữa sự xô bồ, hoa lệ, hiện đại, ngôi biệt thự vẫn giữ được vẻ đẹp riêng biệt nhưng không hề lạc lõng, giống như một cầu nối giữa hiện tại và quá khứ, khiến thực khách ghé thăm đều lưu luyến mãi không thôi. Trải qua hơn 1 năm hoạt động, nhận được nhiều sự yêu quý của khách hàng, Bò Tơ Quán Mộc đã tiếp tục mở cơ sở mới tại D17 ngõ 76 Nguyễn Phong Sắc, đem không gian phố Xưa đến với nhiều thực khách hơn tại Hà Nội.</p>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6 col-12">
-                            <div className="menu-thumb">
-                                <div className="menu-image-wrap">
-                                    <img src="https://botoquanmoc.com/images/products/2023/05/08/large/344595423_930630421391829_3761460050034676019_n_1683515996.jpg" className="img-fluid menu-image" alt=""/>
-
-                                    <span className="menu-tag bg-warning">Breakfast</span>
-                                </div>
-
-                                <div className="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 className="mb-0">XÔI CHIÊN</h4>
-
-                                    <span className="price-tag bg-white shadow-lg ms-4">45.000<small>Đ</small></span>
-
-                                    <del className="ms-4">150<small>Đ</small></del>
-
-                                    <div className="d-flex flex-wrap align-items-center w-100 mt-2">
-                                        <h6 className="reviews-text mb-0 me-3">3/5</h6>
-
-                                        <div className="reviews-stars">
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star reviews-icon"></i>
-                                            <i className="bi-star reviews-icon"></i>
-                                        </div>
-
-                                        <p className="reviews-text mb-0 ms-4">86 Reviews</p>
+                                
+                                        <div className="about-video-img" style={{backgroundImage:'url("images/news/priscilla-du-preez-W3SEyZODn8U-unsplash.jpg")'}} >
+                                    </div >
                                     </div>
-                                </div>
-                            </div>
                         </div>
-
-                        <div className="col-lg-4 col-md-6 col-12">
-                            <div className="menu-thumb">
-                                <div className="menu-image-wrap">
-                                    <img src="https://botoquanmoc.com/images/products/2023/05/08/large/119205895_999066027226801_8360464199140109388_n_1683520069.jpg" className="img-fluid menu-image" alt=""/>
-
-                                    <span className="menu-tag bg-warning">Dinner</span>
-                                </div>
-
-                                <div className="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 className="mb-0">CHÁO TIM BÒ</h4>
-
-                                    <span className="price-tag bg-white shadow-lg ms-4">95.000<small>Đ</small></span>
-
-                                    <del className="ms-4">124.000<small>Đ</small></del>
-
-                                    <div className="d-flex flex-wrap align-items-center w-100 mt-2">
-                                        <h6 className="reviews-text mb-0 me-3">3/5</h6>
-
-                                        <div className="reviews-stars">
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star reviews-icon"></i>
-                                            <i className="bi-star reviews-icon"></i>
-                                        </div>
-
-                                        <p className="reviews-text mb-0 ms-4">44 Reviews</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* <div className="col-lg-4 col-md-6 col-12">
-                            <div className="menu-thumb">
-                                <div className="menu-image-wrap">
-                                    <img src="images/breakfast/louis-hansel-dphM2U1xq0U-unsplash.jpg" className="img-fluid menu-image" alt=""/>
-
-                                    <span className="menu-tag bg-warning">Breakfast</span>
-                                </div>
-
-                                <div className="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 className="mb-0">Burger Set</h4>
-
-                                    <span className="price-tag bg-white shadow-lg ms-4"><small>Đ</small>20.50</span>
-
-                                    <div className="d-flex flex-wrap align-items-center w-100 mt-2">
-                                        <h6 className="reviews-text mb-0 me-3">4.3/5</h6>
-
-                                        <div className="reviews-stars">
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star reviews-icon"></i>
-                                        </div>
-
-                                        <p className="reviews-text mb-0 ms-4">102 Reviews</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6 col-12">
-                            <div className="menu-thumb">
-                                <div className="menu-image-wrap">
-                                    <img src="images/lunch/farhad-ibrahimzade-D5c9ZciQy_I-unsplash.jpg" className="img-fluid menu-image" alt=""/>
-
-                                    <span className="menu-tag bg-warning">Lunch</span>
-                                </div>
-
-                                <div className="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 className="mb-0">Healthy Soup</h4>
-
-                                    <span className="price-tag bg-white shadow-lg ms-4"><small>Đ</small>34.20</span>
-
-                                    <div className="d-flex flex-wrap align-items-center w-100 mt-2">
-                                        <h6 className="reviews-text mb-0 me-3">3/5</h6>
-
-                                        <div className="reviews-stars">
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star reviews-icon"></i>
-                                            <i className="bi-star reviews-icon"></i>
-                                        </div>
-
-                                        <p className="reviews-text mb-0 ms-4">64 Reviews</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
-
+                    </div>
+                    
+              
+                    </section>
+                   
+                    
+                       
                     </div>
                 </div>
             </section>
+            <section className="about-sec section" id="about">
+                <div className='container'>
+                <div className="row">
+                            <div className="">
+                                <div className="sec-title text-center mb-5">
+                                <h2 className="h2-title">Restaurant Menu</h2>
+                                    <div className="sec-title-shape mb-4">
+                                        <img src="images/product/title-shape.svg" alt=""/>
+                                    </div>
+                                    <div class="reviews-stars">
+                                    <i class="bi-star-fill reviews-icon"></i>
+                                    <i class="bi-star-fill reviews-icon"></i>
+                                    <i class="bi-star-fill reviews-icon"></i>
+                                    <i class="bi-star-fill reviews-icon"></i>
+                                    <i class="bi-star reviews-icon"></i>
+                                </div>
 
-            <section className="BgImage"></section>
 
+                                
+                                     <div class="menu-list-row">
+                                    <div class="row g-xxl-5 bydefault_show" id="menu-dish">
+                                        <div class="col-lg-4 col-sm-6 dish-box-wp breakfast" data-cat="breakfast">
+                                            <div class="dish-box text-center">
+                                                <div class="dist-img">
+                                                    <img src="images/product/bbq.jpg" alt=""/>
+                                                </div>
+                                                <div class="dish-rating">
+                                                    5
+                                                    <i className="bi-star-fill reviews-icon"></i>
+                                                </div>
+                                                <div class="dish-title">
+                                                    <h3 class="h3-title">Sườn Bò Nướng Sốt BBQ</h3>
+                                                    <p>23 Đánh Giá Món Ăn</p>
+                                                </div>
+                                                <div class="dish-info">
+                                                    <ul>
+                                                        <li>
+                                                            <p>Sale</p>
+                                                            <b>Thành Tiền</b>
+                                                        </li>
+                                                        <li>
+                                                            <p>Upto 30%</p>
+                                                            <b>560000.vnd</b>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="dist-bottom-row">
+                                                    <ul>
+                                                        
+                                                        <li>
+                                                          
+                                                            <NavLink className="nav-link " to="/Menu">   <button class="dish-add-btn"> Check our Menu</button></NavLink>
+                                                            
+                                                                </li>
+                                                        <li>
+                                                        
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 dish-box-wp breakfast" data-cat="breakfast">
+                                            <div class="dish-box text-center">
+                                                <div class="dist-img">
+                                                    <img src="images/product/bbq6.jpg" alt=""/>
+                                                </div>
+                                                <div class="dish-rating">
+                                                    5
+                                                    <i className="bi-star-fill reviews-icon"></i>
+                                                </div>
+                                                <div class="dish-title">
+                                                    <h3 class="h3-title">Combo Bò Wagyu Đặc Biệt</h3>
+                                                    <p>38 Đánh Giá Món Ăn</p>
+                                                </div>
+                                                <div class="dish-info">
+                                                    <ul>
+                                                        <li>
+                                                            <p>Sale</p>
+                                                            <b>Thành Tiền</b>
+                                                        </li>
+                                                        <li>
+                                                            <p>Upto 30%</p>
+                                                            <b>750000.vnd</b>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="dist-bottom-row">
+                                                    <ul>
+                                                        
+                                                        <li>
+                                                          
+                                                            <NavLink className="nav-link " to="/Menu">   <button class="dish-add-btn"> Check our Menu</button></NavLink>
+                                                            
+                                                                </li>
+                                                        <li>
+                                                        
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 dish-box-wp breakfast" data-cat="breakfast">
+                                            <div class="dish-box text-center">
+                                                <div class="dist-img">
+                                                    <img src="images/product/bbq4.jpg" alt=""/>
+                                                </div>
+                                                <div class="dish-rating">
+                                                    5
+                                                    <i className="bi-star-fill reviews-icon"></i>
+                                                </div>
+                                                <div class="dish-title">
+                                                    <h3 class="h3-title">Bò Bít Tết (Beef Steak)</h3>
+                                                    <p>90 Đánh Giá Món Ăn</p>
+                                                </div>
+                                                <div class="dish-info">
+                                                    <ul>
+                                                        <li>
+                                                            <p>Sale</p>
+                                                            <b>Thành Tiền</b>
+                                                        </li>
+                                                        <li>
+                                                            <p>Upto 30%</p>
+                                                            <b>470000.vnd</b>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="dist-bottom-row">
+                                                    <ul>
+                                                        
+                                                        <li>
+                                                          
+                                                            <NavLink className="nav-link " to="/Menu">   <button class="dish-add-btn"> Check our Menu</button></NavLink>
+                                                            
+                                                                </li>
+                                                        <li>
+                                                        
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 dish-box-wp breakfast" data-cat="breakfast">
+                                            <div class="dish-box text-center">
+                                                <div class="dist-img">
+                                                    <img src="images/product/bbq3.jpg" alt=""/>
+                                                </div>
+                                                <div class="dish-rating">
+                                                    5
+                                                    <i className="bi-star-fill reviews-icon"></i>
+                                                </div>
+                                                <div class="dish-title">
+                                                    <h3 class="h3-title">Steak Thăn Bò (450Gr)</h3>
+                                                    <p>78 Đánh Giá Món Ăn</p>
+                                                </div>
+                                                <div class="dish-info">
+                                                    <ul>
+                                                        <li>
+                                                            <p>Sale</p>
+                                                            <b>Thành Tiền</b>
+                                                        </li>
+                                                        <li>
+                                                            <p>Upto 30%</p>
+                                                            <b>550000.vnd</b>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="dist-bottom-row">
+                                                    <ul>
+                                                        
+                                                        <li>
+                                                          
+                                                            <NavLink className="nav-link " to="/Menu">   <button class="dish-add-btn"> Check our Menu</button></NavLink>
+                                                            
+                                                                </li>
+                                                        <li>
+                                                        
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 dish-box-wp breakfast" data-cat="breakfast">
+                                            <div class="dish-box text-center">
+                                                <div class="dist-img">
+                                                    <img src="images/product/bbq2.jpg" alt=""/>
+                                                </div>
+                                                <div class="dish-rating">
+                                                    5
+                                                    <i className="bi-star-fill reviews-icon"></i>
+                                                </div>
+                                                <div class="dish-title">
+                                                    <h3 class="h3-title">Thăn Bò Nướng Đá Núi Lửa</h3>
+                                                    <p>90 Đánh Giá Món Ăn</p>
+                                                </div>
+                                                <div class="dish-info">
+                                                    <ul>
+                                                        <li>
+                                                            <p>Sale</p>
+                                                            <b>Thành Tiền</b>
+                                                        </li>
+                                                        <li>
+                                                            <p>Upto 30%</p>
+                                                            <b>380000.vnd</b>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="dist-bottom-row">
+                                                    <ul>
+                                                        
+                                                        <li>
+                                                          
+                                                            <NavLink className="nav-link " to="/Menu">   <button class="dish-add-btn"> Check our Menu</button></NavLink>
+                                                            
+                                                                </li>
+                                                        <li>
+                                                        
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 dish-box-wp breakfast" data-cat="breakfast">
+                                            <div class="dish-box text-center">
+                                                <div class="dist-img">
+                                                    <img src="images/product/bbq6.jpg" alt=""/>
+                                                </div>
+                                                <div class="dish-rating">
+                                                    5
+                                                    <i className="bi-star-fill reviews-icon"></i>
+                                                </div>
+                                                <div class="dish-title">
+                                                    <h3 class="h3-title">Bò Áp Chảo Macau</h3>
+                                                    <p>23 Đánh Giá Món Ăn</p>
+                                                </div>
+                                                <div class="dish-info">
+                                                    <ul>
+                                                        <li>
+                                                            <p>Sale</p>
+                                                            <b>Thành Tiền</b>
+                                                        </li>
+                                                        <li>
+                                                            <p>Upto 30%</p>
+                                                            <b>560000.vnd</b>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="dist-bottom-row">
+                                                    <ul>
+                                                        
+                                                        <li>
+                                                          
+                                                            <NavLink className="nav-link " to="/Menu">   <button class="dish-add-btn"> Check our Menu</button></NavLink>
+                                                            
+                                                                </li>
+                                                        <li>
+                                                        
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    
+                                       
+                                    </div>
+                                    </div> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                       
+              
+            </section>
+
+            {/* say */}
+            <section className="about-sec section" id="about">
+                        <div className="row">
+                            <div className="">
+                                <div className="sec-title text-center mb-5">
+                               
+                                    <h2 class="h2-title" > "Đầu Bếp Danh Tiếng" <span>Masterchef</span></h2>
+                               
+                                    <div className="sec-title-shape mb-4">
+                                        <img src="images/product/title-shape.svg" alt=""/>
+                                    </div>
+
+                                
+                                    
+                            </div>
+                        </div>
+                    </div>
+                    <div className='container'>
+                    <div class="row">
+                            <div class="col-lg-5">
+                                <div class="testimonials-img">
+                                    <img src="images/product/testimonial-img.png" alt=""/>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="testimonials-box">
+                                            <div class="testimonial-box-top">
+                                                  <div class="testimonials-box-img back-img" style={{backgroundImage:'url("images/product/testimonials/t1.jpg")'}}>
+                                                  
+                                                </div> 
+                                                <div class="reviews-stars">
+                                    <i class="bi-star-fill reviews-icon"></i>
+                                    <i class="bi-star-fill reviews-icon"></i>
+                                    <i class="bi-star-fill reviews-icon"></i>
+                                    <i class="bi-star-fill reviews-icon"></i>
+                                    <i class="bi-star reviews-icon"></i>
+                                </div>
+                                               
+
+                                            </div>
+                                            <div class="testimonials-box-text">
+                                                <h3 class="h3-title">
+                                                    Nilay Hirpara
+                                                </h3>
+                                                <h4>Quốc Tịch : France</h4>
+                                                <p>Chuyên Gia món Âu.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="col-sm-6">
+                                        <div class="testimonials-box">
+                                            <div class="testimonial-box-top">
+                                            <div class="testimonials-box-img back-img" style={{backgroundImage:'url("images/product/testimonials/t2.jpg")'}}>
+                                                  
+                                                  </div>
+                                                  <div class="reviews-stars">
+                                    <i class="bi-star-fill reviews-icon"></i>
+                                    <i class="bi-star-fill reviews-icon"></i>
+                                    <i class="bi-star-fill reviews-icon"></i>
+                                    <i class="bi-star-fill reviews-icon"></i>
+                                    <i class="bi-star reviews-icon"></i>
+                                </div>
+
+                                            </div>
+                                            <div class="testimonials-box-text">
+                                                <h3 class="h3-title">
+                                                    Tùng Lâm
+                                                </h3>
+                                                <h4>Quốc Tịch :Việt Nam</h4>
+                                                <p>Món Việt Nam Truyền Thống</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="testimonials-box">
+                                            <div class="testimonial-box-top">
+                                            <div class="testimonials-box-img back-img" style={{backgroundImage:'url("images/product/testimonials/t3.jpg")'}}>
+                                                  
+                                                  </div>
+                                                  <div class="reviews-stars">
+                                    <i class="bi-star-fill reviews-icon"></i>
+                                    <i class="bi-star-fill reviews-icon"></i>
+                                    <i class="bi-star-fill reviews-icon"></i>
+                                    <i class="bi-star-fill reviews-icon"></i>
+                                    <i class="bi-star reviews-icon"></i>
+                                </div>
+                                                
+
+                                            </div>
+                                            <div class="testimonials-box-text">
+                                                <h3 class="h3-title">
+                                                    Navnit Kumar
+                                                </h3><h4>Quốc Tịch : Thái Lan</h4>
+                                                <p>Chuyên Gia Ẩm Thực Thái Lan</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="testimonials-box">
+                                            <div class="testimonial-box-top">
+                                            <div class="testimonials-box-img back-img" style={{backgroundImage:'url("images/product/testimonials/t4.jpg")'}}>
+                                                  
+                                                  </div>
+                                                  <div class="reviews-stars">
+                                    <i class="bi-star-fill reviews-icon"></i>
+                                    <i class="bi-star-fill reviews-icon"></i>
+                                    <i class="bi-star-fill reviews-icon"></i>
+                                    <i class="bi-star-fill reviews-icon"></i>
+                                    <i class="bi-star reviews-icon"></i>
+                                </div>
+                                                
+
+                                            </div>
+                                            <div class="testimonials-box-text">
+                                                <h3 class="h3-title">
+                                                    Davis Nguyễn
+                                                </h3>
+                                                <h4>Quốc Tịch : Trung Quốc</h4>
+                                                <p>Chuyên Ẩm Thực Trung Hoa</p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+              
+            </section>
+
+
+
+
+           
+
+
+
+
+            
+            
+            {/* gbimage */}
+            <section className="BgImage">
+            
+            </section>
+            
+
+
+
+            
+
+{/* tin tức */}
             <section className="news section-padding">
                 <div className="container">
                     <div className="row">
 
                         <h2 className="text-center mb-lg-5 mb-4">Tin tức &amp; Sự kiện</h2>
 
-                        <div className="col-lg-6 col-md-6 col-12">
-                            <div className="news-thumb mb-4">
-                                <NavLink to="/blogdetail0">  
-                                    <img src="https://botoquanmoc.com/images/news/2023/04/27/large/343658403_959895225355526_2705148923649967748_n_1682583011.jpg" className="img-fluid news-image" alt=""/>
-                                </NavLink>
-                                
-                                <div className="news-text-info news-text-info-large">
-                                    <span className="category-tag bg-danger">27/04/23</span>
-
-                                    <h5 className="news-title mt-2">
-                                        <a href="news-detail.html" className="news-title-link">[HÀ NỘI], BÒ TƠ QUÁN MỘC CẬP NHẬP MENU MỚI HÈ 2023</a>
-                                    </h5>
+                       
+                <section class="blog-sec section" id="blog">
+                    <div class="sec-wp">
+                        <div class="container">
+                          
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="blog-box">
+                                        <div class="blog-img back-img"
+                                             style={{backgroundImage:'url("https://botoquanmoc.com/images/news/2023/04/27/large/343658403_959895225355526_2705148923649967748_n_1682583011.jpg")'}}></div>
+                                        <div class="blog-text">
+                                            <p class="blog-date">June.15.2023</p>
+                                            <a href="#" class="h4-title">[HÀ NỘI], BÒ TƠ QUÁN MỘC CẬP NHẬP MENU MỚI HÈ 2023</a>
+                                            <p>Đến hẹn lại lên, Bò Tơ Quán Mộc tiếp tục bổ sung vào menu của mình rất nhiều món ăn ngon, hấp dẫn dịp hè 2023 này để quý khách hàng có thêm phần lựa chọn. Các món ăn mới lần này sẽ là các món ăn từ thịt gà và thịt heo để giúp đa dạng menu nhà Bò Tơ hơn.</p>
+                                            <a  class="sec-btn"> <NavLink to="/blogdetail0">  
+                                            Read More
+                                </NavLink></a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div> 
-                        </div>
-
-                        <div className="col-lg-6 col-md-6 col-12">
-                            <div className="news-thumb mb-4">
-                                <NavLink to="/blogdetail">
-                                    <img src="https://botoquanmoc.com/images/news/2023/04/20/resized/bia-web_1681979603.png" className="img-fluid news-image" alt=""/>
-                                </NavLink>
-                                
-                                <div className="news-text-info news-text-info-large">
-                                    <span className="category-tag bg-danger">20/04/23</span>
-
-                                    <h5 className="news-title mt-2">
-                                        <a href="news-detail.html" className="news-title-link">RỘN RÀNG KHAI TRƯƠNG, RINH NGAY ƯU ĐÃI 20% TOÀN BỘ MENU ĐỒ ĂN</a>
-                                    </h5>
+                                <div class="col-lg-6">
+                                    <div class="blog-box">
+                                        <div class="blog-img back-img"
+                                            style={{backgroundImage:'url("https://botoquanmoc.com/images/news/2023/04/20/resized/bia-web_1681979603.png")'}}></div>
+                                        <div class="blog-text">
+                                            <p class="blog-date">June.15.2023</p>
+                                            <a href="#" class="h4-title">RỘN RÀNG KHAI TRƯƠNG, RINH NGAY ƯU ĐÃI 20% TOÀN BỘ MENU ĐỒ ĂN</a>
+                                            <p>Buổi lễ khai trương diễn ra thành công tốt đẹp nhờ có sự ủng hộ nhiệt tình của quý thực khách gần xa. Thay lời cảm ơn chân thành nhất, Bò Tơ Quán Mộc dành tặng ưu đãi 20% toàn bộ menu đồ ăn. Ngoải ra, những món quà xinh xắn được Bò Tơ chuẩn bị còn được gửi đến tay quý khách thay lời yêu thương vì sự ủng hộ của tất cả mọi người dành cho Bò Tơ Quán Mộc Sài Gòn.</p>
+                                                <a class="sec-btn"> <NavLink to="/blogdetail0">  
+                                            Read More
+                                </NavLink></a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div> 
-                        </div>
-
-                        <div className="col-lg-4 col-md-4 col-12">
-                            <div className="news-thumb mb-lg-0 mb-lg-4 mb-0">
-                                <a href="news-detail.html">
-                                    <img src="https://botoquanmoc.com/images/news/2023/04/19/resized/65393736_661120591021348_4470469688463196160_n_1681870833.jpg" className="img-fluid news-image" alt=""/>
-                                </a>
-                                
-                                <div className="news-text-info">
-                                    <span className="category-tag me-3 bg-info">Khuyến mại</span>
-                                    <strong>19/04/23</strong>
-                                    <h5 className="news-title mt-2">
-                                        <a href="news-detail.html" className="news-title-link">KHÁM PHÁ MẸT BÒ TƠ SIÊU HOT DÀNH...</a>
-                                    </h5>
                                 </div>
-                            </div> 
-                        </div>
-
-                        <div className="col-lg-4 col-md-4 col-12">
-                            <div className="news-thumb mb-lg-0 mb-lg-4 mb-2">
-                                <a href="news-detail.html">
-                                    <img src="https://botoquanmoc.com/images/news/2023/03/04/resized/78_1677900197.png" className="img-fluid news-image" alt=""/>
-                                </a>
-                                
-                                <div className="news-text-info">
-                                    <span className="category-tag">Mới</span>
-                                    <strong> 04/03/23</strong>
-                                    <h5 className="news-title mt-2">
-                                        <a href="news-detail.html" className="news-title-link">THÀNH PHẦN DINH DƯỠNG</a>
-                                    </h5>
                                 </div>
-                            </div> 
-                        </div>
-
-                        <div className="col-lg-4 col-md-6 col-12">
-                            <div className="news-thumb mb-4">
-                                <a href="news-detail.html">
-                                    <img src="https://botoquanmoc.com/images/news/2023/01/11/resized/325072151_1354205105332398_6657784196248892336_n_1673403303.jpg" className="img-fluid news-image" alt=""/>
-                                </a>
-                                
-                                <div className="news-text-info">
-                                    <span className="category-tag me-3 bg-info">Khuyến mại</span>
-
-                                    <strong>11/01/23</strong>
-
-                                    <h5 className="news-title mt-2">
-                                        <a href="news-detail.html" className="news-title-link">BÒ KHÔ MẮC KHÉN - QUÀ TẶNG ĐẶC BIỆT DỊP TẾT 2023</a>
-                                    </h5>
+                        
+                        <div class="row">
+                                <div class="col-lg-4">
+                                            <div class="blog-box">
+                                                <div class="blog-img back-img"
+                                                    style={{backgroundImage:'url("https://botoquanmoc.com/images/news/2023/04/19/resized/65393736_661120591021348_4470469688463196160_n_1681870833.jpg")'}}></div>
+                                                <div class="blog-text">
+                                                    <p class="blog-date">June.15.2023</p>
+                                                    <a href="#" class="h4-title">KHÁM PHÁ MẸT BÒ TƠ SIÊU HOT DÀNH CHO TEAM VĂN PHÒNG NHỮNG TRƯA HÈ OI Ả</a>
+                                                    <p>GIẢM GIÁ 50% 195K chỉ còn 98K
+Mẹt bò tơ cuốn bánh tráng của nhà Bò Tơ Quán Mộc có gì ngon mà nhiều người “nghiền” đến thế???</p>
+                                                    <a  class="sec-btn"> <NavLink to="/blogdetail0">  
+                                                    Read More
+                                        </NavLink></a>
+                                                </div>
+                                            </div>
                                 </div>
-                            </div> 
+                                <div class="col-lg-4">
+                                            <div class="blog-box">
+                                                <div class="blog-img back-img"
+                                                    style={{backgroundImage:'url(https://botoquanmoc.com/images/news/2023/03/04/resized/78_1677900197.png)'}}></div>
+                                                <div class="blog-text">
+                                                    <p class="blog-date">June.15.2023</p>
+                                                    <a href="#" class="h4-title">THÀNH PHẦN DINH DƯỠNG TUYỆT VỜI TỪ THỊT BÒ MANG LẠI</a>
+                                                    <p>Cùng Bò Tơ Quán Mộc điểm danh các thành phần dinh dưỡng tuyệt vời có trong thịt bò bên dưới bài viết cả nhà nhé</p>
+                                                    <a  class="sec-btn"> <NavLink to="/blogdetail0">  
+                                                    Read More
+                                        </NavLink></a>
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="col-lg-4">
+                                            <div class="blog-box">
+                                                <div class="blog-img back-img"
+                                                    style={{backgroundImage:'url("https://botoquanmoc.com/images/news/2023/01/11/resized/325072151_1354205105332398_6657784196248892336_n_1673403303.jpg")'}}></div>
+                                                <div class="blog-text">
+                                                    <p class="blog-date">June.15.2023</p>
+                                                    <a href="#" class="h4-title">​ BÒ KHÔ MẮC KHÉN - QUÀ TẶNG ĐẶC BIỆT DỊP TẾT 2023</a>
+                                                    <p>Tinh hoa Tây Bắc, món quà ý nghĩa dịp cuối năm dành tặng cho những người thân yêu đó chính là bò khô mắc khén thơm ngon được sản xuất độc quyền tại Bò Tơ Quán Mộc.</p>
+                                                    <a  class="sec-btn"> <NavLink to="/blogdetail0">  
+                                                    Read More
+                                        </NavLink></a>
+                                                </div>
+                                            </div>
+                                </div>
                         </div>
+                    </div>
+                </section>
+
+               
+           
+
+
+
+                     
 
                     </div>
                 </div>
