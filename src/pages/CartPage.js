@@ -39,15 +39,15 @@ export default function CartPage() {
                 <thead>
                   <th>Stt</th>
                   <th>Tên</th>
-                  <th>Ảnh</th>
+                  <th style={{width:402}}>Ảnh</th>
                   <th>Số Lượng</th>
                   <th>Giá</th>
                   </thead>       
                 <tbody>
                   <tr >
-                    <td  >{itemCart.id}</td>
-                    <td ><h4 className="name-main-list"  style = {{ width: 403,height: 150}} > {itemCart.nameFood}</h4></td>
-                    <td className="wrap-image"> <img  style = {{ width: 403,height: 200}} src={itemCart.img}/>  </td>
+                    <td><div className="name-product-list">{itemCart.id}</div></td>
+                    <td ><h4 className="name-main-list"  > {itemCart.nameFood}</h4></td>
+                    <td><div className="image-product-list"><img src={itemCart.img}/></div></td>
 
                     <td><div className="main-btn row" >
                           <button className="add-button-main col-4"  onClick={() => handleDecreaseQuantity(itemCart)}><h3 style={{margin:-10}}>-</h3></button>
@@ -55,15 +55,15 @@ export default function CartPage() {
                            <button className="add-button-main col-4" onClick={() => handleIncreaseQuantity(itemCart)}><h3 style={{margin:-10}}>+</h3></button>
                     </div>  
                     </td>
-                    <td ><h5 className="price-main-list" style = {{ background :"white",width: 203,height: 200}} >{itemCart.price * itemCart?.quantity}</h5></td>
+                    <td ><h5 className="price-main-list" style = {{ background :"white",height: 200}} >{itemCart.price * itemCart?.quantity}</h5></td>
                     <td> <button className="subtract-button" onClick={()=>{dispatch(deleteCart(itemCart))}}>
                                               delete
                           </button></td>
                   </tr>
                 
                 </tbody>
-    </table>
-    </div>
+            </table>
+            </div>
                     
                 </>
             }) : <div> Chưa có sản phẩm trong giỏ,<NavLink to='/menu'>   Mua ngay</NavLink> </div>
