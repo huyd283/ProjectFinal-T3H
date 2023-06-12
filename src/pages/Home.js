@@ -233,8 +233,8 @@ function Home (props){
                                                     <i className="bi-star-fill reviews-icon"></i>
                                                 </div>
                                                 <div class="dish-title">
-                                                    <h3 class="h3-title">Sườn Bò Nướng Sốt BBQ</h3>
-                                                    <p>23 Đánh Giá Món Ăn</p>
+                                                    <h3 class="h3-title">Combo Bò Wagyu Đặc Biệt</h3>
+                                                    <p>38 Đánh Giá Món Ăn</p>
                                                 </div>
                                                 <div class="dish-info">
                                                     <ul>
@@ -244,7 +244,7 @@ function Home (props){
                                                         </li>
                                                         <li>
                                                             <p>Upto 30%</p>
-                                                            <b>560000.vnd</b>
+                                                            <b>750000.vnd</b>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -273,8 +273,8 @@ function Home (props){
                                                     <i className="bi-star-fill reviews-icon"></i>
                                                 </div>
                                                 <div class="dish-title">
-                                                    <h3 class="h3-title">Sườn Bò Nướng Sốt BBQ</h3>
-                                                    <p>23 Đánh Giá Món Ăn</p>
+                                                    <h3 class="h3-title">Bò Bít Tết (Beef Steak)</h3>
+                                                    <p>90 Đánh Giá Món Ăn</p>
                                                 </div>
                                                 <div class="dish-info">
                                                     <ul>
@@ -284,7 +284,7 @@ function Home (props){
                                                         </li>
                                                         <li>
                                                             <p>Upto 30%</p>
-                                                            <b>560000.vnd</b>
+                                                            <b>470000.vnd</b>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -313,8 +313,8 @@ function Home (props){
                                                     <i className="bi-star-fill reviews-icon"></i>
                                                 </div>
                                                 <div class="dish-title">
-                                                    <h3 class="h3-title">Sườn Bò Nướng Sốt BBQ</h3>
-                                                    <p>23 Đánh Giá Món Ăn</p>
+                                                    <h3 class="h3-title">Steak Thăn Bò (450Gr)</h3>
+                                                    <p>78 Đánh Giá Món Ăn</p>
                                                 </div>
                                                 <div class="dish-info">
                                                     <ul>
@@ -324,7 +324,7 @@ function Home (props){
                                                         </li>
                                                         <li>
                                                             <p>Upto 30%</p>
-                                                            <b>560000.vnd</b>
+                                                            <b>550000.vnd</b>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -353,8 +353,8 @@ function Home (props){
                                                     <i className="bi-star-fill reviews-icon"></i>
                                                 </div>
                                                 <div class="dish-title">
-                                                    <h3 class="h3-title">Sườn Bò Nướng Sốt BBQ</h3>
-                                                    <p>23 Đánh Giá Món Ăn</p>
+                                                    <h3 class="h3-title">Thăn Bò Nướng Đá Núi Lửa</h3>
+                                                    <p>90 Đánh Giá Món Ăn</p>
                                                 </div>
                                                 <div class="dish-info">
                                                     <ul>
@@ -364,7 +364,7 @@ function Home (props){
                                                         </li>
                                                         <li>
                                                             <p>Upto 30%</p>
-                                                            <b>560000.vnd</b>
+                                                            <b>380000.vnd</b>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -393,7 +393,7 @@ function Home (props){
                                                     <i className="bi-star-fill reviews-icon"></i>
                                                 </div>
                                                 <div class="dish-title">
-                                                    <h3 class="h3-title">Sườn Bò Nướng Sốt BBQ</h3>
+                                                    <h3 class="h3-title">Bò Áp Chảo Macau</h3>
                                                     <p>23 Đánh Giá Món Ăn</p>
                                                 </div>
                                                 <div class="dish-info">
@@ -580,9 +580,17 @@ function Home (props){
 
             
             
+            {/* gbimage */}
+            <section className="BgImage">
             
-            <section className="BgImage"></section>
+            </section>
+            
 
+
+
+            
+
+{/* tin tức */}
             <section className="news section-padding">
                 <div className="container">
                     <div className="row">
@@ -603,7 +611,7 @@ function Home (props){
                                             <p class="blog-date">June.15.2023</p>
                                             <a href="#" class="h4-title">[HÀ NỘI], BÒ TƠ QUÁN MỘC CẬP NHẬP MENU MỚI HÈ 2023</a>
                                             <p>Đến hẹn lại lên, Bò Tơ Quán Mộc tiếp tục bổ sung vào menu của mình rất nhiều món ăn ngon, hấp dẫn dịp hè 2023 này để quý khách hàng có thêm phần lựa chọn. Các món ăn mới lần này sẽ là các món ăn từ thịt gà và thịt heo để giúp đa dạng menu nhà Bò Tơ hơn.</p>
-                                            <a href="#" class="sec-btn"> <NavLink to="/blogdetail0">  
+                                            <a  class="sec-btn"> <NavLink to="/blogdetail0">  
                                             Read More
                                 </NavLink></a>
                                         </div>
@@ -617,7 +625,7 @@ function Home (props){
                                             <p class="blog-date">June.15.2023</p>
                                             <a href="#" class="h4-title">RỘN RÀNG KHAI TRƯƠNG, RINH NGAY ƯU ĐÃI 20% TOÀN BỘ MENU ĐỒ ĂN</a>
                                             <p>Buổi lễ khai trương diễn ra thành công tốt đẹp nhờ có sự ủng hộ nhiệt tình của quý thực khách gần xa. Thay lời cảm ơn chân thành nhất, Bò Tơ Quán Mộc dành tặng ưu đãi 20% toàn bộ menu đồ ăn. Ngoải ra, những món quà xinh xắn được Bò Tơ chuẩn bị còn được gửi đến tay quý khách thay lời yêu thương vì sự ủng hộ của tất cả mọi người dành cho Bò Tơ Quán Mộc Sài Gòn.</p>
-                                                <a href="#" class="sec-btn"> <NavLink to="/blogdetail0">  
+                                                <a class="sec-btn"> <NavLink to="/blogdetail0">  
                                             Read More
                                 </NavLink></a>
                                         </div>
@@ -636,7 +644,7 @@ function Home (props){
                                                     <a href="#" class="h4-title">KHÁM PHÁ MẸT BÒ TƠ SIÊU HOT DÀNH CHO TEAM VĂN PHÒNG NHỮNG TRƯA HÈ OI Ả</a>
                                                     <p>GIẢM GIÁ 50% 195K chỉ còn 98K
 Mẹt bò tơ cuốn bánh tráng của nhà Bò Tơ Quán Mộc có gì ngon mà nhiều người “nghiền” đến thế???</p>
-                                                    <a href="#" class="sec-btn"> <NavLink to="/blogdetail0">  
+                                                    <a  class="sec-btn"> <NavLink to="/blogdetail0">  
                                                     Read More
                                         </NavLink></a>
                                                 </div>
@@ -650,7 +658,7 @@ Mẹt bò tơ cuốn bánh tráng của nhà Bò Tơ Quán Mộc có gì ngon m�
                                                     <p class="blog-date">June.15.2023</p>
                                                     <a href="#" class="h4-title">THÀNH PHẦN DINH DƯỠNG TUYỆT VỜI TỪ THỊT BÒ MANG LẠI</a>
                                                     <p>Cùng Bò Tơ Quán Mộc điểm danh các thành phần dinh dưỡng tuyệt vời có trong thịt bò bên dưới bài viết cả nhà nhé</p>
-                                                    <a href="#" class="sec-btn"> <NavLink to="/blogdetail0">  
+                                                    <a  class="sec-btn"> <NavLink to="/blogdetail0">  
                                                     Read More
                                         </NavLink></a>
                                                 </div>
@@ -664,7 +672,7 @@ Mẹt bò tơ cuốn bánh tráng của nhà Bò Tơ Quán Mộc có gì ngon m�
                                                     <p class="blog-date">June.15.2023</p>
                                                     <a href="#" class="h4-title">​ BÒ KHÔ MẮC KHÉN - QUÀ TẶNG ĐẶC BIỆT DỊP TẾT 2023</a>
                                                     <p>Tinh hoa Tây Bắc, món quà ý nghĩa dịp cuối năm dành tặng cho những người thân yêu đó chính là bò khô mắc khén thơm ngon được sản xuất độc quyền tại Bò Tơ Quán Mộc.</p>
-                                                    <a href="#" class="sec-btn"> <NavLink to="/blogdetail0">  
+                                                    <a  class="sec-btn"> <NavLink to="/blogdetail0">  
                                                     Read More
                                         </NavLink></a>
                                                 </div>

@@ -544,8 +544,8 @@ table tbody tr td .price-main-list{
     padding-top: 0;
     border-radius: 30px;
     margin: 50px 0 30px;
-    background: linear-gradient(145deg, #1cf14a, white);
-    box-shadow: 28px 28px 45px #ccdedf, -28px -28px 45px white;
+    background: linear-gradient(145deg, #09d2a3, rgb(243, 237, 239));
+    box-shadow: 28px 28px 45px #e16279, -28px -28px 45px rgb(214, 226, 220);
     transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
 }
 
@@ -681,3 +681,4 @@ table tbody tr td .price-main-list{
 .blog-box:hover {
     transform: scale(1.23);
 }
+/* test */
