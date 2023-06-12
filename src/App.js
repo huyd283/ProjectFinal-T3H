@@ -13,6 +13,7 @@ import Menu from './pages/Menu';
 import ProductDetails from './pages/ProductDetails';
 import { useDispatch } from 'react-redux';
 import { getFectProdust } from './redux/slice/getProductSlice';
+import AboutPage from './pages/AboutPage';
 
 
 // import { BrowserRouter, useLocation } from "react-router-dom";
@@ -30,6 +31,7 @@ function App() {
     <Route path="/BlogDetail0" element={<BlogDetail0/>}/>
     <Route path="/Contact" element={<Contact/>}/>
     <Route path="/Cartpage" element={<CartPage/>}></Route>
+    <Route path="/About" element={<AboutPage/>}/>
     <Route path="/product_details/:id" element={<ProductDetails />}/>
     </Routes>
     <Footer/> 

@@ -8,7 +8,7 @@ function ModalComponent({ isOpen, onClose }) {
 
   const handleInput = (e) => {
     setOrder({
-      ...order,
+      ...order, 
       [e.target.name]: e.target.value,
     });
   };
