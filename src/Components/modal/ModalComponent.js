@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { database } from "../../db";
-
+import UserContext from "../context/UserContext";
+import { legacy_createStore } from "@reduxjs/toolkit";
 function ModalComponent({ isOpen, onClose }) {
   const [order, setOrder] = useState({});
   const [orderId, setOrderId] = useState(null);
   const [counter, setCounter] = useState(0);
+  const {state,dispatch} = React.useContext(UserContext);      
 
   const handleInput = (e) => {
     setOrder({
@@ -16,7 +18,7 @@ function ModalComponent({ isOpen, onClose }) {
   const isOrderValid = () => {
     return order.guests >= 1 && order.hour >= 7 && order.hour <= 21;
   };
-
+  const obj = {};
   const formSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -24,18 +26,36 @@ function ModalComponent({ isOpen, onClose }) {
         console.log("Đơn đặt hàng không hợp lệ");
         return;
       }
-
+      const length = state.order.length;
       const newOrder = {
         ...order,
-        id: counter + 1,
-        checked: true,
+        id: length + 1,
+        checked: false,
       };
-
-      const newOrderRef = await database.ref("Order").push(newOrder);
-      const newOrderId = newOrderRef.key;
-      setOrderId(newOrderId);
+      const refresh = () => {
+        const dbRef = database.ref();
+        dbRef.child("/Order").get().then((snapshot) => {
+            if (snapshot.exists()) {
+                state.order = snapshot.val();
+                dispatch({ type: "update_order", payload: state.order });
+                // localStorage.setItem('state', JSON.stringify(state));
+                setTimeout(() => {
+                    dispatch({ type: "hide_loading" });
+                }, 1000)
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+    }
+      refresh();
+      const value = { ...newOrder};
+      obj[length] = value;
+      const data = { ...state.order, ...obj }
+      database.ref('Order/').set(data);
       console.log("Đẩy dữ liệu thành công");
-      setCounter((prevCounter) => prevCounter + 1);
+      // setCounter((prevCounter) => prevCounter + 1);
       e.target.reset();
     } catch (err) {
       console.log(err);
@@ -111,7 +131,7 @@ function ModalComponent({ isOpen, onClose }) {
                         </select>
                     </div>
                     <div className="col-6">
-                    <select name="minutes" id="contact-minutes" className="form-control" required onChange={handleInput}>
+                    <select name="minutes" id="contact-minutes" className="form-control" defaultValue={"0"} required onChange={handleInput}>
 
                             {
                                 [...Array(60).keys()].map((i) => {

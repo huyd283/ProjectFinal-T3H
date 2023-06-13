@@ -6,6 +6,9 @@ const reducer = (state,action)=>{
         case "update_products": {
             return {...state,productsCate:state.productsCate,isLoading:true};
         } 
+        case "update_order": {
+            return {...state,order:state.order,isLoading:true};
+        } 
         case "hide_loading":{
             return {...state,isLoading:false};
         }
