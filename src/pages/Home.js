@@ -569,28 +569,13 @@ function Home (props){
                     
               
             </section>
-
-
-
-
-           
-
-
-
-
-            
             
             {/* gbimage */}
             <section className="BgImage">
             
             </section>
             
-
-
-
-            
-
-{/* tin tức */}
+            {/* tin tức */}
             <section className="news section-padding">
                 <div className="container">
                     <div className="row">

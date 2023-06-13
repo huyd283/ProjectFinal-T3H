@@ -1,15 +1,16 @@
-import React from "react";
+import React,{useContext, useEffect, useState } from "react";
 import TableCart from "../Components/cart/TableCart";
-import Footer from "../Components/ShareComponents/Footer"
 import FormCart from "../Components/cart/FormCart";
+import UserContext from "../Components/context/UserContext";
 import { useDispatch, useSelector } from "react-redux";
 import { decreaseQuantity, deleteCart, increaseQuantity } from "../redux/slice/cartSlice";
 import { NavLink } from "react-router-dom";
+import'./body.css';
 
-export default function CartPage() {
-    const dispatch = useDispatch();
+export default function CartPage(props) {
+    const {state,dispatch} = React.useContext(UserContext);      
     const { cart } = useSelector((state) => state.carts);
-  if(cart === 0 ) return <h1>undfind</h1>
+  if(cart === 0 ) return <h1>undefind</h1>
   console.log(cart);
   const handleDecreaseQuantity = (product) => {
     if (product.quantity === 1) {
@@ -26,14 +27,12 @@ export default function CartPage() {
     dispatch(increaseQuantity(product.id));
   };
     return (
-     
-         
-            <section className="product spad">
+    <section className="product spad">
                 <div className="container">
                 <div className="bodyCart">
-                    <h2 className="bg-light-subtle mb-2" >Products List</h2>
+                    <h2 className="bg-light-subtle mb-2" >Đơn Hàng</h2>
 
-            { cart?.length > 0 ? cart.map((itemCart,index)=>{
+             { cart?.length > 0 ? cart.map((itemCart,index)=>{
                 return <>
                 <div key={index} className="main-cart row ">
               <table className="table">
@@ -68,13 +67,12 @@ export default function CartPage() {
             </div>
                     
                 </>
-            }) : <div> khong co san pham,<NavLink to='/menu'>   mua ngay</NavLink> </div>
-            }
- <FormCart></FormCart>
+            }) : <div> Chưa có sản phẩm trong giỏ,<NavLink to='/menu'>   Mua ngay</NavLink> </div>
+            
+            } 
+            {/* <FormCart></FormCart> */}
             </div>
                 </div>
             </section>
-               
-        
-    )
+                )
 }
