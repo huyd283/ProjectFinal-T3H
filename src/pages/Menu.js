@@ -72,12 +72,13 @@ function Menu (props){
                 
                 <div class="pagination">
                     <a href="#">&laquo;</a>
-                    <a href="#"><div><NavLink className="nav-link" to="/Menucopy">1</NavLink></div></a>
-                    <a class="active" href="#"><div><NavLink className="nav-link" to="/Menu">2</NavLink></div></a>
-                    <a href="#"><div><NavLink className="nav-link" to="/Menucopy">3</NavLink></div></a>
-                    <a href="#"><div><NavLink className="nav-link" to="/Menucopy">4</NavLink></div></a>
-                    <a href="#"><div><NavLink className="nav-link" to="/Menucopy">5</NavLink></div></a>
-                    <a href="#"><div><NavLink className="nav-link" to="/Menucopy">6</NavLink></div></a>
+                    <a class="active" href="#"><div><NavLink className="nav-link" to="/Menu">1</NavLink></div></a>
+                    <a href="#"><div><NavLink className="nav-link" to="/Menu2">2</NavLink></div></a>
+                   
+                    <a href="#"><div><NavLink className="nav-link" to="/Menu2">3</NavLink></div></a>
+                    <a href="#"><div><NavLink className="nav-link" to="/Menu2">4</NavLink></div></a>
+                    <a href="#"><div><NavLink className="nav-link" to="/Menu2">5</NavLink></div></a>
+                    <a href="#"><div><NavLink className="nav-link" to="/Menu2">6</NavLink></div></a>
 
                     <a href="#">&raquo;</a>
               </div>

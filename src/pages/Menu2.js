@@ -8,8 +8,9 @@ import { useState } from "react";
 import { TabPanel } from "@mui/lab";
 import TabPanelUI from "./TabPanelUI";
 import'./body.css';
+
 import TabPanelUIcopy from "./TabPanelUIcopy";
-function Menucopy (props){
+function Menu2 (props){
   const dispatch = useDispatch();
 
   const [activeTab, setActiveTab] = useState(0);
@@ -88,4 +89,4 @@ function Menucopy (props){
             
           
 )}
-        export default Menucopy;
+        export default Menu2;

@@ -21,7 +21,7 @@ export default function FormCart(props) {
     return (
         <div className="form ">
             
-            <h6 className="text-bg-danger">Thông tin đặt hàng</h6>
+            <h6 className="text-bg-danger" style={{textAlign :"center"}}>Thông tin đặt hàng</h6>
       
                  <form onSubmit={formSubmit}  className="custom-form contact-form row" action="#" method="post" role="form">
                 <div className="col-lg-6 col-6">
