@@ -179,7 +179,7 @@ button {
 }
 
 .wrapper img{
-    height: 297px;
+    height: 342px;
     width: 100%;
     transition: scale 400ms;
     
@@ -682,3 +682,8 @@ table tbody tr td .price-main-list{
     transform: scale(1.23);
 }
 /* test */
+.chitiet{
+ 
+    text-align: center;
+    margin-bottom: 50px;
+}

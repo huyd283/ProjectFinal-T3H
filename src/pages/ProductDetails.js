@@ -28,7 +28,11 @@ console.log(productId);
       productId && productId?.map((item,index)=>{
        
         return <>
+       <div>
+       <h1 className="chitiet">Chi Tiết Món Ăn</h1>
+       </div>
         <div className="container">
+           
         <div key={index}  className="nav-link"  class="menu-thumb">
                     <div className="main-item-detail row">
                       <div className="wrapper col-6">
