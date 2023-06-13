@@ -81,7 +81,7 @@ function TabPanelUI({listcategory}) {
                                             <i className="bi-star-fill reviews-icon"></i>
                                         </div>
                                         <div className="dish-title">
-                                            <h5 className="h3-title">{item.nameFood}(Sale 30%)</h5>
+                                            <h5 className="h3-title">{item.nameFood}</h5>
                                             <e>{item.review } </e>
                                         </div>
                                         <div className="dish-info">
