@@ -17,6 +17,7 @@ import { UserProvider } from './Components/context/UserContext';
 import reducer from '../src/Components/context/Reducer';
 import store from '../src/Components/context/Store';
 import AboutPage from './pages/AboutPage';
+import Menucopy from './pages/Menucopy';
 
 // import { BrowserRouter, useLocation } from "react-router-dom";
 
@@ -38,6 +39,7 @@ function App() {
     <Route path="/Cartpage" element={<CartPage/>}></Route>
     <Route path="/About" element={<AboutPage/>}/>
     <Route path="/product_details/:id" element={<ProductDetails />}/>
+    <Route path="/Menucopy" element={<Menucopy/>}/>
     </Routes>
     <Footer/> 
     </div>
