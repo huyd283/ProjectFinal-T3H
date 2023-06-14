@@ -1,4 +1,4 @@
-const reducer = (state,action)=>{ 
+const Reducer = (state,action)=>{ 
     switch(action.type){
         case "update_cart": {
             return {...state,cart:state.cart,isLoading:true};
@@ -9,6 +9,12 @@ const reducer = (state,action)=>{
         case "update_order": {
             return {...state,order:state.order,isLoading:true};
         } 
+        case "update_guest_order": {
+            return {...state,guest_order:state.guest_order,isLoading:true};
+        }
+        case "update_pay": {
+            return {...state,pay:state.pay,isLoading:true};
+        }
         case "hide_loading":{
             return {...state,isLoading:false};
         }
@@ -17,4 +23,4 @@ const reducer = (state,action)=>{
 
     }
 }
-export default reducer;
+export default Reducer;

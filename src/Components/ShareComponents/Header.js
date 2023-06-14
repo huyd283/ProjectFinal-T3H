@@ -1,13 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import ModalComponent from "../modal/ModalComponent";
 import { useSelector } from "react-redux";
 import { useRef } from "react";
+import UserContext from "../context/UserContext";
 
 function Header(props) {
-  const { cart } = useSelector((state) => state.carts);
+  const {state,dispatch} = React.useContext(UserContext);
+  // const { cart } = useSelector((state) => state.carts);
 
   const ref = useRef(null);
 
@@ -21,7 +23,9 @@ function Header(props) {
   const closeModal = () => {
     setIsModalOpen(false);
   };
-
+useEffect(()=>{
+  console.log(state.cart.length)
+},[])
   return (
     <React.Fragment>
       <div className="navbar navbar-expand-lg bg-white shadow-lg">
@@ -55,8 +59,8 @@ function Header(props) {
           <div className="d-flex flex-row-reverse">
             <button type="button" className="custom-btn btn btn-danger" data-bs-toggle="modal" data-bs-target="#BookingModal" onClick={openModal}>ĐẶT BÀN</button>
             <div className="iconCart">
-                         {cart.length === 0 ? "" :  <div className="countItem">
-                             <span>{cart.length === 0 ? "" : cart.length} </span>
+                         {state.cart.length === 0 ? "" :  <div className="countItem">
+                             <span>{state.cart.length} </span>
                         </div>} 
                    
                         <NavLink className="my-auto" to="./Cartpage"><FontAwesomeIcon className="me-3 fs-4" icon={faCartShopping} style={{ color: "#000000" }} /></NavLink>

@@ -6,16 +6,17 @@ import { getByCate } from '../redux/slice/getProductSlice';
 import { NavLink } from 'react-router-dom';
 import'./body.css';
 import { hover } from '@testing-library/user-event/dist/hover';
-import { addToCart } from '../redux/slice/cartSlice';
+// import { addToCart } from '../redux/slice/cartSlice';
 import { ToastContainer, toast } from 'react-toastify';
+import UserContext from '../Components/context/UserContext';
 
 function TabPanelUI({listcategory}) {
   const [value, setValue] = React.useState(0);
   const [listCaterolyA, setListCateroly] = useState("TẤT CẢ");
-  const dispatch = useDispatch();
+  const Dispatch = useDispatch();
   const { productId } = useSelector((state) => state.products);
   useEffect(() => {
-    dispatch(getByCate(listCaterolyA));
+    Dispatch(getByCate(listCaterolyA));
 
   }, [listCaterolyA]);
 
@@ -28,7 +29,26 @@ function TabPanelUI({listcategory}) {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
+  const {state,dispatch}=React.useContext(UserContext);
+const addToCart = (item) => { 
+  console.log(typeof item)
+  const copyItem ={...item} ;
+  let checked=false;
+  // toast("Thêm sản phẩm thành công!");
+  state.cart.forEach(i=>{
+    if(i.id===copyItem.id){
+      checked=true;
+    }
+  })
+  if(checked==false) {
+    copyItem.quantity=1;
+    state.cart.push(copyItem);
+  }else{
+    alert("Sản phẩm đã có trong giỏ hàng!")
+  }
+localStorage.setItem('cart', JSON.stringify(state.cart));
+dispatch({type:"update_cart", payload:state.cart});
+}
   return (
     <TabContext value={value}>
                         <div class="menu-tab-wp">
@@ -103,7 +123,7 @@ function TabPanelUI({listcategory}) {
                                                  </li>
                                                 <li>
                                                     
-                                                      <button className="dish-add-btn"  onClick={()=>{dispatch(addToCart(item) ,toast("thêm sản phẩm thành !"))}}>Đặt Món</button>
+                                                      <button className="dish-add-btn"  onClick={()=>addToCart(item)}>Đặt Món</button>
                                                      
                                                 </li>
                                             </ul>

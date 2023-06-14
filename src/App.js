@@ -14,16 +14,17 @@ import ProductDetails from './pages/ProductDetails';
 import { useDispatch } from 'react-redux';
 import { getFectProdust } from './redux/slice/getProductSlice';
 import { UserProvider } from './Components/context/UserContext';
-import reducer from '../src/Components/context/Reducer';
-import store from '../src/Components/context/Store';
+import Reducer from '../src/Components/context/Reducer';
+import Store from '../src/Components/context/Store';
 import AboutPage from './pages/AboutPage';
 import Menu2 from './pages/Menu2';
+import Pays from './pages/Pays';
 
 // import { BrowserRouter, useLocation } from "react-router-dom";
 
 function App() {
-  const localState = localStorage.getItem("state") ? JSON.parse(localStorage.getItem("state")) :store;
-  const [state,dispatch] = useReducer(reducer,localState);  
+  const localState = localStorage.getItem("state") ? JSON.parse(localStorage.getItem("state")) :Store;
+  const [state,dispatch] = useReducer(Reducer,localState);  
   const display=state.isLoading ? "block":"none";
   return (
     <UserProvider value={{state,dispatch}}>
@@ -38,6 +39,7 @@ function App() {
     <Route path="/Contact" element={<Contact/>}/>
     <Route path="/Cartpage" element={<CartPage/>}></Route>
     <Route path="/About" element={<AboutPage/>}/>
+    <Route path="/Pays" element={<Pays/>}/>
     <Route path="/product_details/:id" element={<ProductDetails />}/>
     <Route path="/Menu2" element={<Menu2/>}/>
     </Routes>
