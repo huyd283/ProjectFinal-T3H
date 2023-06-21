@@ -8,7 +8,11 @@
 .products{
     width: 100%;
 }
-
+.bodyPay{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
 
 .combo{
     
@@ -72,7 +76,7 @@
 }
 .listcate:hover{
     flex: 1;
-    background-color:rgb(184, 249, 249) ;
+    background-color:rgb(206, 251, 251) ;
 }
 
 
@@ -316,8 +320,8 @@ button {
 
 .dish-box {
     border-radius: 30px;
-    background: linear-gradient(145deg, #6aead2, #ffffff);
-    box-shadow: 28px 28px 28px #2bc0e1, -28px -28px 45px #ffffff;
+    background: linear-gradient(145deg, #9ff4e4, #ffffff);
+    box-shadow: 28px 28px 28px #7cd7eb, -28px -28px 45px #ffffff;
     display: flow-root;
     padding: 0 10px 30px;
     padding-top: 0;
@@ -462,8 +466,8 @@ button {
     padding: 10px;
     display: inline-block;
     border-radius: 20px;
-    background: linear-gradient(145deg, #70f97b, #3facda);
-    box-shadow: 48px 28px 55px rgb(55, 236, 185); 
+    background: linear-gradient(145deg, #99e7a0, #3facda);
+    box-shadow: 48px 28px 55px rgb(161, 244, 220); 
     /* đổ bóng màu 2 chiều */
     /* -28px -28px 55px white; */
     position: relative;

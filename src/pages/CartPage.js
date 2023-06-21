@@ -251,7 +251,7 @@ export default function CartPage(props) {
                     <NavLink to="/Pays" type="button" className="form-control" >Tạo đơn hàng</NavLink>
                 </div>
             </form>
-        </div>
+            </div>
             </div>
                 </div>
             </section>

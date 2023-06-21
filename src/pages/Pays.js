@@ -46,11 +46,11 @@ const obj={};
          
             <section className="product spad">
                 <div className="container">
-                <div className="bodyCart">
+                <div className="">
                     <h2 className="bg-light-subtle mb-2" >Thông tin đơn hàng</h2>
 
-                <div  className="main-cart row ">
-                    <div className="col-8 ">
+                <div  className="bodyPay  row ">
+                    <div className=" ">
                     <table className="table w-50">
                         <thead>
                         <th>STT</th>
@@ -83,40 +83,69 @@ const obj={};
                     </tbody>
                     </table>
                     </div>
-                    
-                </div>
-                <div className="infoUser">
-                      <div>
-                      Họ Tên:  {state.pay.order["contact-name"]}
-                      </div>
-                      <div>
-                      Số Điện Thoại:  {state.pay.order["contact-phone"]}
-                      </div>
-                      <div>
-                      Email :  {state.pay.order["contact-email"]}
-                      </div>
-                      <div>
-                      Địa Chỉ:  {state.pay.order["contact-address"]}
-                      </div>
-                      <div>
-                      Địa Điểm Tới:  {state.pay.order["contact-add"]}
-                      </div>
-                      <div>
-                    Ngày :  {state.pay.order["contact-time"]}
-                      </div>
-                      <div>
-                    Giờ :  {state.pay.order["contact-hour"]}, {state.pay.order["contact-minute"]}phút
-                      </div>
-                      <div>
-                      Ghi Chú:  {state.pay.order["contact-message"]}
-                      </div>
-                      <div>
-                           Tổng tiền: {state.pay.total}
-                          </div>
-                          </div>
-                    <button  type="button" className="form-control"  onClick={confirmOrder}>Xác nhận</button>
-                         
+                    {/* <div className="">
+                    <table className="table w-50">
+                        <thead>
+                        <th>Họ Tên</th>
+                        <th>SĐT</th>
+                        <th>Email</th>
+                        <th>Địa Chỉ</th>
+                        <th>Địa Điểm Tới</th>
+                        <th>Ngày</th>
+                        <th>Giờ</th>
+                        <th>Ghi Chú</th>
+                        <th>Tổng Tiền</th>
+                        </thead> 
+                        <tbody>
+                        <tr>
+                            <td><div className="name-main-list">{state.pay.order["contact-name"]}</div></td>
+                            <td><div className="name-main-list" > {state.pay.order["contact-phone"]}</div></td>
+                            <td><div className="name-main-list">{state.pay.order["contact-email"]}</div></td>
+                            <td><div className="name-main-list">{state.pay.order["contact-address"]}</div></td>
+                            <td><div className="name-main-list">{state.pay.order["contact-add"]}</div></td>
+                            <td><div className="name-main-list">{state.pay.order["contact-time"]}</div></td>
+                            <td><div className="name-main-list">Giờ :  {state.pay.order["contact-hour"]}:{state.pay.order["contact-minute"]} Phút</div></td>
+                            <td><div className="name-main-list">{state.pay.order["contact-message"]}</div></td>
+                            <td><div className="name-main-list">{state.pay.total}</div></td> 
+                            <td> 
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    </div> */}
+                    </div>
+        <div className="form ">
             
+            <h6 className="text-bg-danger" style={{textAlign :"center"}}>Thông tin đặt hàng</h6>
+            <form className="custom-form contact-form row" action="#" method="" role="form">
+                <div className="col-lg-6 col-6">
+                    <label for="contact-name" className="form-label">Họ và tên: {state.pay.order["contact-name"]}</label> 
+                </div>
+                
+                <div className="col-lg-6 col-6">
+                    <label for="contact-phone" className="form-label">Số điện thoại: {state.pay.order["contact-phone"]}</label>
+                </div>
+
+                <div className="col-12 row">
+                        
+                    <label for="contact-email" className="form-label  ">Email: {state.pay.order["contact-email"]} </label>
+                    
+                    <label for="contact-name" className="form-label ">Địa chỉ: {state.pay.order["contact-add"]}</label>
+
+                    <label for="contact-address" className="form-label ">Địa điểm nhà hàng: {state.pay.order["contact-address"]}</label>
+
+                    {/* <label id="contact-address" name="contact-add"  className="form-control"> : </label> */}
+
+                    <label for="contact-time" className="form-label ">Thời gian ăn: {state.pay.order["contact-hour"]}: {state.pay.order["contact-minute"]}</label>
+
+                    <label for="contact-message" className="form-label">Lời nhắn: {state.pay.order["contact-message"]}</label>
+                </div>
+
+            </form>
+            </div>
+                    <div className="row">
+                    <button  type="button" className="form-control "  onClick={confirmOrder}>Xác nhận</button>        
+                    </div>
             </div>
                 </div>
             </section>
